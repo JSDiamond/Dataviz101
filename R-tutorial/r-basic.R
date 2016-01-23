@@ -4,11 +4,15 @@
 #      University of North Carolina at Chapel Hill
 ################################################################################
 
+# Helpful hint: Use cmd + return to run the line of code you are on
+
 # Values, aka variables
 x <- 1
 x
 x = 2
 x
+
+
 
 # The c() command
 vector = c(1, 2, 3, 4, 5)
@@ -28,6 +32,7 @@ sequence2
 repetition = rep(c(1, 2, 3), times = 8)
 repetition
 
+# Helpful hint: Use cmd + return to run the snippet of code you are currently highlighting
 # Helpful hint: you can clear your console by pressing ctrl + l
 
 # Referencing vector elements
@@ -102,6 +107,7 @@ random = sample(1:6, 25, replace=TRUE)
 table(random)
 barplot(table(random), main="Random Values", xlab="value", ylab="frequency")
 hist(random)
+plot(table(random))
 
 random = runif(20, min=0, max=100)
 matrix = matrix(random, nrow = 10, ncol = , byrow = TRUE)

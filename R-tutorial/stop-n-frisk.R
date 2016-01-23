@@ -1,5 +1,5 @@
 ################################################################################
-# 2012 Stop & Frisk Data Analysis
+# 2012 Stop & Frisk Data Analysis, via Mark Hansen @cocteau
 ################################################################################
 
 # Loading data from a file
@@ -32,7 +32,7 @@ sarah = sf[,c("sex", "city")]
 table(sf[,"sex"]) #will output a count of the resulting values
 #LOGICALMASK: sf[,"sex"]
 gender == 1 #outputs TRUE or FALSE for each item in the vector
-mf = gender == 1
+mf = gender == 1 # test for males
 boys = sf[mf,] #will only return TRUE results, in this case men
 
 #shorthand for selecting a column
@@ -41,23 +41,46 @@ sf$sex
 #include NA's
 table(mf,useNA="always")
 #2D matrix table
-table(sf$sex,sf$eyecolor)
+table(sf$sex, sf$eyecolor)
+table(sf$crimsusp, sf$sex)
 
 #plot / hist
 plot(table(sf$age))
+table(sf$age) # more stange data entry errors
 hist(sf$age)
-hist(sf$age, breaks=20)
+hist(sf$age, breaks=20) # breaks defaults to 10
 
 babies = sf[sf$age == 1,]
 elderly = sf[sf$age >= 99,]
-sum(sf$dob==12311900) #many default dates of birth
+sum(sf$dob==12311900) #many default dates of birth 12/31/1900
 dobs = as.character(sf$dob)
 
 #get the year out from the dob string using a conditional loop
 #ifelse( condition, true result action, false result action )
 year = ifelse( nchar(dobs)==7, substring(dobs,4), substring(dobs,5) )
+
+help('ifelse')
+ifelse( c(0:10)==3, TRUE, FALSE )
+nchar('tenletters')
+nchar(dobs)
+
 year = as.numeric(year)
-hist(2012-year-sf$age)
+
+# (s&f year) - (dob year) - (recorded age) should = 0
+hist(2012 - year - sf$age)
+
+
+age.columns = cbind( (2012 - year) , sf$age)
+help('cbind')
+age.columns
+# A scatter plot of calculated age vs recorded age should be a direct relationship
+plot( age.columns )
+
+matching.age = ifelse( age.columns[,1] == age.columns[,2], 0 , 1 )
+# Number of matching ages
+sum(matching.age==1)
+# Number of mismatched ages
+sum(matching.age==0)
 
 #add the year vector to the dataset
 sf$yearob = year
@@ -65,7 +88,7 @@ sf$yearob = year
 #Reasonably smart way to get min max mean ...
 summary(sf)
 
-#A list can gold different data types
+#A list can hold different data types
 
 
 
