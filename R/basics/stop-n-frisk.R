@@ -4,9 +4,9 @@
 
 # Loading data from a file
 # Option 1
-sf = read.csv("~/Desktop/Dataviz Studio 1/R-basics/data/stop.csv")
+sf = read.csv("~/Desktop/Dataviz101/R/basics/data/stop.csv")
 # Option 2
-setwd("~/Desktop/Dataviz Studio 1/R-basics/")
+setwd("~/Desktop/Dataviz101/R/basics/")
 sf = read.csv("data/stop.csv")
 # Option 3: From the web
 sf = read.csv("http://compute-cuj.org/dm/stop.csv")
@@ -88,9 +88,16 @@ sf$yearob = year
 #Reasonably smart way to get min max mean ...
 summary(sf)
 
-#A list can hold different data types
 
+# Creating a PDF of you graphic(s)
+# Begin output to a pdf file
+# File size is in inches, 6in. x 6in.
+pdf("stop-n-frisk-1.pdf", family = "Helvetica", width = 6, height = 6)
 
+hist(sf$age, breaks=20)
+plot( age.columns )
 
+# End output to the pdf
+dev.off()
 
 
