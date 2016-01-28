@@ -53,7 +53,7 @@ Begin by opening a Terminal window
 	# revert back to the previous state
 	git revert --hard <d8a151d10f0db7a6a02fa8e436b86b063ab9bf0c>
 	
-	
+	git remote add origin https://github.com/JSDiamond/PROJECT.git
 	git push origin master
 
 
