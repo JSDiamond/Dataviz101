@@ -53,7 +53,15 @@ Begin by opening a Terminal window
 	# revert back to the previous state
 	git revert --hard <d8a151d10f0db7a6a02fa8e436b86b063ab9bf0c>
 	
+	# make a repo on Github and copy the clone url on the main repo page
+	
 	git remote add origin https://github.com/JSDiamond/PROJECT.git
+	git pull origin master
+	
+	# this may open a merge statement int the VIM text editor, 
+	# if so hit `cntrl` + `c` then type `:wq` to write & save,
+	# then push to the repo
+	
 	git push origin master
 
 
