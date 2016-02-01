@@ -12,3 +12,11 @@
 
 #### Data sources
 [NYPD Motor Vehicle Collisions](https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95)
+
+#### Packages
+If you dont have ggplot2 or plyr, install using the console in RStudio
+  install.packages("ggplot2", "plyr")
+  library(ggplot2)
+  library(plyr)
+  
+Then they should appear in the packages window
