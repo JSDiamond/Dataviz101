@@ -20,3 +20,7 @@ If you dont have ggplot2 or plyr, install using the console in RStudio
   library(plyr)
   
 Then they should appear in the packages window
+
+#### Helpful links
+[http://www.r-bloggers.com/quick-introduction-to-ggplot2/](http://www.r-bloggers.com/quick-introduction-to-ggplot2/)
+[https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
