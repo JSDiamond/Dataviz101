@@ -1,0 +1,8 @@
+library(ggplot2)
+
+ceo <- read.csv("Glassdoor Post.csv")
+View(ceo)
+
+p <- ggplot(ceo) + geom_point(aes(x=25, y=CEO.Approval)) + geom_point(aes(x=75, y=Stock.Performance)) + xlim(0,100) + ylim(-25,100) + geom_segment(aes(x=25, xend=75, y=CEO.Approval, yend= Stock.Performance), alpha=0.5)
+
+p + geom_text(aes(x=21, y=CEO.Approval, label=Name), size=2, hjust=1) + geom_text(aes(x=24, y=CEO.Approval, label=CEO.Approval), size=2, hjust=1) + geom_text(aes(x=76, y= Stock.Performance, label= Stock.Performance), size=2, hjust=0) + geom_text(aes(x=79, y= Stock.Performance, label=Name), size=2, hjust=0)

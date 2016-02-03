@@ -1,0 +1,25 @@
+# using data from “worldhealth2e.csv”
+
+library(ggplot2)
+library(maps)
+library(plyr)
+
+# transform data set to correct format
+health <- data.frame(region = tolower(rownames(worldhealth)), worldhealth)
+health
+
+# world map data
+world_map <- map_data("world")
+
+# merge the data sets together
+health_map <- merge(world_map, worldhealth, by="region")
+head(health_map)
+
+# sort by group, then order
+health_map <- arrange(health_map, group, order)
+head(health_map)
+
+# plot this baby (monochromatic scale)
+ggplot(health_map, aes(x=long, y=lat, group=group, fill=Communicable)) + geom_polygon(color="white") + coord_map("polyconic")
+
+/* ————— xyz ————— */

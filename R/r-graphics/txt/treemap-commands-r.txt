@@ -1,0 +1,5 @@
+library(portfolio)
+
+stem <- read.csv("STEM_employment-totals.csv")
+
+map.market(id=stem$occupation, area=stem$employment, group=stem$type, color=stem$wage, lab = c(TRUE, TRUE), main="STEM employment totals")

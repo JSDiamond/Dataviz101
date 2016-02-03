@@ -1,0 +1,26 @@
+wantFind <- read.csv("want-find-test.csv")
+
+ggplot(wantFind) + geom_segment(aes(x=10, xend=40, y=most_important, yend=hardest_to_find), color="red", alpha=0.5) + 
+    xlim(0, 50) + ylim(0, 100) + 
+    geom_text(aes(x=8.6, y=most_important, label=skill), alpha=0.6, size=4, hjust=1) + 
+    geom_text(aes(x=9.8, y=most_important, label=most_important), size=4, hjust=1) + 
+    geom_text(aes(x=40.2, y=hardest_to_find, label=hardest_to_find), size=4, hjust=0) + 
+    geom_text(aes(x=42, y=hardest_to_find, label=skill), alpha=0.6, size=4, hjust=0) + 
+    ggtitle("Skills wanted/hardest to find: Finance sector") + 
+    annotate("text", x=9.8, y=90, label="Most important skills sought", size=5, hjust=1) + 
+    annotate("text", x=40.2, y=90, label="Hardest-to-find skills", size=5, hjust=0)
+
+
+————
+
+col <- read.csv("COL-4.csv")
+
+p <- ggplot(col) + geom_point(aes(x=25, y=STEM_pay), color="red", size=1) + geom_point(aes(x=75, y=COL), color="red", size=1) + 
+	xlim(15,85) + geom_segment(aes(x=25, xend=75, y=STEM_pay, yend=COL), color="red", alpha=0.5) + scale_y_reverse()
+
+p + geom_text(aes(x=23.5, y=STEM_pay, label=City), size=2, hjust=1) + 
+	geom_text(aes(x=24.5, y=STEM_pay, label=STEM_pay), size=2, hjust=1) + 
+	geom_text(aes(x=75.5, y=COL, label=COL), size=2, hjust=0) + 
+	geom_text(aes(x=76.5, y=COL, label=City), size=2, hjust=0) + 
+	annotate("text", x=24.5, y=-2, label="STEM pay rank", size=3, hjust=1) + 
+	annotate("text", x=75.5, y=-2, label="Cost of living rank", size=3, hjust=0)

@@ -1,0 +1,7 @@
+/* ———— cleveland dot plot ———- */
+
+ggplot() + geom_point(data=msa, aes(x=All_Pay, y=reorder(MSA, STEM_Pay), size=2, color="lightblue")) + geom_point(data=msa, aes(x=STEM_Pay, y=reorder(MSA, STEM_Pay), size=2, color="green")) + xlim(39000, 116000)
+
+/* ———— with connecting segment line ———- */
+
+ggplot() + geom_point(data=msa, aes(x=All_Pay, y=reorder(MSA, STEM_Pay), size=2, color="lightblue")) + geom_point(data=msa, aes(x=STEM_Pay, y=reorder(MSA, STEM_Pay), size=2, color="green")) + geom_segment(data=msa, aes(x=All_Pay, xend=STEM_Pay, y=MSA, yend=MSA), color="grey50") + xlim(39000, 116000)

@@ -1,0 +1,9 @@
+library(rgl)
+
+library(rgl)
+
+superheroes <- read.csv("superheroes-2.csv")
+ 
+plot3d(superheroes$date, superheroes$budget, superheroes$gross, type="s", size=superheroes$profit*2, col=superheroes$studio_code, lit=FALSE, alpha=0.5)
+
+play3d(spin3d())

@@ -1,0 +1,8 @@
+fedrate <- read.csv("fed-fund-rate-4.csv")
+
+View(fedrate)
+
+ggplot() + geom_point(data=fedrate, aes(x=year_mar-0.1, y=rate_mar, size=number_mar), color="blue", shape=1) + 
+geom_point(data=fedrate, aes(x=year_june+0.1, y=rate_june, size=number_june), color="blue") + 
+scale_size_area(max_size=15) + 
+labs(size="Number of projections")

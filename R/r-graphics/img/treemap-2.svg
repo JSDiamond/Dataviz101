@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 644" enable-background="new 0 0 1000 644" xml:space="preserve">
+<font horiz-adv-x="1000">
+<!-- Copyright (c) 1985, 1987, 1989, 1990, 1997 Adobe Systems Incorporated.  All Rights Reserved.Helvetica is a trademark of Linotype-Hell AG and/or its subsidiaries. -->
+<font-face font-family="Helvetica" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="278"/>
+<glyph unicode="A" horiz-adv-x="667" d="M477,209l71,-209l106,0l-260,718l-110,0l-270,-718l100,0l75,209M219,295l115,316l2,0l106,-316z"/>
+<glyph unicode="B" horiz-adv-x="667" d="M171,635l176,0C455,635 496,597 496,530C496,442 439,414 346,414l-175,0M74,0l309,0C542,0 627,97 627,212C627,335 544,368 497,387C576,424 593,490 593,537C593,635 524,718 390,718l-316,0M171,335l191,0C441,335 530,315 530,214C530,134 479,83 378,83l-207,0z"/>
+<glyph unicode="C" horiz-adv-x="722" d="M674,502C660,622 564,737 379,737C170,737 44,584 44,363C44,87 204,-19 367,-19C421,-19 641,-7 681,264l-94,0C554,97 445,67 382,67C204,67 144,197 144,366C144,555 249,651 379,651C448,651 553,628 580,502z"/>
+<glyph unicode="D" horiz-adv-x="722" d="M81,0l287,0C604,0 674,208 674,369C674,576 559,718 372,718l-291,0M178,635l181,0C491,635 574,544 574,363C574,182 492,83 366,83l-188,0z"/>
+<glyph unicode="E" horiz-adv-x="667" d="M616,86l-433,0l0,240l393,0l0,86l-393,0l0,220l426,0l0,86l-523,0l0,-718l530,0z"/>
+<glyph unicode="F" horiz-adv-x="611" d="M183,326l352,0l0,86l-352,0l0,220l400,0l0,86l-497,0l0,-718l97,0z"/>
+<glyph unicode="G" horiz-adv-x="778" d="M389,301l224,0C613,224 597,160 534,110C481,68 423,64 387,64C196,64 148,214 148,360C148,548 254,651 383,651C462,651 567,625 598,500l94,0C671,661 522,737 388,737C154,737 48,540 48,365C48,289 51,166 161,62C198,26 258,-19 381,-19C479,-19 569,25 618,93l23,-93l63,0l0,384l-315,0z"/>
+<glyph unicode="H" horiz-adv-x="722" d="M549,421l-375,0l0,297l-97,0l0,-718l97,0l0,335l375,0l0,-335l97,0l0,718l-97,0z"/>
+<glyph unicode="I" horiz-adv-x="278" d="M188,718l-97,0l0,-718l97,0z"/>
+<glyph unicode="L" horiz-adv-x="556" d="M173,718l-97,0l0,-718l461,0l0,86l-364,0z"/>
+<glyph unicode="M" horiz-adv-x="833" d="M761,0l0,718l-138,0l-204,-607l-2,0l-205,607l-139,0l0,-718l94,0l0,424C167,445 165,536 165,602l2,0l202,-602l96,0l202,603l2,0C669,536 667,445 667,424l0,-424z"/>
+<glyph unicode="N" horiz-adv-x="722" d="M552,138l-2,0l-359,580l-115,0l0,-718l94,0l0,580l2,0l365,-580l109,0l0,718l-94,0z"/>
+<glyph unicode="O" horiz-adv-x="778" d="M639,359C639,190 545,67 389,67C233,67 139,190 139,359C139,528 233,651 389,651C545,651 639,528 639,359M739,359C739,514 657,737 389,737C121,737 39,514 39,359C39,204 121,-19 389,-19C657,-19 739,204 739,359z"/>
+<glyph unicode="P" horiz-adv-x="667" d="M183,635l197,0C460,635 522,606 522,515C522,418 463,386 376,386l-193,0M183,303l226,0C565,303 622,416 622,516C622,632 542,718 409,718l-323,0l0,-718l97,0z"/>
+<glyph unicode="R" horiz-adv-x="722" d="M185,308l235,0C536,308 548,239 548,180C548,153 551,44 565,0l119,0l0,16C654,33 649,48 648,88l-6,130C638,318 597,336 556,353C602,380 656,419 656,525C656,677 538,718 420,718l-332,0l0,-718l97,0M185,635l242,0C475,635 556,626 556,515C556,409 481,391 410,391l-225,0z"/>
+<glyph unicode="S" horiz-adv-x="667" d="M600,508C596,587 571,737 320,737C146,737 73,627 73,515C73,390 179,357 226,346l147,-34C491,284 526,260 526,185C526,82 408,64 338,64C246,64 140,102 140,232l-91,0C49,165 61,105 122,50C154,21 206,-19 339,-19C462,-19 620,28 620,198C620,312 550,368 457,390l-205,47C210,447 167,467 167,528C167,637 270,654 331,654C412,654 504,619 509,508z"/>
+<glyph unicode="T" horiz-adv-x="611" d="M14,632l243,0l0,-632l97,0l0,632l243,0l0,86l-583,0z"/>
+<glyph unicode="U" horiz-adv-x="722" d="M547,718l0,-454C547,108 447,67 358,67C271,67 176,110 176,266l0,452l-97,0l0,-479C79,105 162,-19 355,-19C552,-19 644,105 644,252l0,466z"/>
+<glyph unicode="V" horiz-adv-x="667" d="M335,106l-2,0l-205,612l-108,0l262,-718l103,0l262,718l-109,0z"/>
+<glyph unicode="W" horiz-adv-x="944" d="M471,595l2,0l164,-595l102,0l189,718l-107,0l-134,-584l-2,0l-161,584l-106,0l-161,-584l-2,0l-134,584l-105,0l187,-718l102,0z"/>
+<glyph unicode="Z" horiz-adv-x="611" d="M588,86l-442,0l442,548l0,84l-532,0l0,-86l407,0l-440,-551l0,-81l565,0z"/>
+<glyph unicode="a" horiz-adv-x="556" d="M143,364C149,404 163,465 263,465C346,465 386,435 386,380C386,328 361,320 340,318l-145,-18C49,282 36,180 36,136C36,46 104,-15 200,-15C302,-15 355,33 389,70C392,30 404,-10 482,-10C502,-10 515,-4 530,0l0,64C520,62 509,60 501,60C483,60 472,69 472,91l0,301C472,526 320,538 278,538C149,538 66,489 62,364M384,181C384,111 304,58 222,58C156,58 127,92 127,149C127,215 196,228 239,234C348,248 370,256 384,267z"/>
+<glyph unicode="b" horiz-adv-x="556" d="M141,0l0,65l2,0C161,36 198,-15 287,-15C465,-15 517,152 517,277C517,424 438,538 299,538C238,537 186,512 148,457l-2,0l0,261l-88,0l0,-718M426,263C426,148 381,61 285,61C229,61 142,98 142,237C142,322 156,459 283,459C419,459 426,330 426,263z"/>
+<glyph unicode="c" horiz-adv-x="500" d="M477,347C470,438 418,538 281,538C108,538 30,409 30,247C30,96 117,-15 264,-15C417,-15 468,102 477,185l-85,0C377,105 326,61 267,61C146,61 124,172 124,262C124,355 159,459 268,459C342,459 381,417 392,347z"/>
+<glyph unicode="," horiz-adv-x="278" d="M87,0l53,0C140,-47 129,-97 87,-101l0,-46C107,-144 191,-128 191,8l0,98l-104,0z"/>
+<glyph unicode="d" horiz-adv-x="556" d="M499,718l-88,0l0,-269l-2,0C388,479 348,538 253,538C114,538 35,424 35,277C35,152 87,-15 265,-15C316,-15 376,1 414,72l2,0l0,-72l83,0M126,263C126,330 133,459 269,459C396,459 410,322 410,237C410,98 323,61 267,61C171,61 126,148 126,263z"/>
+<glyph unicode="e" horiz-adv-x="556" d="M421,164C418,125 369,61 286,61C185,61 134,124 134,233l382,0C516,418 442,538 291,538C118,538 40,409 40,247C40,96 127,-15 274,-15C358,-15 392,5 416,21C482,65 506,139 509,164M134,303C134,384 198,459 279,459C386,459 420,384 425,303z"/>
+<glyph unicode="f" horiz-adv-x="278" d="M262,450l0,73l-88,0l0,65C174,630 188,649 226,649C237,649 251,648 262,647l0,79C248,727 235,728 222,728C136,728 86,692 86,613l0,-90l-72,0l0,-73l72,0l0,-450l88,0l0,450z"/>
+<glyph unicode="g" horiz-adv-x="556" d="M131,263C131,330 138,459 274,459C401,459 415,322 415,237C415,98 328,61 272,61C176,61 131,148 131,263M499,523l-83,0l0,-77C394,478 353,538 258,538C119,538 40,424 40,277C40,152 92,-15 270,-15C340,-15 386,17 411,59l0,-22C411,-25 414,-147 262,-147C241,-147 160,-147 144,-64l-88,0C73,-203 194,-220 256,-220C498,-220 499,-32 499,43z"/>
+<glyph unicode="h" horiz-adv-x="556" d="M491,356C491,505 389,538 308,538C224,538 180,486 155,453l-2,0l0,265l-88,0l0,-718l88,0l0,285C153,417 227,459 299,459C383,459 403,413 403,342l0,-342l88,0z"/>
+<glyph unicode="i" horiz-adv-x="222" d="M155,523l-88,0l0,-523l88,0M155,618l0,100l-88,0l0,-100z"/>
+<glyph unicode="k" horiz-adv-x="500" d="M289,328l200,195l-112,0l-225,-221l0,416l-85,0l0,-718l85,0l0,198l73,66l163,-264l113,0z"/>
+<glyph unicode="l" horiz-adv-x="222" d="M155,718l-88,0l0,-718l88,0z"/>
+<glyph unicode="m" horiz-adv-x="833" d="M65,0l88,0l0,285C153,427 241,459 291,459C356,459 373,406 373,362l0,-362l88,0l0,319C461,389 510,459 584,459C659,459 681,410 681,338l0,-338l88,0l0,362C769,509 663,538 607,538C526,538 491,502 447,453C432,481 402,538 308,538C214,538 169,477 150,449l-2,0l0,74l-83,0z"/>
+<glyph unicode="&#x2212;" horiz-adv-x="584" d="M545,216l0,73l-506,0l0,-73z"/>
+<glyph unicode="n" horiz-adv-x="556" d="M491,356C491,505 389,538 308,538C218,538 169,477 150,449l-2,0l0,74l-83,0l0,-523l88,0l0,285C153,427 241,459 291,459C377,459 403,413 403,322l0,-322l88,0z"/>
+<glyph unicode="o" horiz-adv-x="556" d="M35,262C35,127 111,-14 278,-14C445,-14 521,127 521,262C521,397 445,538 278,538C111,538 35,397 35,262M126,262C126,332 152,462 278,462C404,462 430,332 430,262C430,192 404,62 278,62C152,62 126,192 126,262z"/>
+<glyph unicode="p" horiz-adv-x="556" d="M142,237C142,322 156,459 283,459C419,459 426,330 426,263C426,148 381,61 285,61C229,61 142,98 142,237M58,-207l88,0l0,262l2,0C171,18 217,-15 287,-15C465,-15 517,152 517,277C517,424 438,538 299,538C204,538 164,479 143,449l-2,0l0,74l-83,0z"/>
+<glyph unicode="r" horiz-adv-x="333" d="M165,304C165,380 217,444 299,444l33,0l0,91C325,537 320,538 309,538C243,538 197,497 162,436l-2,0l0,87l-83,0l0,-523l88,0z"/>
+<glyph unicode="s" horiz-adv-x="500" d="M447,374C447,400 434,538 247,538C144,538 49,486 49,371C49,299 97,262 170,244l102,-25C347,200 376,186 376,144C376,86 319,61 256,61C132,61 120,127 117,168l-85,0C35,105 50,-15 257,-15C375,-15 464,50 464,158C464,229 426,269 317,296l-88,22C161,335 134,345 134,388C134,453 211,462 238,462C349,462 361,407 362,374z"/>
+<glyph unicode=" " horiz-adv-x="278"/>
+<glyph unicode="t" horiz-adv-x="278" d="M257,450l0,73l-84,0l0,146l-88,0l0,-146l-71,0l0,-73l71,0l0,-345C85,42 104,-7 191,-7C200,-7 225,-3 257,0l0,69l-31,0C208,69 173,69 173,110l0,340z"/>
+<glyph unicode="u" horiz-adv-x="556" d="M489,0l0,523l-88,0l0,-288C401,159 368,61 257,61C200,61 156,90 156,176l0,347l-88,0l0,-376C68,22 161,-15 238,-15C322,-15 367,17 404,78l2,-2l0,-76z"/>
+<glyph unicode="v" horiz-adv-x="500" d="M248,97l-2,0l-136,426l-102,0l191,-523l94,0l199,523l-96,0z"/>
+<glyph unicode="w" horiz-adv-x="722" d="M358,405l2,0l106,-405l91,0l152,523l-88,0l-106,-411l-2,0l-102,411l-98,0l-101,-411l-2,0l-100,411l-96,0l151,-523l91,0z"/>
+<glyph unicode="x" horiz-adv-x="500" d="M306,269l177,254l-108,0l-121,-184l-121,184l-113,0l175,-254l-184,-269l111,0l126,197l130,-197l112,0z"/>
+<glyph unicode="y" horiz-adv-x="500" d="M252,97l-2,0l-139,426l-100,0l194,-537C163,-122 158,-135 112,-135C88,-135 70,-130 59,-126l0,-80C73,-210 83,-214 96,-214C209,-214 218,-202 301,10C368,181 428,352 489,523l-97,0z"/>
+<glyph unicode="z" horiz-adv-x="500" d="M460,451l0,72l-405,0l0,-73l291,0l-315,-381l0,-69l438,0l0,73l-321,0z"/>
+</font>
+
+	<font horiz-adv-x="1000">
+<!-- Copyright (c) 1985, 1987, 1989, 1990, 1997 Adobe Systems Incorporated.  All Rights Reserved.Helvetica is a trademark of Linotype-Hell AG and/or its subsidiaries. -->
+<font-face font-family="Helvetica-Bold" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="278"/>
+<glyph unicode="e" horiz-adv-x="556" d="M378,156C367,118 327,98 288,98C175,98 167,188 163,228l365,0l0,25C528,496 383,546 278,546C45,546 23,341 23,277C23,58 138,-14 288,-14C379,-14 485,28 522,156M167,319C175,389 210,431 276,431C321,431 376,405 384,319z"/>
+<glyph unicode="5" horiz-adv-x="556" d="M199,580l289,0l0,118l-390,0l-49,-390l125,-6C201,352 249,353 268,353C342,353 372,289 372,226C372,150 333,93 266,93C204,93 173,132 167,190l-140,0C34,47 147,-19 258,-19C467,-19 516,139 516,236C516,399 396,465 301,465C232,465 200,444 174,426z"/>
+<glyph unicode="&#x2212;" horiz-adv-x="584" d="M544,197l0,112l-504,0l0,-112z"/>
+<glyph unicode="1" horiz-adv-x="556" d="M69,489l169,0l0,-489l140,0l0,710l-115,0C260,657 224,587 89,587l-20,0z"/>
+<glyph unicode="+" horiz-adv-x="584" d="M236,309l-196,0l0,-112l196,0l0,-197l112,0l0,197l196,0l0,112l-196,0l0,197l-112,0z"/>
+<glyph unicode="2" horiz-adv-x="556" d="M170,459C171,511 174,592 272,592C340,592 370,538 370,491C370,411 319,375 191,282C37,170 31,83 26,0l485,0l0,124l-308,0C219,157 268,189 362,255C431,302 510,364 510,486C510,630 402,710 266,710C203,710 34,690 34,459z"/>
+<glyph unicode="0" horiz-adv-x="556" d="M32,346C32,97 111,-19 278,-19C445,-19 524,97 524,346C524,595 445,710 278,710C111,710 32,595 32,346M176,346C176,529 198,598 278,598C358,598 380,529 380,346C380,163 358,93 278,93C198,93 176,163 176,346z"/>
+</font>
+
+	<g>
+	<text transform="matrix(0.9999 0 0 1 307.8534 45.893)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="27.1578">STEM empl</tspan><tspan x="141.8" y="0" font-family="'Helvetica'" font-size="27.1578">o</tspan><tspan x="156.1" y="0" font-family="'Helvetica'" font-size="27.1578">yment totals</tspan></text>
+	
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="19.2" y1="94.8" x2="19.2" y2="101.3"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="239.1" y1="94.8" x2="239.1" y2="101.3"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="459.1" y1="94.8" x2="459.1" y2="101.3"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="679.1" y1="94.8" x2="679.1" y2="101.3"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="899" y1="94.8" x2="899" y2="101.3"/>
+	<rect x="19.2" y="78.5" fill="#8C2C04" width="17.3" height="16.3"/>
+	<rect x="36.4" y="78.5" fill="#9D3303" width="17.3" height="16.3"/>
+	<rect x="53.7" y="78.5" fill="#B03903" width="17.3" height="16.3"/>
+	<rect x="70.9" y="78.5" fill="#C24002" width="17.3" height="16.3"/>
+	<rect x="88.2" y="78.5" fill="#D54601" width="17.3" height="16.3"/>
+	<rect x="105.5" y="78.5" fill="#DD4E04" width="17.3" height="16.3"/>
+	<rect x="122.7" y="78.5" fill="#E35608" width="17.3" height="16.3"/>
+	<rect x="140" y="78.5" fill="#E95E0D" width="17.3" height="16.3"/>
+	<rect x="157.2" y="78.5" fill="#EF6611" width="17.3" height="16.3"/>
+	<rect x="174.5" y="78.5" fill="#F36E1A" width="17.3" height="16.3"/>
+	<rect x="191.7" y="78.5" fill="#F67725" width="17.3" height="16.3"/>
+	<rect x="209" y="78.5" fill="#F8802E" width="17.3" height="16.3"/>
+	<rect x="226.2" y="78.5" fill="#FB8837" width="17.3" height="16.3"/>
+	<rect x="243.5" y="78.5" fill="#FD9141" width="17.3" height="16.3"/>
+	<rect x="260.7" y="78.5" fill="#FD994D" width="17.3" height="16.3"/>
+	<rect x="278" y="78.5" fill="#FDA058" width="17.3" height="16.3"/>
+	<rect x="295.2" y="78.5" fill="#FDA863" width="17.3" height="16.3"/>
+	<rect x="312.5" y="78.5" fill="#FDB06F" width="17.3" height="16.3"/>
+	<rect x="329.7" y="78.5" fill="#FDB87C" width="17.3" height="16.3"/>
+	<rect x="347" y="78.5" fill="#FDC189" width="17.3" height="16.3"/>
+	<rect x="364.2" y="78.5" fill="#FDC996" width="17.3" height="16.3"/>
+	<rect x="381.5" y="78.5" fill="#FDD1A4" width="17.3" height="16.3"/>
+	<rect x="398.7" y="78.5" fill="#FDD8B2" width="17.3" height="16.3"/>
+	<rect x="416" y="78.5" fill="#FEDEC1" width="17.3" height="16.3"/>
+	<rect x="433.2" y="78.5" fill="#FEE5CF" width="17.3" height="16.3"/>
+	<rect x="450.5" y="78.5" fill="#FEECDE" width="17.3" height="16.3"/>
+	<rect x="467.7" y="78.5" fill="#FEE5CF" width="17.3" height="16.3"/>
+	<rect x="485" y="78.5" fill="#FEDEC1" width="17.3" height="16.3"/>
+	<rect x="502.2" y="78.5" fill="#FDD8B2" width="17.3" height="16.3"/>
+	<rect x="519.5" y="78.5" fill="#FDD1A4" width="17.3" height="16.3"/>
+	<rect x="536.7" y="78.5" fill="#FDC996" width="17.3" height="16.3"/>
+	<rect x="554" y="78.5" fill="#FDC189" width="17.3" height="16.3"/>
+	<rect x="571.2" y="78.5" fill="#FDB87C" width="17.3" height="16.3"/>
+	<rect x="588.5" y="78.5" fill="#FDB06F" width="17.3" height="16.3"/>
+	<rect x="605.7" y="78.5" fill="#FDA863" width="17.3" height="16.3"/>
+	<rect x="623" y="78.5" fill="#FDA058" width="17.3" height="16.3"/>
+	<rect x="640.2" y="78.5" fill="#FD994D" width="17.3" height="16.3"/>
+	<rect x="657.5" y="78.5" fill="#FD9141" width="17.3" height="16.3"/>
+	<rect x="674.8" y="78.5" fill="#FB8837" width="17.3" height="16.3"/>
+	<rect x="692" y="78.5" fill="#F8802E" width="17.3" height="16.3"/>
+	<rect x="709.3" y="78.5" fill="#F67725" width="17.3" height="16.3"/>
+	<rect x="726.5" y="78.5" fill="#F36E1A" width="17.3" height="16.3"/>
+	<rect x="743.8" y="78.5" fill="#EF6611" width="17.3" height="16.3"/>
+	<rect x="761" y="78.5" fill="#E95E0D" width="17.3" height="16.3"/>
+	<rect x="778.3" y="78.5" fill="#E35608" width="17.3" height="16.3"/>
+	<rect x="795.5" y="78.5" fill="#DD4E04" width="17.3" height="16.3"/>
+	<rect x="812.8" y="78.5" fill="#D54601" width="17.3" height="16.3"/>
+	<rect x="830" y="78.5" fill="#C24002" width="17.3" height="16.3"/>
+	<rect x="847.3" y="78.5" fill="#B03903" width="17.3" height="16.3"/>
+	<rect x="864.5" y="78.5" fill="#9D3303" width="17.3" height="16.3"/>
+	<rect x="881.8" y="78.5" fill="#8C2C04" width="17.3" height="16.3"/>
+	<text transform="matrix(0.9999 0 0 1 9.038512e-04 118.4155)" font-family="'Helvetica-Bold'" font-size="11.3157">−2e+05</text>
+	<text transform="matrix(0.9999 0 0 1 219.9599 118.4155)" font-family="'Helvetica-Bold'" font-size="11.3157">−1e+05</text>
+	<text transform="matrix(0.9999 0 0 1 443.2235 118.4155)" font-family="'Helvetica-Bold'" font-size="11.3157">0e+00</text>
+	<text transform="matrix(0.9999 0 0 1 663.1835 118.4155)" font-family="'Helvetica-Bold'" font-size="11.3157">1e+05</text>
+	<text transform="matrix(0.9999 0 0 1 883.1425 118.4155)" font-family="'Helvetica-Bold'" font-size="11.3157">2e+05</text>
+	
+		<rect x="19.2" y="127.4" fill="none" stroke="#A9A9A9" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="879.8" height="488.8"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="19.2" y="520" fill="#DE4F04" width="198.7" height="96.2"/>
+	
+		<rect x="19.2" y="520" fill="none" stroke="#DE4F04" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="198.7" height="96.2"/>
+	<text transform="matrix(0.9999 0 0 1 28.9657 535.5019)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">P</tspan><tspan x="5.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">h</tspan><tspan x="9.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ysicians and Surgeon</tspan><tspan x="85.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="89" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, All Other</tspan></text>
+	<rect x="19.2" y="520" fill="none" width="198.7" height="96.2"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="19.2" y="430.1" fill="#FD8D3D" width="198.7" height="90"/>
+	
+		<rect x="19.2" y="430.1" fill="none" stroke="#FD8D3D" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="198.7" height="90"/>
+	<text transform="matrix(0.9999 0 0 1 28.9657 445.5195)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Pha</tspan><tspan x="14.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="16.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">macists</tspan></text>
+	<rect x="19.2" y="430.1" fill="none" width="198.7" height="90"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="19.2" y="368.8" fill="#FDAA66" width="198.7" height="61.3"/>
+	
+		<rect x="19.2" y="368.8" fill="none" stroke="#FDAA66" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="198.7" height="61.3"/>
+	<text transform="matrix(0.9999 0 0 1 28.9657 384.2558)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">P</tspan><tspan x="5.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">h</tspan><tspan x="9.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ysical The</tspan><tspan x="45.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="47.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">apists</tspan></text>
+	<rect x="19.2" y="368.8" fill="none" width="198.7" height="61.3"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="217.9" y="566.9" fill="#FDB171" width="157.7" height="49.3"/>
+	
+		<rect x="217.9" y="566.9" fill="none" stroke="#FDB171" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="157.7" height="49.3"/>
+	<text transform="matrix(0.9999 0 0 1 227.6884 582.3476)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Speech−Language </tspan><tspan x="68.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">P</tspan><tspan x="73.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">athologists</tspan></text>
+	<rect x="217.9" y="566.9" fill="none" width="157.7" height="49.3"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="375.6" y="566.9" fill="#E05205" width="152.4" height="49.3"/>
+	
+		<rect x="375.6" y="566.9" fill="none" stroke="#E05205" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="152.4" height="49.3"/>
+	<text transform="matrix(0.9999 0 0 1 385.3593 582.3476)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">F</tspan><tspan x="4.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">amily and Gene</tspan><tspan x="59.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="62.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">al P</tspan><tspan x="76.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="78.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">actitioners</tspan></text>
+	<rect x="375.6" y="566.9" fill="none" width="152.4" height="49.3"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="528" y="566.9" fill="#FDBF87" width="149.6" height="49.3"/>
+	
+		<rect x="528" y="566.9" fill="none" stroke="#FDBF87" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="149.6" height="49.3"/>
+	<text transform="matrix(0.9999 0 0 1 537.7469 582.3476)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Respi</tspan><tspan x="20.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="22.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ato</tspan><tspan x="33.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="36.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">y The</tspan><tspan x="56.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="59.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">apists</tspan></text>
+	<rect x="528" y="566.9" fill="none" width="149.6" height="49.3"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="217.9" y="523.9" fill="#FDAE6B" width="157.1" height="42.9"/>
+	
+		<rect x="217.9" y="523.9" fill="none" stroke="#FDAE6B" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="157.1" height="42.9"/>
+	<text transform="matrix(0.9999 0 0 1 227.6884 539.4179)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Occupational The</tspan><tspan x="62.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="64.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">apists</tspan></text>
+	<rect x="217.9" y="523.9" fill="none" width="157.1" height="42.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="375" y="523.9" fill="#FDB272" width="151.4" height="42.9"/>
+	
+		<rect x="375" y="523.9" fill="none" stroke="#FDB272" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="151.4" height="42.9"/>
+	<text transform="matrix(0.9999 0 0 1 384.7939 539.4179)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Clinical Psychologists</text>
+	<rect x="375" y="523.9" fill="none" width="151.4" height="42.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="526.4" y="523.9" fill="#FDA45D" width="151.1" height="42.9"/>
+	
+		<rect x="526.4" y="523.9" fill="none" stroke="#FDA45D" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="151.1" height="42.9"/>
+	<text transform="matrix(0.9999 0 0 1 536.2079 539.4179)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Medical Scientists</text>
+	<rect x="526.4" y="523.9" fill="none" width="151.1" height="42.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="217.9" y="469.1" fill="#EC620F" width="108.9" height="54.8"/>
+	
+		<rect x="217.9" y="469.1" fill="none" stroke="#EC620F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="108.9" height="54.8"/>
+	<text transform="matrix(0.9999 0 0 1 227.6884 484.582)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Dentist</tspan><tspan x="24.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="28.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, Gene</tspan><tspan x="52.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="54.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">al</tspan></text>
+	<rect x="217.9" y="469.1" fill="none" width="108.9" height="54.8"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="217.9" y="418.8" fill="#FDA058" width="108.9" height="50.3"/>
+	
+		<rect x="217.9" y="418.8" fill="none" stroke="#FDA058" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="108.9" height="50.3"/>
+	<text transform="matrix(0.9999 0 0 1 227.6884 434.2597)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">P</tspan><tspan x="5.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">h</tspan><tspan x="9.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ysician Assistants</tspan></text>
+	<rect x="217.9" y="418.8" fill="none" width="108.9" height="50.3"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="217.9" y="368.8" fill="#FDAE6B" width="108.9" height="50"/>
+	
+		<rect x="217.9" y="368.8" fill="none" stroke="#FDAE6B" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="108.9" height="50"/>
+	<text transform="matrix(0.9999 0 0 1 227.6884 384.2558)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Chemists</text>
+	<rect x="217.9" y="368.8" fill="none" width="108.9" height="50"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="326.9" y="487.4" fill="#FDB475" width="148.7" height="36.6"/>
+	
+		<rect x="326.9" y="487.4" fill="none" stroke="#FDB475" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="148.7" height="36.6"/>
+	<text transform="matrix(0.9999 0 0 1 336.6269 502.8437)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">E</tspan><tspan x="5.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">n</tspan><tspan x="9.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">vironmental Scientists</tspan></text>
+	<rect x="326.9" y="487.4" fill="none" width="148.7" height="36.6"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="475.5" y="487.4" fill="#FDC189" width="101.3" height="36.6"/>
+	
+		<rect x="475.5" y="487.4" fill="none" stroke="#FDC189" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="101.3" height="36.6"/>
+	<text transform="matrix(0.9999 0 0 1 485.2909 502.8437)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Dietitians and Nut</tspan><tspan x="62.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="65.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">itionists</tspan></text>
+	<rect x="475.5" y="487.4" fill="none" width="101.3" height="36.6"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="576.8" y="487.4" fill="#FD9F56" width="100.8" height="36.6"/>
+	
+		<rect x="576.8" y="487.4" fill="none" stroke="#FD9F56" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="100.8" height="36.6"/>
+	<text transform="matrix(0.9999 0 0 1 586.5585 502.8437)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">V</tspan><tspan x="4.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ete</tspan><tspan x="15.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="18.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ina</tspan><tspan x="29" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="31.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ians</tspan></text>
+	<rect x="576.8" y="487.4" fill="none" width="100.8" height="36.6"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="326.9" y="451.9" fill="#DD4E03" width="81.4" height="35.5"/>
+	
+		<rect x="326.9" y="451.9" fill="none" stroke="#DD4E03" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="81.4" height="35.5"/>
+	<text transform="matrix(0.9999 0 0 1 336.6269 467.3925)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Inte</tspan><tspan x="13.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="16" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">nist</tspan><tspan x="28.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="32.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, Gene</tspan><tspan x="56" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="58.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">al</tspan></text>
+	<rect x="326.9" y="451.9" fill="none" width="81.4" height="35.5"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="326.9" y="420.6" fill="#8F2E03" width="81.4" height="31.3"/>
+	
+		<rect x="326.9" y="420.6" fill="none" stroke="#8F2E03" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="81.4" height="31.3"/>
+	<text transform="matrix(0.9999 0 0 1 336.6269 436.0468)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Surgeons</text>
+	<rect x="326.9" y="420.6" fill="none" width="81.4" height="31.3"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="326.9" y="394.1" fill="#FD9447" width="81.4" height="26.5"/>
+	
+		<rect x="326.9" y="394.1" fill="none" stroke="#FD9447" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="81.4" height="26.5"/>
+	<text transform="matrix(0.9999 0 0 1 336.6269 409.5468)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Geoscientists</text>
+	<rect x="326.9" y="394.1" fill="none" width="81.4" height="26.5"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="326.9" y="368.8" fill="#FDB06F" width="81.4" height="25.3"/>
+	
+		<rect x="326.9" y="368.8" fill="none" stroke="#FDB06F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="81.4" height="25.3"/>
+	<text transform="matrix(0.9999 0 0 1 336.6269 384.2558)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Biological Scientist</tspan><tspan x="66" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="69.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, All Other</tspan></text>
+	<rect x="326.9" y="368.8" fill="none" width="81.4" height="25.3"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="408.3" y="458.6" fill="#FD9243" width="69.3" height="28.8"/>
+	
+		<rect x="408.3" y="458.6" fill="none" stroke="#FD9243" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="69.3" height="28.8"/>
+	<text transform="matrix(0.9999 0 0 1 418.0702 474.08)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Optomet</tspan><tspan x="30.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="33.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ists</tspan></text>
+	<rect x="408.3" y="458.6" fill="none" width="69.3" height="28.8"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="477.6" y="458.6" fill="#FDAC68" width="67.8" height="28.8"/>
+	
+		<rect x="477.6" y="458.6" fill="none" stroke="#FDAC68" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="67.8" height="28.8"/>
+	<text transform="matrix(0.9999 0 0 1 487.3739 474.08)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Social Scientists</text>
+	<rect x="477.6" y="458.6" fill="none" width="67.8" height="28.8"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="545.4" y="458.6" fill="#E85D0C" width="66.8" height="28.8"/>
+	
+		<rect x="545.4" y="458.6" fill="none" stroke="#E85D0C" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="66.8" height="28.8"/>
+	<text transform="matrix(0.9999 0 0 1 555.1942 474.08)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">P</tspan><tspan x="4.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ediat</tspan><tspan x="22.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="24.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ician</tspan><tspan x="41.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="45" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, Gene</tspan><tspan x="68.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="71.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">al</tspan></text>
+	<rect x="545.4" y="458.6" fill="none" width="66.8" height="28.8"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="612.2" y="458.6" fill="#8C2C04" width="65.3" height="28.8"/>
+	
+		<rect x="612.2" y="458.6" fill="none" stroke="#8C2C04" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="65.3" height="28.8"/>
+	<text transform="matrix(0.9999 0 0 1 622.0077 474.08)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Anesthesiologists</text>
+	<rect x="612.2" y="458.6" fill="none" width="65.3" height="28.8"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="408.3" y="427.1" fill="#FDA25B" width="57.5" height="31.5"/>
+	
+		<rect x="408.3" y="427.1" fill="none" stroke="#FDA25B" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="57.5" height="31.5"/>
+	<text transform="matrix(0.9999 0 0 1 418.0702 442.5761)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Biochemists and Biop</tspan><tspan x="76.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">h</tspan><tspan x="80.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ysicists</tspan></text>
+	<rect x="408.3" y="427.1" fill="none" width="57.5" height="31.5"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="408.3" y="395.9" fill="#FDAD6A" width="57.5" height="31.2"/>
+	
+		<rect x="408.3" y="395.9" fill="none" stroke="#FDAD6A" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="57.5" height="31.2"/>
+	<text transform="matrix(0.9999 0 0 1 418.0702 411.3574)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Chirop</tspan><tspan x="23.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="25.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">actors</tspan></text>
+	<rect x="408.3" y="395.9" fill="none" width="57.5" height="31.2"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="408.3" y="368.8" fill="#E15306" width="57.5" height="27.1"/>
+	
+		<rect x="408.3" y="368.8" fill="none" stroke="#E15306" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="57.5" height="27.1"/>
+	<text transform="matrix(0.9999 0 0 1 418.0702 384.2558)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Psychiat</tspan><tspan x="29.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="32.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ists</tspan></text>
+	<rect x="408.3" y="368.8" fill="none" width="57.5" height="27.1"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="465.8" y="439.5" fill="#FDA057" width="76" height="19.1"/>
+	
+		<rect x="465.8" y="439.5" fill="none" stroke="#FDA057" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="76" height="19.1"/>
+	<text transform="matrix(0.9999 0 0 1 475.5722 455.0019)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">P</tspan><tspan x="5.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">h</tspan><tspan x="9.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ysical Scientist</tspan><tspan x="61.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="65.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, All Other</tspan></text>
+	<rect x="465.8" y="439.5" fill="none" width="76" height="19.1"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="541.8" y="439.5" fill="#B73C02" width="70.9" height="19.1"/>
+	
+		<rect x="541.8" y="439.5" fill="none" stroke="#B73C02" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="70.9" height="19.1"/>
+	<text transform="matrix(0.9999 0 0 1 551.5624 455.0019)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Obstet</tspan><tspan x="23.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="26.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">icians and Gynecologists</tspan></text>
+	<rect x="541.8" y="439.5" fill="none" width="70.9" height="19.1"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="612.7" y="439.5" fill="#FDB06F" width="64.9" height="19.1"/>
+	
+		<rect x="612.7" y="439.5" fill="none" stroke="#FDB06F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="64.9" height="19.1"/>
+	<text transform="matrix(0.9999 0 0 1 622.4608 455.0019)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Microbiologists</text>
+	<rect x="612.7" y="439.5" fill="none" width="64.9" height="19.1"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="465.8" y="415.9" fill="#FDCA99" width="49" height="23.6"/>
+	
+		<rect x="465.8" y="415.9" fill="none" stroke="#FDCA99" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="49" height="23.6"/>
+	<text transform="matrix(0.9999 0 0 1 475.5722 431.3515)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Recreational The</tspan><tspan x="60.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="62.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">apists</tspan></text>
+	<rect x="465.8" y="415.9" fill="none" width="49" height="23.6"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="465.8" y="392.3" fill="#FDBB80" width="49" height="23.6"/>
+	
+		<rect x="465.8" y="392.3" fill="none" stroke="#FDBB80" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="49" height="23.6"/>
+	<text transform="matrix(0.9999 0 0 1 475.5722 407.7695)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Conse</tspan><tspan x="22.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="25.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">v</tspan><tspan x="29.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ation Scientists</tspan></text>
+	<rect x="465.8" y="392.3" fill="none" width="49" height="23.6"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="465.8" y="368.8" fill="#FDBB81" width="49" height="23.5"/>
+	
+		<rect x="465.8" y="368.8" fill="none" stroke="#FDBB81" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="49" height="23.5"/>
+	<text transform="matrix(0.9999 0 0 1 475.5722 384.2558)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Zoologists and Wildli</tspan><tspan x="72.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">f</tspan><tspan x="74.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">e Biologists</tspan></text>
+	<rect x="465.8" y="368.8" fill="none" width="49" height="23.5"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="514.8" y="420.7" fill="#FD8D3C" width="57.2" height="18.9"/>
+	
+		<rect x="514.8" y="420.7" fill="none" stroke="#FD8D3C" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="57.2" height="18.9"/>
+	<text transform="matrix(0.9999 0 0 1 524.5995 436.1621)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">P</tspan><tspan x="5.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">h</tspan><tspan x="9.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ysicists</tspan></text>
+	<rect x="514.8" y="420.7" fill="none" width="57.2" height="18.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="572.1" y="420.7" fill="#FDAB67" width="56" height="18.9"/>
+	
+		<rect x="572.1" y="420.7" fill="none" stroke="#FDAB67" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="56" height="18.9"/>
+	<text transform="matrix(0.9999 0 0 1 581.8407 436.1621)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Radiation The</tspan><tspan x="49.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="51.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">apists</tspan></text>
+	<rect x="572.1" y="420.7" fill="none" width="56" height="18.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="628" y="420.7" fill="#FDB97D" width="49.5" height="18.9"/>
+	
+		<rect x="628" y="420.7" fill="none" stroke="#FDB97D" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="49.5" height="18.9"/>
+	<text transform="matrix(0.9999 0 0 1 637.7811 436.1621)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">F</tspan><tspan x="4.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ood Scientists and </tspan><tspan x="71.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">T</tspan><tspan x="75.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">echnologists</tspan></text>
+	<rect x="628" y="420.7" fill="none" width="49.5" height="18.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="514.8" y="401.4" fill="#FDBB80" width="42.3" height="19.3"/>
+	
+		<rect x="514.8" y="401.4" fill="none" stroke="#FDBB80" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="42.3" height="19.3"/>
+	<text transform="matrix(0.9999 0 0 1 524.5995 416.8105)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Soil and Plant Scientists</text>
+	<rect x="514.8" y="401.4" fill="none" width="42.3" height="19.3"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="514.8" y="384.8" fill="#FDBF86" width="42.3" height="16.6"/>
+	
+		<rect x="514.8" y="384.8" fill="none" stroke="#FDBF86" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="42.3" height="16.6"/>
+	<text transform="matrix(0.9999 0 0 1 524.5995 400.2343)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">The</tspan><tspan x="13.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="16.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">apist</tspan><tspan x="32.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="36.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, All Other</tspan></text>
+	<rect x="514.8" y="384.8" fill="none" width="42.3" height="16.6"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="514.8" y="368.8" fill="#FDA55F" width="42.3" height="16"/>
+	
+		<rect x="514.8" y="368.8" fill="none" stroke="#FDA55F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="42.3" height="16"/>
+	<text transform="matrix(0.9999 0 0 1 524.5995 384.2558)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Psychologist</tspan><tspan x="44.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="48.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, All Other</tspan></text>
+	<rect x="514.8" y="368.8" fill="none" width="42.3" height="16"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="557.2" y="405.8" fill="#FDA55F" width="45" height="14.9"/>
+	
+		<rect x="557.2" y="405.8" fill="none" stroke="#FDA55F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="45" height="14.9"/>
+	<text transform="matrix(0.9999 0 0 1 566.9393 421.2343)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Atmosphe</tspan><tspan x="35.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="38.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ic and Space Scientists</tspan></text>
+	<rect x="557.2" y="405.8" fill="none" width="45" height="14.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="602.2" y="405.8" fill="#FDBE86" width="38.4" height="14.9"/>
+	
+		<rect x="602.2" y="405.8" fill="none" stroke="#FDBE86" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="38.4" height="14.9"/>
+	<text transform="matrix(0.9999 0 0 1 611.9716 421.2343)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">F</tspan><tspan x="4.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">oresters</tspan></text>
+	<rect x="602.2" y="405.8" fill="none" width="38.4" height="14.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="640.6" y="405.8" fill="#F77D2B" width="36.9" height="14.9"/>
+	
+		<rect x="640.6" y="405.8" fill="none" stroke="#F77D2B" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="36.9" height="14.9"/>
+	<text transform="matrix(0.9999 0 0 1 650.4198 421.2343)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">P</tspan><tspan x="4.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">odiat</tspan><tspan x="22.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="24.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ists</tspan></text>
+	<rect x="640.6" y="405.8" fill="none" width="36.9" height="14.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="557.2" y="391.7" fill="#FDAF6D" width="37.9" height="14"/>
+	
+		<rect x="557.2" y="391.7" fill="none" stroke="#FDAF6D" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="37.9" height="14"/>
+	<text transform="matrix(0.9999 0 0 1 566.9393 407.1914)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Li</tspan><tspan x="6.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">f</tspan><tspan x="8.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">e Scientist</tspan><tspan x="44.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="48.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, All Other</tspan></text>
+	<rect x="557.2" y="391.7" fill="none" width="37.9" height="14"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="557.2" y="379.6" fill="#FDA35B" width="37.9" height="12.2"/>
+	
+		<rect x="557.2" y="379.6" fill="none" stroke="#FDA35B" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="37.9" height="12.2"/>
+	<text transform="matrix(0.9999 0 0 1 566.9393 395.0273)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Mate</tspan><tspan x="17.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="20.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ials Scientists</tspan></text>
+	<rect x="557.2" y="379.6" fill="none" width="37.9" height="12.2"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="557.2" y="368.8" fill="#FDBC82" width="37.9" height="10.8"/>
+	
+		<rect x="557.2" y="368.8" fill="none" stroke="#FDBC82" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="37.9" height="10.8"/>
+	<text transform="matrix(0.9999 0 0 1 566.9393 384.2558)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Anthropologists and Archeologists</text>
+	<rect x="557.2" y="368.8" fill="none" width="37.9" height="10.8"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="595" y="392.1" fill="#FDAD69" width="29.8" height="13.7"/>
+	
+		<rect x="595" y="392.1" fill="none" stroke="#FDAD69" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="29.8" height="13.7"/>
+	<text transform="matrix(0.9999 0 0 1 604.8094 407.5761)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Hydrologists</text>
+	<rect x="595" y="392.1" fill="none" width="29.8" height="13.7"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="624.8" y="392.1" fill="#FDC794" width="27.4" height="13.7"/>
+	
+		<rect x="624.8" y="392.1" fill="none" stroke="#FDC794" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="27.4" height="13.7"/>
+	<text transform="matrix(0.9999 0 0 1 634.5897 407.5761)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">E</tspan><tspan x="5.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">x</tspan><tspan x="9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ercise P</tspan><tspan x="37.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">h</tspan><tspan x="41.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ysiologists</tspan></text>
+	<rect x="624.8" y="392.1" fill="none" width="27.4" height="13.7"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="652.2" y="392.1" fill="#D84701" width="25.4" height="13.7"/>
+	
+		<rect x="652.2" y="392.1" fill="none" stroke="#D84701" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="25.4" height="13.7"/>
+	<text transform="matrix(0.9999 0 0 1 661.9608 407.5761)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">O</tspan><tspan x="6.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="9.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">thodontists</tspan></text>
+	<rect x="652.2" y="392.1" fill="none" width="25.4" height="13.7"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="595" y="380.2" fill="#FD9B50" width="29.1" height="11.9"/>
+	
+		<rect x="595" y="380.2" fill="none" stroke="#FD9B50" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="29.1" height="11.9"/>
+	<text transform="matrix(0.9999 0 0 1 604.8094 395.6836)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">P</tspan><tspan x="4.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">olitical Scientists</tspan></text>
+	<rect x="595" y="380.2" fill="none" width="29.1" height="11.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="595" y="368.8" fill="#FDB272" width="29.1" height="11.4"/>
+	
+		<rect x="595" y="368.8" fill="none" stroke="#FDB272" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="29.1" height="11.4"/>
+	<text transform="matrix(0.9999 0 0 1 604.8094 384.2558)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Epidemiologists</text>
+	<rect x="595" y="368.8" fill="none" width="29.1" height="11.4"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="624.2" y="379.9" fill="#AA3703" width="27" height="12.2"/>
+	
+		<rect x="624.2" y="379.9" fill="none" stroke="#AA3703" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="27" height="12.2"/>
+	<text transform="matrix(0.9999 0 0 1 633.9452 395.4121)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">O</tspan><tspan x="6.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="8.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">al and Maxillo</tspan><tspan x="57.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">f</tspan><tspan x="59.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">acial Surgeons</tspan></text>
+	<rect x="624.2" y="379.9" fill="none" width="27" height="12.2"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="651.2" y="379.9" fill="#E85D0C" width="26.4" height="12.2"/>
+	
+		<rect x="651.2" y="379.9" fill="none" stroke="#E85D0C" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="26.4" height="12.2"/>
+	<text transform="matrix(0.9999 0 0 1 660.9423 395.4121)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Dentist</tspan><tspan x="24.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="28.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, All Other Specialists</tspan></text>
+	<rect x="651.2" y="379.9" fill="none" width="26.4" height="12.2"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="624.2" y="368.8" fill="#FDAE6B" width="15" height="11.2"/>
+	
+		<rect x="624.2" y="368.8" fill="none" stroke="#FDAE6B" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="15" height="11.2"/>
+	<text transform="matrix(0.9999 0 0 1 633.9452 384.2558)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Sociologists</text>
+	<rect x="624.2" y="368.8" fill="none" width="15" height="11.2"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="639.2" y="373.6" fill="#FDB272" width="22.7" height="6.4"/>
+	
+		<rect x="639.2" y="373.6" fill="none" stroke="#FDB272" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="22.7" height="6.4"/>
+	<text transform="matrix(0.9999 0 0 1 648.9491 389.0547)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Animal Scientists</text>
+	<rect x="639.2" y="373.6" fill="none" width="22.7" height="6.4"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="639.2" y="368.8" fill="#FD9344" width="22.7" height="4.8"/>
+	
+		<rect x="639.2" y="368.8" fill="none" stroke="#FD9344" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="22.7" height="4.8"/>
+	<text transform="matrix(0.9999 0 0 1 648.9491 384.2558)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Astronomers</text>
+	<rect x="639.2" y="368.8" fill="none" width="22.7" height="4.8"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="661.9" y="374.1" fill="#FDB06F" width="15.7" height="5.9"/>
+	
+		<rect x="661.9" y="374.1" fill="none" stroke="#FDB06F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="15.7" height="5.9"/>
+	<text transform="matrix(0.9999 0 0 1 671.6571 389.541)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Geog</tspan><tspan x="19.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="21.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">aphers</tspan></text>
+	<rect x="661.9" y="374.1" fill="none" width="15.7" height="5.9"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="661.9" y="368.8" fill="#FDA65F" width="12.3" height="5.3"/>
+	
+		<rect x="661.9" y="368.8" fill="none" stroke="#FDA65F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="12.3" height="5.3"/>
+	<text transform="matrix(0.9999 0 0 1 671.6571 384.2558)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Indust</tspan><tspan x="21.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="24.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ial−Organizational Psychologists</tspan></text>
+	<rect x="661.9" y="368.8" fill="none" width="12.3" height="5.3"/>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="674.1" y="368.8" fill="#F98331" width="3.4" height="5.3"/>
+	
+		<rect x="674.1" y="368.8" fill="none" stroke="#F98331" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="3.4" height="5.3"/>
+	<text transform="matrix(0.9999 0 0 1 683.911 384.2558)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Prosthodontists</text>
+	<rect x="674.1" y="368.8" fill="none" width="3.4" height="5.3"/>
+	
+		<rect x="19.2" y="368.8" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="658.4" height="247.4"/>
+	<text transform="matrix(0.9999 0 0 1 324.2255 497.3906)" fill="#FFFFFF" font-family="'Helvetica'" font-size="13.5789">Science</text>
+	<rect x="19.2" y="368.8" fill="none" width="658.4" height="247.4"/>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="19.2" y="233.7" fill="#FD9F55" width="296.6" height="135"/>
+	
+		<rect x="19.2" y="233.7" fill="none" stroke="#FD9F55" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="296.6" height="135"/>
+	<text transform="matrix(0.9999 0 0 1 28.9657 249.2133)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Soft</tspan><tspan x="14.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">w</tspan><tspan x="19.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">are D</tspan><tspan x="39.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">e</tspan><tspan x="43.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">v</tspan><tspan x="47" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">eloper</tspan><tspan x="69" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="72.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, Applications</tspan></text>
+	<rect x="19.2" y="233.7" fill="none" width="296.6" height="135"/>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="19.2" y="127.4" fill="#FDA862" width="296.6" height="106.4"/>
+	
+		<rect x="19.2" y="127.4" fill="none" stroke="#FDA862" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="296.6" height="106.4"/>
+	<text transform="matrix(0.9999 0 0 1 28.9657 142.8569)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Computer Systems Analysts</text>
+	<rect x="19.2" y="127.4" fill="none" width="296.6" height="106.4"/>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="315.8" y="242.2" fill="#FD984C" width="183.6" height="126.6"/>
+	
+		<rect x="315.8" y="242.2" fill="none" stroke="#FD984C" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="183.6" height="126.6"/>
+	<text transform="matrix(0.9999 0 0 1 325.5946 257.6889)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Soft</tspan><tspan x="14.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">w</tspan><tspan x="19.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">are D</tspan><tspan x="39.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">e</tspan><tspan x="43.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">v</tspan><tspan x="47" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">eloper</tspan><tspan x="69" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="72.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, Systems Soft</tspan><tspan x="123.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">w</tspan><tspan x="129.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">are</tspan></text>
+	<rect x="315.8" y="242.2" fill="none" width="183.6" height="126.6"/>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="499.4" y="242.2" fill="#FDAE6B" width="178.1" height="126.6"/>
+	
+		<rect x="499.4" y="242.2" fill="none" stroke="#FDAE6B" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="178.1" height="126.6"/>
+	<text transform="matrix(0.9999 0 0 1 509.2226 257.6889)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Net</tspan><tspan x="12.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">w</tspan><tspan x="18" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">o</tspan><tspan x="22.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="25.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">k and Computer Systems Administ</tspan><tspan x="146.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="149.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ators</tspan></text>
+	<rect x="499.4" y="242.2" fill="none" width="178.1" height="126.6"/>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="315.8" y="175.5" fill="#FDA965" width="182.9" height="66.8"/>
+	
+		<rect x="315.8" y="175.5" fill="none" stroke="#FDA965" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="182.9" height="66.8"/>
+	<text transform="matrix(0.9999 0 0 1 325.5946 190.9145)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Computer Occupation</tspan><tspan x="77" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="80.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, All Other</tspan></text>
+	<rect x="315.8" y="175.5" fill="none" width="182.9" height="66.8"/>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="315.8" y="127.4" fill="#FD9D54" width="182.9" height="48.1"/>
+	
+		<rect x="315.8" y="127.4" fill="none" stroke="#FD9D54" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="182.9" height="48.1"/>
+	<text transform="matrix(0.9999 0 0 1 325.5946 142.8569)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Computer Net</tspan><tspan x="49.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">w</tspan><tspan x="54.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">o</tspan><tspan x="59.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="62.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">k Architects</tspan></text>
+	<rect x="315.8" y="127.4" fill="none" width="182.9" height="48.1"/>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="498.7" y="202.3" fill="#FDAC68" width="178.9" height="40"/>
+	
+		<rect x="498.7" y="202.3" fill="none" stroke="#FDAC68" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="178.9" height="40"/>
+	<text transform="matrix(0.9999 0 0 1 508.4755 217.7221)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Database Administ</tspan><tspan x="66.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="69" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ators</tspan></text>
+	<rect x="498.7" y="202.3" fill="none" width="178.9" height="40"/>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="498.7" y="163" fill="#FDB77A" width="178.9" height="39.2"/>
+	
+		<rect x="498.7" y="163" fill="none" stroke="#FDB77A" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="178.9" height="39.2"/>
+	<text transform="matrix(0.9999 0 0 1 508.4755 178.479)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">W</tspan><tspan x="7.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">eb D</tspan><tspan x="24" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">e</tspan><tspan x="28.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">v</tspan><tspan x="31.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">elopers</tspan></text>
+	<rect x="498.7" y="163" fill="none" width="178.9" height="39.2"/>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="498.7" y="127.4" fill="#FDA35B" width="136.3" height="35.6"/>
+	
+		<rect x="498.7" y="127.4" fill="none" stroke="#FDA35B" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="136.3" height="35.6"/>
+	<text transform="matrix(0.9999 0 0 1 508.4755 142.8569)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">In</tspan><tspan x="6.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">f</tspan><tspan x="8.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">o</tspan><tspan x="13" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="15.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">mation Secu</tspan><tspan x="59.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="62.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ity Analysts</tspan></text>
+	<rect x="498.7" y="127.4" fill="none" width="136.3" height="35.6"/>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="635" y="127.4" fill="#FD9446" width="42.6" height="35.6"/>
+	
+		<rect x="635" y="127.4" fill="none" stroke="#FD9446" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="42.6" height="35.6"/>
+	<text transform="matrix(0.9999 0 0 1 644.7518 142.8569)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Computer Scientists</text>
+	<rect x="635" y="127.4" fill="none" width="42.6" height="35.6"/>
+	
+		<rect x="19.2" y="127.4" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="658.4" height="241.4"/>
+	<text transform="matrix(0.9999 0 0 1 314.0985 252.9702)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="13.5789" letter-spacing="-1">T</tspan><tspan x="6.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="13.5789">echnology</tspan></text>
+	<rect x="19.2" y="127.4" fill="none" width="658.4" height="241.4"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="677.6" y="392.3" fill="#FDA762" width="72.8" height="223.9"/>
+	
+		<rect x="677.6" y="392.3" fill="none" stroke="#FDA762" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="72.8" height="223.9"/>
+	<text transform="matrix(0.9999 0 0 1 687.329 407.7578)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Civil Engineers</text>
+	<rect x="677.6" y="392.3" fill="none" width="72.8" height="223.9"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="677.6" y="171.4" fill="#FDA762" width="72.8" height="220.9"/>
+	
+		<rect x="677.6" y="171.4" fill="none" stroke="#FDA762" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="72.8" height="220.9"/>
+	<text transform="matrix(0.9999 0 0 1 687.329 186.8413)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Mechanical Engineers</text>
+	<rect x="677.6" y="171.4" fill="none" width="72.8" height="220.9"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="750.4" y="449.3" fill="#FDA965" width="86" height="166.9"/>
+	
+		<rect x="750.4" y="449.3" fill="none" stroke="#FDA965" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="86" height="166.9"/>
+	<text transform="matrix(0.9999 0 0 1 760.1737 464.8125)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Indust</tspan><tspan x="21.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="24.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ial Engineers</tspan></text>
+	<rect x="750.4" y="449.3" fill="none" width="86" height="166.9"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="836.4" y="449.3" fill="#FDA159" width="62.7" height="166.9"/>
+	
+		<rect x="836.4" y="449.3" fill="none" stroke="#FDA159" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="62.7" height="166.9"/>
+	<text transform="matrix(0.9999 0 0 1 846.1317 464.8125)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Elect</tspan><tspan x="17.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="20.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ical Engineers</tspan></text>
+	<rect x="836.4" y="449.3" fill="none" width="62.7" height="166.9"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="750.4" y="302.5" fill="#FD9D54" width="57.3" height="146.9"/>
+	
+		<rect x="750.4" y="302.5" fill="none" stroke="#FD9D54" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="57.3" height="146.9"/>
+	<text transform="matrix(0.9999 0 0 1 760.1737 317.9336)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Electronics Engineer</tspan><tspan x="72.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="76.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, Except Computer</tspan></text>
+	<rect x="750.4" y="302.5" fill="none" width="57.3" height="146.9"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="750.4" y="171.4" fill="#FDA058" width="57.3" height="131.1"/>
+	
+		<rect x="750.4" y="171.4" fill="none" stroke="#FDA058" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="57.3" height="131.1"/>
+	<text transform="matrix(0.9999 0 0 1 760.1737 186.8413)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Engineer</tspan><tspan x="31.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">s</tspan><tspan x="35.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">, All Other</tspan></text>
+	<rect x="750.4" y="171.4" fill="none" width="57.3" height="131.1"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="807.7" y="347.7" fill="#FD9649" width="47.5" height="101.7"/>
+	
+		<rect x="807.7" y="347.7" fill="none" stroke="#FD9649" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="47.5" height="101.7"/>
+	<text transform="matrix(0.9999 0 0 1 817.5057 363.1523)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Computer Hard</tspan><tspan x="54.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">w</tspan><tspan x="59.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">are Engineers</tspan></text>
+	<rect x="807.7" y="347.7" fill="none" width="47.5" height="101.7"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="855.3" y="347.7" fill="#FD974A" width="43.8" height="101.7"/>
+	
+		<rect x="855.3" y="347.7" fill="none" stroke="#FD974A" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="43.8" height="101.7"/>
+	<text transform="matrix(0.9999 0 0 1 865.0389 363.1523)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Aerospace Engineers</text>
+	<rect x="855.3" y="347.7" fill="none" width="43.8" height="101.7"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="807.7" y="242.6" fill="#FDA862" width="31.4" height="105.1"/>
+	
+		<rect x="807.7" y="242.6" fill="none" stroke="#FDA862" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="31.4" height="105.1"/>
+	<text transform="matrix(0.9999 0 0 1 817.5057 258.0737)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">E</tspan><tspan x="5.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">n</tspan><tspan x="9.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">vironmental Engineers</tspan></text>
+	<rect x="807.7" y="242.6" fill="none" width="31.4" height="105.1"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="807.7" y="171.4" fill="#FDB779" width="31.4" height="71.2"/>
+	
+		<rect x="807.7" y="171.4" fill="none" stroke="#FDB779" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="31.4" height="71.2"/>
+	<text transform="matrix(0.9999 0 0 1 817.5057 186.8413)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Urban and Regional Planners</text>
+	<rect x="807.7" y="171.4" fill="none" width="31.4" height="71.2"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="839.1" y="276.8" fill="#F3701C" width="30.7" height="70.8"/>
+	
+		<rect x="839.1" y="276.8" fill="none" stroke="#F3701C" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="30.7" height="70.8"/>
+	<text transform="matrix(0.9999 0 0 1 848.9042 292.3047)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">P</tspan><tspan x="4.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">etroleum Engineers</tspan></text>
+	<rect x="839.1" y="276.8" fill="none" width="30.7" height="70.8"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="869.8" y="276.8" fill="#FD984C" width="29.2" height="70.8"/>
+	
+		<rect x="869.8" y="276.8" fill="none" stroke="#FD984C" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="29.2" height="70.8"/>
+	<text transform="matrix(0.9999 0 0 1 879.5555 292.3047)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Chemical Engineers</text>
+	<rect x="869.8" y="276.8" fill="none" width="29.2" height="70.8"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="839.1" y="223.7" fill="#FDA45D" width="28.3" height="53.1"/>
+	
+		<rect x="839.1" y="223.7" fill="none" stroke="#FDA45D" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="28.3" height="53.1"/>
+	<text transform="matrix(0.9999 0 0 1 848.9042 239.1987)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Mate</tspan><tspan x="17.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="20.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ials Engineers</tspan></text>
+	<rect x="839.1" y="223.7" fill="none" width="28.3" height="53.1"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="839.1" y="171.4" fill="#FDAB67" width="28.3" height="52.4"/>
+	
+		<rect x="839.1" y="171.4" fill="none" stroke="#FDAB67" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="28.3" height="52.4"/>
+	<text transform="matrix(0.9999 0 0 1 848.9042 186.8413)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Health and Sa</tspan><tspan x="50.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">f</tspan><tspan x="52.2" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ety Engineers</tspan></text>
+	<rect x="839.1" y="171.4" fill="none" width="28.3" height="52.4"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="867.5" y="237.6" fill="#FDA158" width="31.6" height="39.2"/>
+	
+		<rect x="867.5" y="237.6" fill="none" stroke="#FDA158" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="31.6" height="39.2"/>
+	<text transform="matrix(0.9999 0 0 1 877.2362 253.1059)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Biomedical Engineers</text>
+	<rect x="867.5" y="237.6" fill="none" width="31.6" height="39.2"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="867.5" y="205.3" fill="#FD9649" width="31.6" height="32.3"/>
+	
+		<rect x="867.5" y="205.3" fill="none" stroke="#FD9649" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="31.6" height="32.3"/>
+	<text transform="matrix(0.9999 0 0 1 877.2362 220.7768)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Nuclear Engineers</text>
+	<rect x="867.5" y="205.3" fill="none" width="31.6" height="32.3"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="867.5" y="171.4" fill="#FD9E55" width="14.6" height="33.9"/>
+	
+		<rect x="867.5" y="171.4" fill="none" stroke="#FD9E55" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="14.6" height="33.9"/>
+	<text transform="matrix(0.9999 0 0 1 877.2362 186.8413)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Mining and Geological Engineers</text>
+	<rect x="867.5" y="171.4" fill="none" width="14.6" height="33.9"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="882.1" y="171.4" fill="#FDA058" width="12.2" height="33.9"/>
+	
+		<rect x="882.1" y="171.4" fill="none" stroke="#FDA058" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="12.2" height="33.9"/>
+	<text transform="matrix(0.9999 0 0 1 891.8885 186.8413)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Ma</tspan><tspan x="11" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="13.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ine Engineers</tspan></text>
+	<rect x="882.1" y="171.4" fill="none" width="12.2" height="33.9"/>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="894.3" y="171.4" fill="#FDAD6A" width="4.8" height="33.9"/>
+	
+		<rect x="894.3" y="171.4" fill="none" stroke="#FDAD6A" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="4.8" height="33.9"/>
+	<text transform="matrix(0.9999 0 0 1 904.0526 186.8413)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Ag</tspan><tspan x="9.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="12.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">icultu</tspan><tspan x="30.9" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="33.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">al Engineers</tspan></text>
+	<rect x="894.3" y="171.4" fill="none" width="4.8" height="33.9"/>
+	
+		<rect x="677.6" y="171.4" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="221.5" height="444.9"/>
+	<text transform="matrix(0.9999 0 0 1 751.9589 398.6718)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="13.5789">Enginee</tspan><tspan x="49.8" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="13.5789">r</tspan><tspan x="54.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="13.5789">ing</tspan></text>
+	<rect x="677.6" y="171.4" fill="none" width="221.5" height="444.9"/>
+	<rect x="677.6" y="127.4" fill="none" width="221.5" height="44"/>
+	<rect x="677.6" y="127.4" fill="#FDAB67" width="102.8" height="44"/>
+	
+		<rect x="677.6" y="127.4" fill="none" stroke="#FDAB67" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="102.8" height="44"/>
+	<text transform="matrix(0.9999 0 0 1 687.329 142.8569)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Ope</tspan><tspan x="15" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="17.5" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ations Research Analysts</tspan></text>
+	<rect x="677.6" y="127.4" fill="none" width="102.8" height="44"/>
+	<rect x="677.6" y="127.4" fill="none" width="221.5" height="44"/>
+	<rect x="780.4" y="158.3" fill="#FDA965" width="118.7" height="13.1"/>
+	
+		<rect x="780.4" y="158.3" fill="none" stroke="#FDA965" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="118.7" height="13.1"/>
+	<text transform="matrix(0.9999 0 0 1 790.1346 173.7602)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Statisticians</text>
+	<rect x="780.4" y="158.3" fill="none" width="118.7" height="13.1"/>
+	<rect x="677.6" y="127.4" fill="none" width="221.5" height="44"/>
+	<rect x="780.4" y="138.7" fill="#FD9548" width="63.6" height="19.6"/>
+	
+		<rect x="780.4" y="138.7" fill="none" stroke="#FD9548" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="63.6" height="19.6"/>
+	<text transform="matrix(0.9999 0 0 1 790.1346 154.1274)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Actua</tspan><tspan x="20.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="23" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">ies</tspan></text>
+	<rect x="780.4" y="138.7" fill="none" width="63.6" height="19.6"/>
+	<rect x="677.6" y="127.4" fill="none" width="221.5" height="44"/>
+	<rect x="844" y="138.7" fill="#FDC38E" width="55" height="19.6"/>
+	
+		<rect x="844" y="138.7" fill="none" stroke="#FDC38E" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="55" height="19.6"/>
+	<text transform="matrix(0.9999 0 0 1 853.7577 154.1274)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Su</tspan><tspan x="9.7" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">r</tspan><tspan x="12.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">v</tspan><tspan x="16.3" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">e</tspan><tspan x="20.6" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">y Researchers</tspan></text>
+	<rect x="844" y="138.7" fill="none" width="55" height="19.6"/>
+	<rect x="677.6" y="127.4" fill="none" width="221.5" height="44"/>
+	<rect x="780.4" y="127.4" fill="#FD9A4F" width="95.1" height="11.3"/>
+	
+		<rect x="780.4" y="127.4" fill="none" stroke="#FD9A4F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="95.1" height="11.3"/>
+	<text transform="matrix(0.9999 0 0 1 790.1346 142.8569)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Economists</text>
+	<rect x="780.4" y="127.4" fill="none" width="95.1" height="11.3"/>
+	<rect x="677.6" y="127.4" fill="none" width="221.5" height="44"/>
+	<rect x="875.5" y="130.7" fill="#FD994D" width="23.6" height="8"/>
+	
+		<rect x="875.5" y="130.7" fill="none" stroke="#FD994D" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="23.6" height="8"/>
+	<text transform="matrix(0.9999 0 0 1 885.2362 146.1274)" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Mathematicians</text>
+	<rect x="875.5" y="130.7" fill="none" width="23.6" height="8"/>
+	<rect x="677.6" y="127.4" fill="none" width="221.5" height="44"/>
+	<rect x="875.5" y="127.4" fill="#FDB678" width="23.6" height="3.3"/>
+	
+		<rect x="875.5" y="127.4" fill="none" stroke="#FDB678" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="23.6" height="3.3"/>
+	<text transform="matrix(0.9999 0 0 1 885.2362 142.8569)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">Mathematical Scienc</tspan><tspan x="73.1" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">e</tspan><tspan x="77.4" y="0" fill="#FFFFFF" font-family="'Helvetica'" font-size="7.921">,  All Other</tspan></text>
+	<rect x="875.5" y="127.4" fill="none" width="23.6" height="3.3"/>
+	
+		<rect x="677.6" y="127.4" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="221.5" height="44"/>
+	<text transform="matrix(0.9999 0 0 1 773.1962 154.2514)" fill="#FFFFFF" font-family="'Helvetica'" font-size="13.5789">Math</text>
+	<rect x="677.6" y="127.4" fill="none" width="221.5" height="44"/>
+</g>
+</svg>

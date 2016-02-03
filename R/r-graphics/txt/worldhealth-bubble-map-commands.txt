@@ -1,0 +1,19 @@
+# using data from “worldhealth2f.csv”
+
+library(ggplot2)
+library(maps)
+
+worldhealth <- read.csv("worldhealth2f.csv")
+worldmap <- map_data("world")
+
+# sets up ggplot function
+p <- ggplot()
+
+# draws map
+p <- p + geom_polygon(data=worldmap, aes(x=long, y=lat, group = group),colour="grey90", fill="white" )
+
+# draws map and adds bubbles on top
+p <- p + geom_point(data=worldhealth, aes(x=long, y=lat, size = Communicable), color="red", alpha=0.4) + scale_size_area(max_size=15)
+
+# draws map, adds two sets of concentric bubbles and adds labels
+p <- p + geom_point(data=worldhealth, aes(x=long, y=lat, size = Communicable), color="red", alpha=0.2) + geom_point(data=worldhealth, aes(x=long, y=lat, size = Non.communicable), color="purple", alpha=0.2) + scale_size_area(max_size=5) + labs(color="Type") + scale_color_discrete(labels=c("Communicable", "Non-communicable")) + geom_text(data=worldhealth, aes(x=long, y=lat, label=Country), size=1, vjust=-4)

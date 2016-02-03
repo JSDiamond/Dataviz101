@@ -1,0 +1,6 @@
+setwd("~/Desktop/young-professionals")
+library(ggplot2)
+library(rgl)
+st <- read.csv("strategic-thinking.csv")
+View(st)
+plot3d(st$school, st$industry, st$score, type="s", size=0.75, lit=FALSE, col=st$score)

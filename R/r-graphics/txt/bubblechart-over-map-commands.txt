@@ -1,0 +1,53 @@
+library(ggplot2)
+
+library(maps)
+library(mapproj)
+library(scales)
+
+usa <- map_data("state")
+or…
+world <- map_data(“world”)
+
+msa <- read.csv("msas.csv")
+
+View(msa)
+
+#for polygons (choropleths), use scale_fill_… instead of scale_color_…
+ 
+ggplot() + geom_path(data = usa, aes(x=long, y=lat, group=group)) + geom_point(data = msa, aes(x=long, y=lat, size=STEM_Employment, color=STEM_Employment_percent), alpha=0.4) + coord_map("polyconic") + scale_size_area(max_size=15) + scale_colour_gradient(low="blue", high="green")
+
+/* ———— color gradient2 with low, mid, high colors ———- */
+
+gplot() + geom_path(data = usa, aes(x=long, y=lat, group=group)) + geom_point(data = msa, aes(x=long, y=lat, size=STEM_Employment, color=STEM_Employment_percent), alpha=0.4) + coord_map("polyconic") + scale_size_area(max_size=15) + scale_colour_gradient2(low="red", mid="blue", high="green", midpoint=10)
+
+/* ———— color gradientn with multiple colors ———- */
+
+ggplot() + geom_path(data = usa, aes(x=long, y=lat, group=group)) + geom_point(data = msa, aes(x=long, y=lat, size=STEM_Employment, color=STEM_Employment_percent), alpha=0.4) + coord_map("polyconic") + scale_size_area(max_size=15) + scale_colour_gradientn(colours=c("darkblue", "blue", "lightblue", "lightgreen", "green"))
+
+/* ———— coloring country fill and stroke ———- */
+
+ggplot() + geom_polygon(data = world, aes(x=long, y=lat, group=group), color="grey50", fill="white") + geom_point(data = h1b2014, aes(x=long, y=lat, size=h1b2014), color="red", alpha=0.4) + scale_size_area(max_size=30)
+
+/* ———— concentric bubbles ———- */
+
+ggplot() + geom_path(data = usa, aes(x=long, y=lat, group=group)) + geom_point(data = msa, aes(x=long, y=lat, size=Total_Employment, color="purple"), alpha=0.4) + geom_point(data = msa, aes(x=long, y=lat, size=STEM_Employment, color="red"), alpha=0.4) + coord_map("polyconic") + scale_size_area(max_size=15) + labs(color="Type") + scale_color_discrete(labels=c("Total employment", "STEM employment"))
+
+/* ———— subset of data: just Nuclear Engineers ———- */
+
+occupation1 <- subset(msa, X1.Occupation == "Nuclear Engineers")
+
+View(occupation1)
+
+ggplot() + geom_path(data = usa, aes(x=long, y=lat, group=group)) + geom_point(data = occupation1, aes(x=long, y=lat, size=STEM_Employment), color="red", alpha=0.4) + coord_map("polyconic") + scale_size_area(max_size=15) + ggtitle("Number 1 occupation: Nuclear Engineers") + labs(size="Overall STEM employment") + geom_text(data= occupation1, aes(x=long, y=lat, label=MSA), size=4, vjust=-1)
+
+/* ———— subset of data: just Nuclear Engineers, option 2 ———- */
+
+occupation1 <- subset(msa, X1.Occupation == "Nuclear Engineers")
+
+View(occupation1)
+
+ggplot() + geom_path(data = usa, aes(x=long, y=lat, group=group)) + geom_point(data = occupation1, aes(x=long, y=lat, size=X1.Pay), color="green", alpha=0.4) + coord_map("polyconic") + scale_size_area(max_size=15) + ggtitle("MSAs with #1 occupation: Nuclear Engineers") + labs(size="Pay") + geom_text(data = occupation1, aes(x=long, y=lat, label=MSA), size=3, vjust=-1)
+
+/* ———— #1 STEM job for every MSA ———- */
+
+ggplot() + geom_path(data = usa, aes(x=long, y=lat, group=group)) + geom_point(data = msa, aes(x=long, y=lat, size=STEM_Employment, color=X1.Occupation), alpha=0.4) + coord_map("polyconic") + scale_size_area(max_size=15) + ggtitle("Number 1 STEM occupation by MSA") + labs(size="Overall STEM employment") + geom_text(data = msa, aes(x=long, y=lat+0.2, label=X1.Occupation), size=3, vjust=-1)

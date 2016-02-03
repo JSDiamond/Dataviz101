@@ -1,0 +1,6 @@
+library(RColorBrewer)
+library(treemap)
+
+starwars = read.csv("starwars5.csv")
+
+treemap(id=starwars$type, area=starwars$amount, group=starwars$category, color=starwars$amount, lab = c(TRUE, TRUE), main="Force Awakens est. revenue", pal="Oranges", linecol="white", textcol="white")

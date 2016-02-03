@@ -1,0 +1,5 @@
+col <- read.csv("COL.csv")
+
+View(col)
+
+ggplot(col, aes(x=STEM_pay, y=COL, color=Bang.for.your.Buck.index, size=Bang.for.your.Buck.index)) + geom_point(alpha=0.6) + scale_colour_gradientn(colours = c("red", "purple", "blue", "green")) + geom_text(aes(label=City), size=2, vjust=-4, color="black") + geom_text(aes(label=Bang.for.your.Buck.index), size=2, vjust=-2, color="black") + scale_size_area()

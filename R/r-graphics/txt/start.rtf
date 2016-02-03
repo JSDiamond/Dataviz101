@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww13040\viewh13200\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs36 \cf0 First download R from a Comprehensive R Archive Network (CRAN):\
+https://cran.r-project.org/mirrors.html\
+\
+Download RStudio\'97a set of integrated tools designed to help you be more productive with R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.\
+https://www.rstudio.com/products/rstudio/download/\
+\
+Launch RStudio and set the working directory. Place any CSV or other data files that RStudio imports into this directory. Any PDFs or image files that RStudio exports will be saved into this working directory.\
+\
+If working from behind a firewall or if there are any problems installing libraries, enter this code in the console after launching RStudio and enter <return>:\
+Sys.setenv(http_proxy="http://proxy.bloomberg.com:8080")\
+\
+Install any needed libraries, for example:\
+install.packages("ggplot2")\
+\
+Loading multiple libraries at once:\
+install.packages(c("ggplot2", "gcookbook"))\
+\
+Then load those libraries (quote marks not needed to load):\
+library(ggplot2)\
+\
+Import data (first place files in working directory) by assigning a variable:\
+superheroes <- read.csv("superheroes-2.csv")\
+\
+View the imported data in Studio\'92s viewing console:\
+View(superheroes)}

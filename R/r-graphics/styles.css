@@ -1,0 +1,135 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#topbar {
+	width: 100%;
+	height: 35px;
+	position: fixed;
+	margin: 0px;
+	padding: 20px;
+	background-color: #efefef;
+	font-family: "HaasTextBold", Helvetica, sans-serif;
+	font-weight: 500;
+	color: #666;
+	font-size: 18px;
+	z-index: 999;
+	opacity: 0.95;
+}
+#topbar a {
+	color: #666;
+	text-decoration: none;
+}
+#topbar a:hover {
+	color: #000;
+}
+#nav {
+	top: 100px;
+	left: 20px;
+	position: fixed;
+}
+#nav a, #nav a:visited {
+	font-family: "BWHaasText-65Medium", Helvetica, sans-serif;
+	font-weight: 600;
+	color: #999;
+	font-size: 18px;
+	line-height: 25px;
+	text-decoration: none;
+}
+#nav a:hover {
+	text-decoration: underline;
+	color: #333;
+}
+#content {
+	top: 0px;
+	left: 300px;
+	position: absolute;
+	width: 1000px;
+	padding: 0px;
+	background-color: #fff;
+}
+#content > div {
+    display: none;
+}
+#content > div:target {
+    display: block;
+}
+#home {
+	position: absolute;
+	display: block;
+	width: 1000px;
+	top: 100px;
+	left: 300px;
+	font-family: "HaasDisplayBold", Helvetica, sans-serif;
+	letter-spacing: -5px;
+	color: #000;
+	font-size: 180px;
+	line-height: 150px;
+}
+#home .red {
+	color: #ff3333;
+}
+#start, #scatterplot, #slopechart, #dotplot, #maps, #histograms, #densitycurves, #treemaps, #heatmaps {
+	display: block;
+	padding-bottom: 50px;
+}
+.sectionTitle {
+	font-family: "HaasDisplayBold", Helvetica, sans-serif;
+	color: #333;
+	font-size: 42px;
+	line-height: 42px;
+	margin-bottom: 24px;
+	padding-top: 100px;
+}
+.image {
+	position: relative;
+	margin-bottom: 30px;
+	/*border: 1px solid #eee;*/
+}
+.subhed {
+	font-family: "HaasTextBold", Helvetica, sans-serif;
+	color: #666;
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	/*border-top: 1px solid #ccc;*/
+}
+h2 {
+	display: inline;
+	font-family: "HaasText", Helvetica, sans-serif;
+	color: #666;
+	font-size: 18px;
+	line-height: 24px;
+}
+.code {
+	position: relative;
+	display: block;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	width: 980px;
+	background-color: #eaf2fc;
+	margin: 20px 0px;
+	padding: 10px;
+	font-family: Monaco, courier, monospace;
+	color: #666;
+	font-size: 14px;
+	line-height: 20px;
+}
+.codeHighlight {
+	color: #ff6666;
+}
+.code a, .code a:visited {
+	background-color: #ffffb3;
+	text-decoration: none;
+	color: #666;
+}
+.code a:hover {
+	color: #000;
+	background-color: #ffffb3;
+	text-decoration: underline;
+}

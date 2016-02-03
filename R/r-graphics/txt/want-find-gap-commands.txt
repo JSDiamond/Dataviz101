@@ -1,0 +1,6 @@
+ggplot(wantFindIndex, aes(x=want, y=find)) + 
+	geom_point(aes(color=positive), size=6, alpha=0.6) + 
+	xlim(0,80) + ylim(0,70) + 
+	geom_text(aes(label=skills), size=4, vjust=-2) + 
+	labs(x="Most important skills wanted in MBA recruits", y="Hardest-to-find skills in MBA recruits", 				title="Finance", color="Skill harder to find \nthan it is wanted?") + 
+	scale_color_manual(values=c("red", "green"))

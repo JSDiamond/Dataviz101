@@ -1,0 +1,27 @@
+ggplot(worldhealth, aes(x=Communicable, y=Non.communicable, size=GNI)) + geom_point(alpha=0.3) + scale_size_area(max_size=15) + geom_text(aes(y=Non.communicable+12, label=Country), size=2)
+
+/* ————— color by region ————— */
+
+ggplot(worldhealth, aes(x=Communicable, y=Non.communicable, size=GNI, color=Region)) + geom_point(alpha=0.3) + scale_size_area(max_size=15) + geom_text(aes(y=Non.communicable+12, label=Country), size=2) + scale_colour_brewer(palette="Set1")
+
+/* ————— concentric circles ————— */
+
+ggplot() + geom_point(data = worldhealth, aes(x=GNI, y=Non.communicable, size=Communicable, color="purple"), alpha=0.4) + geom_point(data = worldhealth, aes(x=GNI, y=Non.communicable, size=Non.communicable, color="red"), alpha=0.4) + scale_size_area(max_size=15) + labs(color="Type") + scale_color_discrete(labels=c("Communicable", "Non-communicable")) + geom_text(data=worldhealth, aes(x=GNI, y=Non.communicable+22, label=Country), size=2)
+
+/* ————— concentric circles, x=GNI, y=region ————— */
+
+ggplot() + geom_point(data = worldhealth, aes(x=GNI, y=Region, size=Communicable, color="purple"), alpha=0.4) + geom_point(data = worldhealth, aes(x=GNI, y=Region, size=Non.communicable, color="red"), alpha=0.4) + scale_size_area(max_size=15) + labs(color="Type") + scale_color_discrete(labels=c("Communicable", "Non-communicable")) + geom_text(data=worldhealth, aes(x=GNI, y=Region, label=Country), size=2, vjust=-4)
+
+/* ———— bar graph ———— */
+
+ggplot(worldhealth, aes(x=reorder(Country, GNI), y=Communicable, fill=Region)) + geom_bar(stat="identity", position="identity") + ylim(-1350, 0) + theme(axis.text.x = element_text(angle=90, hjust=1, vjust=0.5))
+
+with…
+
+ggplot(worldhealth, aes(x=reorder(Country, GNI), y=Non.communicable, fill=Region)) + geom_bar(stat="identity", position="identity") + ylim(0, 1350) + theme(axis.text.x = element_text(angle=90, hjust=1, vjust=0.5))
+
+/* ———— 3d scatterplot ———— */
+
+library(rgl)
+
+plot3d(worldhealth$Communicable, worldhealth$Non.communicable, worldhealth$GNI, type="s", size=2, lit=FALSE, col="red", alpha=0.4)

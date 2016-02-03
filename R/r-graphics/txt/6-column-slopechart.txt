@@ -1,0 +1,28 @@
+library(ggplot2)
+ranks <- read.csv("ranks-ft.csv")
+View(ranks)
+
+p <- ggplot(ranks) + geom_point(aes(x=20, y=rank2015), color="red", size=1) + 
+	geom_point(aes(x=40, y=student), color="red", size=1) +
+	geom_point(aes(x=60, y=alumni), color="red", size=1) +
+	geom_point(aes(x=80, y=employer), color="red", size=1) +
+	geom_point(aes(x=100, y=placement), color="red", size=1) +
+	geom_point(aes(x=120, y=salary), color="red", size=1) + 
+	xlim(-5,140) + 
+	geom_segment(aes(x=20, xend=40, y=rank2015, yend=student), color="red", alpha=0.5) + 
+	geom_segment(aes(x=40, xend=60, y=student, yend=alumni), color="red", alpha=0.5) + 
+	geom_segment(aes(x=60, xend=80, y=alumni, yend=employer), color="red", alpha=0.5) + 
+	geom_segment(aes(x=80, xend=100, y=employer, yend=placement), color="red", alpha=0.5) + 
+	geom_segment(aes(x=100, xend=120, y=placement, yend=salary), color="red", alpha=0.5) + 
+	scale_y_reverse()
+
+p + geom_text(aes(x=17.5, y=rank2015, label=school), size=2, hjust=1) + 
+	geom_text(aes(x=19.5, y=rank2015, label= rank2015), size=2, hjust=1) + 
+	geom_text(aes(x=120.5, y=salary, label=salary), size=2, hjust=0) + 
+	geom_text(aes(x=122.5, y=salary, label=school), size=2, hjust=0) + 
+	annotate("text", x=19.5, y=-2, label="Overall rank", size=3, hjust=1) + 
+	annotate("text", x=40, y=-2, label="Student rank", size=3) + 
+	annotate("text", x=60, y=-2, label="Alumni rank", size=3) + 
+	annotate("text", x=80, y=-2, label="Employer rank", size=3) + 
+	annotate("text", x=100, y=-2, label="Placement rank", size=3) + 
+	annotate("text", x=120.5, y=-2, label="Salary rank", size=3, hjust=0)
