@@ -14,6 +14,12 @@ library(plyr)
 install.packages('rgdal')
 library(rgdal)
 
+county <- map_data("county")
+View(county)
+p <- ggplot()
+p <- p + geom_polygon(data=county, aes(x=long, y=lat, group = group),colour="orange", fill="white" )
+p
+
 #assign a variable to display world map from library
 worldmap <- map_data("world")
 View(worldmap)
@@ -22,10 +28,10 @@ View(worldmap)
 # Mapping the rate of communicable diseases
 # sets up ggplot function
 p <- ggplot()
-
+p
 # adds map function to ggplot function
 p <- p + geom_polygon(data=worldmap, aes(x=long, y=lat, group = group),colour="grey90", fill="white" )
-
+p
 # adds bubbles on top of map
 p <- p + geom_point(data=worldhealth, aes(x=long, y=lat, size = "Communicable"), color="red", alpha=0.4)
   + scale_size_area(max_size=10)
@@ -43,6 +49,7 @@ p2 <- ggplot()
 
 # adds map function to ggplot function
 p2 <- p2 + geom_polygon(data=worldmap, aes(x=long, y=lat, group = group),colour="grey90", fill="white" )
+p2
 
 # adds two sets of bubbles and labels
 p2 <- p2 + geom_point(data=worldhealth, aes(x=long, y=lat, size = "comm"), color="red", alpha=0.4) + 
@@ -58,21 +65,21 @@ p2
 # Choropleth 1
 # Single color gradient (with labels)
 
-unemployment <- read.csv("~/Desktop/Dataviz101/R/r-graphics-cheatsheet/public/csv/unemployment.csv")
+unemployment <- read.csv("~/Desktop/Dataviz101/R/r-graphics/csv/unemployment.csv")
 View(unemployment)
 
 #load USA subset of maps library
 usa <- map_data("state")
-
+View(usa)
 # merge the unemployment and map data sets together
 unemployment_map <- merge(usa, unemployment, by="region")
-
+View(unemployment_map)
 # sort by group, then order
 unemployment_map <- arrange(unemployment_map, group, order)
 
 #plot this baby!
 ggplot(unemployment_map, aes(long, lat, group=group, fill=rate)) + 
-  geom_polygon(color="white") + coord_map("polyconic")
+  geom_polygon(color="green") + coord_map("polyconic")
 
 # ------- N E W --------------------------------------
 # now with centroid labels!
@@ -108,12 +115,11 @@ ggplot(unemployment_map, aes(x=long, y=lat, group=group, fill=rate)) +
 #can set mid point
 ggplot(unemployment_map, aes(x=long, y=lat, group=group, fill=rate)) + 
   geom_polygon(color="white") + coord_map("polyconic") + 
-  scale_fill_gradient2(low="blue", mid="purple", high="red", midpoint=5)
+  scale_fill_gradient2(low="blue", mid="#03300f", high="red", midpoint=5)
 
 
 # Choropleth 4
 # Multiple color gradient
-
 ggplot(unemployment_map, aes(x=long, y=lat, group=group, fill=rate)) + 
   geom_polygon(color="white") + coord_map("polyconic") + 
   scale_fill_gradientn(colours=c("darkblue", "blue", "purple", "red", "darkred"))
