@@ -3,44 +3,43 @@
 install.packages("leaflet")
 library(leaflet)
 
+# basic map with markers
 m <- leaflet()
 m <- addTiles(m)
 m <- addMarkers(m, lng=174.768, lat=-36.852, popup="The birthplace of R")
 m
 
+# Make some random data that looks like lat,long coords
 df = data.frame(Lat = 1:10, Long = rnorm(10))
+
+# Draw the circles on a geo-plane, without map tiles
 leaflet(df) %>% addCircles()
 addCircles(leaflet(df))
 leaflet(df) %>% addCircles(lng = ~Long, lat = ~Lat)
 leaflet() %>% addCircles(data = df)
 
-
+# Make more random data that looks like lat,long coords
 df = data.frame(
   lat = rnorm(100),
   lng = rnorm(100),
   size = runif(100, 5, 20),
   color = sample(colors(), 100)
 )
+
+# Draw the circles with map tiles
 m = leaflet(df) %>% addTiles()
 m %>% addCircleMarkers(radius = ~size, color = ~color, fill = FALSE)
 m %>% addCircleMarkers(radius = runif(100, 4, 10), color = c('red'))
 
 
-install.packages("maps")
-library(maps)
-mapStates = map("state", fill = TRUE, plot = FALSE)
-leaflet(data = mapStates) %>% addTiles() %>%
-  addPolygons(fillColor = topo.colors(10, alpha = NULL), stroke = FALSE)
-
-
+# NYC!
 m = leaflet() %>% setView(lng = -73.9510422, lat = 40.7165015, zoom = 10)
 m %>% addTiles() 
-# stylize with basemaps
+
+# Cleaner looking base tiles for NYC!
 m %>% addProviderTiles("CartoDB.Positron")
 
-
-
-
+# text as csv
 cities <- read.csv(textConnection("
 City,Lat,Long,Pop
 Boston,42.3601,-71.0589,645966
@@ -51,10 +50,12 @@ Pittsburgh,40.4397,-79.9764,305841
 Providence,41.8236,-71.4222,177994
 "))
 
+# City bubbles with pop-up
 leaflet(cities) %>% addTiles() %>% addProviderTiles("CartoDB.Positron") %>%
   addCircles(lng = ~Long, lat = ~Lat, weight = 1,
              radius = ~sqrt(Pop) * 30, popup = ~City
   )
+
 
 accidents = read.csv("~/Desktop/Dataviz101/R/basics/data/NYPD_Motor_Vehicle_Collisions _2016-01-01.csv")
 
@@ -67,20 +68,15 @@ leaflet(subaccident) %>% addTiles() %>% addProviderTiles("CartoDB.Positron") %>%
   )
 
 
+install.packages("maps")
+library(maps)
+mapStates = map("state", fill = TRUE, plot = FALSE)
+leaflet(data = mapStates) %>% addTiles() %>%
+  addPolygons(fillColor = topo.colors(10, alpha = NULL), stroke = FALSE)
+
 
 install.packages("maptools")
 library(maptools)
-install.packages("ggplot2")
-library(ggplot2)
-install.packages("rgdal")
-library(rgdal)
-
-hoods = readShapePoly("~/Desktop/Dataviz101/R/r-graphics/nycd_15d/nycd.shp")
-
-p <- ggplot()
-p <- p + geom_polygon(data=hoods, aes(x=long, y=lat, group=group, fill=id))
-p
-
 
 states <- readShapePoly("~/Desktop/Dataviz101/R/r-graphics/cb_2014_us_state_20m/cb_2014_us_state_20m.shp")
 neStates <- subset(states, states$STUSPS %in% c(
@@ -95,11 +91,10 @@ leaflet(neStates) %>% addTiles() %>% addProviderTiles("CartoDB.Positron") %>%
   )
 
 
-subhoods <- subset(hoods, hoods$BoroCD > c('400'))
-View(subhoods)
 
 #geojson
 hoods <- readLines("~/Desktop/Dataviz101/R/r-graphics/geojson/community_districts.geojson") %>% paste(collapse = "\n")
+
 
 leaflet() %>% setView(lng = -73.9510422, lat = 40.7165015, zoom = 10) %>%
   addTiles() %>% addProviderTiles("CartoDB.Positron") %>%
