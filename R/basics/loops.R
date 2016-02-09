@@ -41,7 +41,9 @@ df$ZZ = apply(df, 1, munge, extra = 'any argument')
 subdf = subset(df, df$X1 > 4)
 subdfX1 = subset(df, df$X1 > 4)$X1
 
+good = c("ob", "kx")
 
 df$XX = ifelse( df$X1 == 5 , 0 , 1 )
+df$XX = ifelse( df$X2 %in% c(1,2,3) , df$X2 , 'Other' )
 
 

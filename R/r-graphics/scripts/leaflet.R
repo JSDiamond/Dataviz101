@@ -83,8 +83,9 @@ states <- readShapePoly("~/Desktop/Dataviz101/R/r-graphics/cb_2014_us_state_20m/
 neStates <- subset(states, states$STUSPS %in% c(
   "CT","ME","MA","NH","RI","VT","NY","NJ","PA"
 ))
-View(states)
-View(hoods)
+View(neStates)
+
+
 leaflet(neStates) %>% addTiles() %>% addProviderTiles("CartoDB.Positron") %>%
   addPolygons(
     stroke = FALSE, fillOpacity = 0.5, smoothFactor = 0.5,
@@ -96,7 +97,7 @@ leaflet(neStates) %>% addTiles() %>% addProviderTiles("CartoDB.Positron") %>%
 #geojson
 hoods <- readLines("~/Desktop/Dataviz101/R/r-graphics/geojson/community_districts.geojson") %>% paste(collapse = "\n")
 
-
+View(hoods)
 leaflet() %>% setView(lng = -73.9510422, lat = 40.7165015, zoom = 10) %>%
   addTiles() %>% addProviderTiles("CartoDB.Positron") %>%
   addGeoJSON(hoods, weight = 1, color = "#444444", fill = FALSE)
