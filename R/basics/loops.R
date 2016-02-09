@@ -1,6 +1,6 @@
 # basic for loop
 for(i in 1:5) {
-  print(i)
+  print(i*1000)
 }
 
 # make a dataframe from random samples
@@ -11,6 +11,8 @@ df = data.frame(cols)
 for(col in df) {
   print(col)
 }
+
+df$Z2 = df$X1 * df$X2 * 1000 
 
 # loop through a dataframe by row
 for(i in 1:nrow(df)) {
@@ -23,13 +25,13 @@ for(i in 1:nrow(df)) {
 }
 
 # sort the dataframe by column name
-df.sorted = df[with(df, order(Z1, na.last = TRUE, decreasing = TRUE)), ]
+df.sorted = df[with(df, order(Z1, na.last = TRUE, decreasing = TRUE)) ]
 
 
 # write a function to do something to your data
 munge = function(c, extra) {
   # it will return whatever is on the last line
-  as.numeric(c['X1']) * as.numeric(c['X2'])*10000
+  as.numeric(c['X1']) * as.numeric(c['X2']) * 10000
 }
 
 # apply: 1 indicates rows, 2 indicates columns, c(1, 2) indicates rows and columns
@@ -38,3 +40,8 @@ df$ZZ = apply(df, 1, munge, extra = 'any argument')
 #select a subset of rows based on a boolean value
 subdf = subset(df, df$X1 > 4)
 subdfX1 = subset(df, df$X1 > 4)$X1
+
+
+df$XX = ifelse( df$X1 == 5 , 0 , 1 )
+
+
