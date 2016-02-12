@@ -5,7 +5,7 @@ labels <- month.name[1:12]
 # barplot of all 12 months
 mp <- barplot(1:12, axes = FALSE, axisnames = FALSE)
 # alter text and rotate based on srt value
-text(mp, par('usr')[3], labels = labels, srt = 45, adj = c(1.1,1.1), xpd = TRUE, cex=.9)
+text(mp, par('usr')[3], labels = labels, srt = 90, adj = c(1.1,0.5), xpd = TRUE, cex=.9)
 axis(2)
      
 # Now with ggplot
@@ -20,7 +20,7 @@ diamonds$cut <- paste("Extra long name - ", as.character(diamonds$cut))
 p = qplot(cut, data=diamonds, geom="bar")
 p + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 
-# crazy barplot
+# crazy boxplot
 q = qplot(cut,carat,data=diamonds,geom="boxplot")
 q + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 
