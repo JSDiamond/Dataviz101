@@ -1,0 +1,13 @@
+#JS Session 1
+
+##HTML, DOM, & File organization 
+
+####Run a server and view `./index.html` in a browser
+
+ * What is the web
+ * Get to know [your browser](https://www.google.com/chrome/browser/desktop/) and it's [dev tools](https://developer.chrome.com/devtools)
+ * Making a web page, [docs](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML)
+ * Styling a web page, [docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
+ * [JS basics](https://learnxinyminutes.com/docs/javascript/) 
+ * Manipulating a web page aka javascript intro, [docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+ * Housekeeping

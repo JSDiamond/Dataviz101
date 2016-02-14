@@ -4,7 +4,7 @@
 
 ####Node.js
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
-[https://nodejs.org/en/](https://nodejs.org/en/)
+[Download Node](https://nodejs.org/en/download/)
 
 ####npm
 Node's package manager is built into the node install. You can make sure you’ve got the very most recent version of npm using npm itself:
@@ -13,12 +13,29 @@ Node's package manager is built into the node install. You can make sure you’v
 	
 [All the packages](https://www.npmjs.com/)
 
+#### Simple Node server
+	npm install http-server -g
+change directory to your repo, then run:
+
+	http-server
+	
+
 ####live-server
 This is a little development server with live reload capability. Use it for hacking your HTML/JavaScript/CSS files, but not for deploying the final site. Install:
 
 	npm install -g live-server
 
 [https://github.com/tapio/live-server](https://github.com/tapio/live-server)
+
+change directory to your repo, then run:
+	
+	live-server
+
+
+#### Simple Python server (built-in for Mac)
+change directory to your repo, then run:
+
+	python -m SimpleHTTPServer
 
 #### iTerm 2
 A fancy Terminal

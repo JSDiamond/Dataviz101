@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+<!-- HTML comment syntax -->
+<!-- 
+  An HTML document contains two parts within it's wrapper <html> tag.
+  The <head> and the <body>.
+  The <head> is for the stuff you need, but don't see like metadata, links to stylesheets, and js libraries.
+-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <title>JS Session 1: I'm the title that appears in your browser tab (also good for SEO)</title>
+
+<!-- 
+  CSS: you can either link to an outside file,
+  or put it right in the <head>. 
+  I highly recommend the former.
+-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/graphic.css"/>
+
+    <style type="text/css">
+      body{
+        background-color: #eee;
+        padding: 40px;
+        color: #333;
+        border: 20px orange solid;
+      }
+      h1{
+        border: 10px solid #333;
+        padding: 6px 8px;
+        margin-left: -16px;
+      }
+    </style>
+
+</head>
+<body>
+<!-- 
+  The <body> is for all the stuff you do see.
+  Content visible in the browser.
+-->
+
+      <section class="fullwidth">
+        <h1 class="innerwidth-A">h1 tag</h1>
+      </section>
+
+      <section id="unique-id-1" class="reusable-class-1">
+          <h3>
+              <span class="color-coral">h3 tag with</span> 
+              <span class="color-teal">inline span tags</span> 
+          </h3>
+
+          <ul id="fruits">
+              <li>orange</li>
+              <li>pineapple</li>
+              <li>kiwi</li>
+          </ul>
+
+          <ol id="days"></ol>
+      </section>
+
+
+<!-- 
+  JS: It's good to put your javascript at the bottom of the page,
+  so that it loads after the other DOM elements.
+  You can either link to an outside file,
+  or put it right in a <script> tag. 
+  I highly recommend the former.
+-->
+
+    <script type="text/javascript">
+      // JS comment syntax
+
+      console.log("Hello Console World")
+
+    </script>
+
+    <script src="js/d3.min.js"></script> 
+    <!-- https://raw.githubusercontent.com/mbostock/d3/master/d3.min.js -->
+
+    <script src='js/graphic.js'></script>
+
+
+</body>
+</html>
