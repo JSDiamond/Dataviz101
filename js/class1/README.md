@@ -11,4 +11,9 @@
  * Styling a web page, [docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
  * [JS basics](https://learnxinyminutes.com/docs/javascript/) 
  * Manipulating a web page, [docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+ * Doing it better with D3 [docs](https://github.com/mbostock/d3/wiki/API-Reference)
+ * * Selecting / DOM Manipulating
+ * * Animating
+ * * Working with data (arrays & arrays of objects)
+ * * Drawing things
  * Housekeeping
