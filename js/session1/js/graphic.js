@@ -28,6 +28,34 @@ var days = [
             , "Saturday"
       ]
 
-// d3.select('#days').selectAll('li').data(days)
+// var daylist = d3.select('#days').selectAll('li').data(days)
 //       .enter().append('li')
 //       .text(function(d){ return d })
+
+//// New data
+// var altdays = [
+//             "Sunday"
+//             , "Monday"
+//             , "Every other day"
+//       ]
+
+//// Update daylist with the new data
+// daylist.data(altdays)
+
+//// Enter any new elements...
+// var day_enters = daylist.data(altdays).enter()
+
+//// ...and append them to the DOM
+// day_enters.append(li)
+
+//// Add text to only the new elements
+// day_enters.text(function(d){ return d })
+
+//// Get all the old elements...
+// var day_exits = daylist.exit()
+
+//// ...and remove them
+// day_exits.remove()
+
+
+
