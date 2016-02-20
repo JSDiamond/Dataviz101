@@ -2,10 +2,10 @@
 // Plain old javascript DOM manipulation
 ////////////////////////////////////////// 
 
-var n1 = document.querySelectorAll("#fruits");
+//var n1 = document.querySelectorAll("#fruits");
 var n2 = document.getElementById("fruits");
 
-console.log(n1, n2)
+console.log(n2)
 
 var li = document.createElement("li");
 var text = document.createTextNode("guava");
