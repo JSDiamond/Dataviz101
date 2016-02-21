@@ -5,6 +5,7 @@
 ####Run a server and view `./index.html` in a browser
 
  * Loading a CSV
+ * Arrays of objects
  * [Working with arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)  
    1. forEach
    2. sort
