@@ -4,9 +4,10 @@
 
 ####Run a server and view `./index.html` in a browser
 
- * What is the web 
- * Doing it better with D3 [docs](https://github.com/mbostock/d3/wiki/API-Reference)
-   1. Selecting / DOM Manipulating
-   2. Animating
-   3. Working with data (arrays & arrays of objects)
-   4. Drawing things
+ * Loading a CSV
+ * [Working with arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)  
+   1. forEach
+   2. sort
+   3. map
+   4. filter
+   5. reduce
