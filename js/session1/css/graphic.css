@@ -9,3 +9,8 @@ h3 span{
 .color-teal{
 	color: teal;
 }
+
+
+ol{
+	list-style: none;
+}

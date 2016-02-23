@@ -17,3 +17,8 @@
    3. Working with data (arrays & arrays of objects)
    4. Drawing things
  * Housekeeping
+
+#### Enter, Update, Exit
+[General Update Pattern, I](https://bl.ocks.org/mbostock/3808218)
+[General Update Pattern, II](https://bl.ocks.org/mbostock/3808221)
+[General Update Pattern, III](https://bl.ocks.org/mbostock/3808234)
