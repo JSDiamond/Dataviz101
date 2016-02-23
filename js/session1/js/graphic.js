@@ -34,11 +34,11 @@ console.log(days)
 var daylist = d3.select('#days').selectAll('li').data(days)
       .enter().append('li')
       .text(function(d, i){ 
-      	//console.log(i)
-      	return d 
+        //console.log(i)
+        return d 
       })
 
-daylist.style('color', function(d){ console.log('style/color'); return 'coral' })
+daylist.style('color', function(d){ return 'coral' })
 
 
 //// New data
@@ -49,26 +49,16 @@ var altdays = [
       ]
 
 //// Update daylist with the new data
-daylist.data(altdays)
+var newdaylist = daylist.data(altdays, function(d){ return d })
 
-// console.log(daylist)
-
-//// Enter any new elements...
-var day_enters = d3.select('#days').selectAll('li').data(altdays).enter().append('li')
-
-//console.log(daylist, day_enters)
-
-//// ...and append them to the DOM
-// day_enters.append('li')
+//// Enter any new elements and append them to the DOM
+var enters = newdaylist.enter().append('li')
 
 //// Add text to only the new elements
-day_enters.text(function(d){ return d })
+enters.text(function(d){ return d })
 
 //// Get all the old elements...
-// var day_exits = daylist.exit()
+var exits = newdaylist.exit()
 
 //// ...and remove them
-// day_exits.remove()
-
-
-
+exits.remove()
