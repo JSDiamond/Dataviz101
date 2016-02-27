@@ -1,25 +1,47 @@
 var languages;
 
-d3.csv('data/language-distribution-by-origin.csv', function(error, loaded_data) {
+d3.csv('data/language-distribution-by-origin.csv', dataResponse)
 
-    if (error) {
-        console.log("Error on load:", error);
-    }
+function dataResponse(error, loaded_data) {
 
-    console.log(loaded_data)
-    
-    loaded_data.forEach(function(d, i){
-      console.log('array index:', i, 'array object:', d)
-      d.speakers_millions = d.speakers_count*.000001
-    })
+      if (error) {
+            console.log("Error on load:", error);
+      } else {
 
-    languages = loaded_data
-    afterLoad(loaded_data)
+            console.log(loaded_data)
+            
+            loaded_data.forEach(function(d, i){
+              console.log('array index:', i, 'array object:', d)
+              d.speakers_millions = d.speakers_count*.000001
+            })
 
-})
+            languages = loaded_data
+            afterLoad(loaded_data)
+            sort1()
+            sort2()
+            map1()
+            filter1()
+
+      }
+  }//end callback function
 
 
-function afterLoad(data){
+
+function doStuff(value, callback){
+  var multiple = value * 1000000
+  if(typeof callback == 'function') callback(multiple)
+}
+
+function doTheCallback(x){
+  console.log('hey our function passed in '+x)
+}
+//doTheCallback('this is x')
+
+doStuff(333, doTheCallback)
+
+
+
+function afterLoad(data, whatever){
 
   //// Get the first item in our data array and extract the keys as an array
   //// then join the array as a string delimited by ' | '
@@ -31,14 +53,14 @@ function afterLoad(data){
       .enter()
       .append('li')
       .text(function(d, i){
-        return d3.values(d).join(' | ')
+        return d.area
+      })
+      .style('font-size', function(d, i){
+        return (i+1)*10+"px"
       })
 
-  sort1()
-  sort2()
-  map1()
-  filter1()
 }
+
 
 function sort1(){
   
@@ -52,7 +74,7 @@ function sort1(){
   //   return d3.descending( parseInt(a.lang_count), parseInt(b.lang_count)) 
   // })
 
-  console.log(languages)
+  //console.log(languages)
 
     var li = d3.select('#sort1').selectAll('li')
       .data(languages)
@@ -68,7 +90,7 @@ function sort1(){
 function sort2(){
   
   languages.sort(function(a,b){
-    return b.speakers_count - a.speakers_count;
+    return a.speakers_count - b.speakers_count;
   })
 
     var li = d3.select('#sort2').selectAll('li')
@@ -88,6 +110,8 @@ function map1(){
     return {area: d.area, speakers: Math.round(d.speakers_millions * 100) / 100 }
   })
 
+  console.log(rounded)
+
     var li = d3.select('#map1').selectAll('li')
       .data(rounded)
       .enter()
@@ -104,6 +128,7 @@ function filter1(){
   var total_speakers = languages.reduce(function(a, b){
     return {speakers_count: (+a.speakers_count) + (+b.speakers_count) }
   })
+  
 
   //// Divide the total by the array.length to get the average
   var average = (total_speakers.speakers_count / languages.length)
@@ -115,6 +140,8 @@ function filter1(){
     //// keeping the true, and removing the false
     return d.speakers_count > average
   })
+
+  console.log(filtered)
 
     var li = d3.select('#filter1').selectAll('li')
       .data(filtered)
