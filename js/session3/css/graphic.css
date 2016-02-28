@@ -7,7 +7,7 @@ body, html{
 section{
 	max-width: 1220px;
 	width: 88%;
-	margin: 10px auto 40px;
+	margin: 10px auto 80px;
 }
 
 h3{
@@ -31,4 +31,31 @@ svg{
 }
 svg.block{
 	display: block;
+}
+
+.domain{
+	display: none;
+}
+.x.axis .domain{
+	display: block;
+	stroke: #777;
+}
+
+.axis text{
+	font-size: 12px;
+	fill: #888;
+}
+
+.axis .tick line{
+	stroke: #ddd;
+	stroke-width: 1px;
+}
+.y.axis .tick line{
+	stroke: #ddd;
+}
+
+
+.circlegroup{
+	font-size: 11px;
+	fill: coral;
 }
