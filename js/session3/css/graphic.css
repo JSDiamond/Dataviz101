@@ -57,5 +57,21 @@ svg.block{
 
 .circlegroup{
 	font-size: 11px;
+}
+
+.circlegroup.catA{
 	fill: coral;
 }
+.circlegroup.catB{
+	fill: lightpink;
+}
+.circlegroup.catC{
+	fill: cyan;
+}
+.circlegroup.catD{
+	fill: teal;
+}
+.circlegroup.catE{
+	fill: orange;
+}
+

@@ -83,16 +83,16 @@ group1.append('line')
 ////////////////////////////////////////////////
 
 var dataset = [
-  {'group': 'A', 'x':10, 'y': 9.14, z:3},
-  {'group': 'A', 'x':8, 'y': 8.14, z:8},
-  {'group': 'B', 'x':13, 'y': 8.74, z:7},
-  {'group': 'B', 'x':9, 'y': 8.77, z:3},
-  {'group': 'C', 'x':11, 'y': 9.26, z:4},
-  {'group': 'C', 'x':14, 'y': 8.1, z:7},
-  {'group': 'D', 'x':6, 'y': 6.13, z:8},
-  {'group': 'D', 'x':4, 'y': 3.1, z:9},
-  {'group': 'E', 'x':12, 'y': 9.13, z:4},
-  {'group': 'E', 'x':7, 'y': 7.26, z:5},
+  {'cat': 'A', 'x':10, 'y': 9.14, z:3},
+  {'cat': 'A', 'x':8, 'y': 8.14, z:8},
+  {'cat': 'B', 'x':13, 'y': 8.74, z:7},
+  {'cat': 'B', 'x':9, 'y': 8.77, z:3},
+  {'cat': 'C', 'x':11, 'y': 9.26, z:4},
+  {'cat': 'C', 'x':14, 'y': 8.1, z:7},
+  {'cat': 'D', 'x':6, 'y': 6.13, z:8},
+  {'cat': 'D', 'x':4, 'y': 3.1, z:9},
+  {'cat': 'E', 'x':12, 'y': 9.13, z:4},
+  {'cat': 'E', 'x':7, 'y': 7.26, z:5},
 ];
 
 var margin = {top: 20, right: 30, bottom: 40, left: 40};
@@ -177,20 +177,18 @@ var circles = marginedgroup.selectAll('circle').data(dataset)
 
 
 //// Easier to add other elements when you use groups
-
 var circleGroup = marginedgroup.selectAll('.circlegroup').data(dataset)
     .enter().append('g')
-    .attr('class', 'circlegroup')
-    .attr('transform', function(d) { return 'translate(' + scale_x(d.x) + ',' + scale_y(d.y) + ')'; })
+    .attr('class', function(d){ return 'circlegroup cat'+d.cat })
+    .attr('transform', function(d){ return 'translate('+ scale_x(d.x) +','+ scale_y(d.y) +')'; })
 
 circleGroup.append('circle')
   .attr({
-    fill: 'coral'
-    , r: function(d){ return d.z }
+    r: function(d){ return d.z }
   }) 
 
 circleGroup.append('text')
-    .text(function(d) { return '(' + d.x + ',' + d.y + ')'; })
+    .text(function(d){ return '('+ d.x +', '+ d.y +')'; })
     .attr('dx', function(d){ return d.z })
 
 
