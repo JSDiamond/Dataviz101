@@ -177,18 +177,18 @@ var circles = marginedgroup.selectAll('circle').data(dataset)
 
 
 //// Easier to add other elements when you use groups
-var circleGroup = marginedgroup.selectAll('.circlegroup').data(dataset)
-    .enter().append('g')
-    .attr('class', function(d){ return 'circlegroup cat'+d.cat })
-    .attr('transform', function(d){ return 'translate('+ scale_x(d.x) +','+ scale_y(d.y) +')'; })
+// var circleGroup = marginedgroup.selectAll('.circlegroup').data(dataset)
+//     .enter().append('g')
+//     .attr('class', function(d){ return 'circlegroup cat'+d.cat })
+//     .attr('transform', function(d){ return 'translate('+ scale_x(d.x) +','+ scale_y(d.y) +')'; })
 
-circleGroup.append('circle')
-  .attr({
-    r: function(d){ return d.z }
-  }) 
+// circleGroup.append('circle')
+//   .attr({
+//     r: function(d){ return d.z }
+//   }) 
 
-circleGroup.append('text')
-    .text(function(d){ return '('+ d.x +', '+ d.y +')'; })
-    .attr('dx', function(d){ return d.z })
+// circleGroup.append('text')
+//     .text(function(d){ return '('+ d.x +', '+ d.y +')'; })
+//     .attr('dx', function(d){ return d.z })
 
 
