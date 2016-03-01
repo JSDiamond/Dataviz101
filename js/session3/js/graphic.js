@@ -38,7 +38,7 @@ svg1.append('line')
     y1: height*0.5,
     x2: (width*0.5 + (width*0.2)*0.5),
     y2: height*0.5,
-    stroke: '#fff',
+    stroke: '#333',
     'stroke-width': 30
   })
 
@@ -46,7 +46,7 @@ svg1.append('line')
 
 var group1 = svg1.append('g')
   .attr('id', 'group1')
-  .attr('transform', 'translate('+ width*0.75 +','+ height*0.5 +') rotate(90)')
+  .attr('transform', 'translate('+ width*0.25 +','+ height*0.5 +') rotate(90)')
 
 group1.append('rect')
   .attr({
@@ -146,6 +146,7 @@ var yAxis = d3.svg.axis()
     .tickPadding(10)
     .outerTickSize(1)
     .orient('left')
+    .tickFormat(function(d,i){ return '$'+d+'M' })
 
 var svg3 = d3.select('#svg-wrapper-3').append('svg')
   .attr('id', 'svg3')
@@ -166,29 +167,31 @@ marginedgroup.append('g')
     .attr('transform', 'translate(' +  width + ',0)')
     .call(yAxis)
 
-var circles = marginedgroup.selectAll('circle').data(dataset)
-  .enter().append('circle')
-  .attr({
-    fill: 'lightblue'
-    , r: function(d){ return d.z }
-    , cx: function(d){ return scale_x(d.x) }
-    , cy: function(d){ return scale_y(d.y) }
-  }) 
+// var circles = marginedgroup.selectAll('circle').data(dataset)
+//   .enter().append('circle')
+//   .attr({
+//     fill: 'blue'
+//     , r: function(d){ return d.z }
+//     , cx: function(d){ return scale_x(d.x) }
+//     , cy: function(d){ return scale_y(d.y) }
+//   }) 
 
 
 //// Easier to add other elements when you use groups
-// var circleGroup = marginedgroup.selectAll('.circlegroup').data(dataset)
-//     .enter().append('g')
-//     .attr('class', function(d){ return 'circlegroup cat'+d.cat })
-//     .attr('transform', function(d){ return 'translate('+ scale_x(d.x) +','+ scale_y(d.y) +')'; })
+var circleGroup = marginedgroup.selectAll('.circlegroup').data(dataset)
+    .enter().append('g')
+    .attr('class', function(d){ return 'circlegroup cat'+d.cat })
+    .attr('transform', function(d){ return 'translate('+ scale_x(d.x) +','+ scale_y(d.y) +')'; })
 
-// circleGroup.append('circle')
-//   .attr({
-//     r: function(d){ return d.z }
-//   }) 
+console.log(circleGroup)
 
-// circleGroup.append('text')
-//     .text(function(d){ return '('+ d.x +', '+ d.y +')'; })
-//     .attr('dx', function(d){ return d.z })
+circleGroup.append('circle')
+  .attr({
+    r: function(d){ return d.z }
+  }) 
+
+circleGroup.append('text')
+    .text(function(d){ return d.cat; })
+    .attr('dx', function(d){ return d.z })
 
 

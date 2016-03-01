@@ -43,20 +43,22 @@ svg.block{
 
 .axis text{
 	font-size: 12px;
-	fill: #888;
+	fill: #444;
 }
 
 .axis .tick line{
-	stroke: #ddd;
+	stroke: #777;
 	stroke-width: 1px;
 }
 .y.axis .tick line{
-	stroke: #ddd;
+	stroke: #777;
 }
 
+.one.two.three.fourth.fives .inner
 
 .circlegroup{
-	font-size: 11px;
+	font-size: 28px;
+	font-weight: bolder;
 }
 
 .circlegroup.catA{
