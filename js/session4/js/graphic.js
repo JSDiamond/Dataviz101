@@ -39,8 +39,12 @@ function renderRangeBands(){
   var data = ['A', 'B', 'C', 'D', 'E']
 
   var rb_scale = d3.scale.ordinal()
-      .domain(data)
-      .rangeRoundBands([0, 600], 0.3)
+  
+  //// For rangeBands, the domain of the data is the array, not the extent
+  rb_scale.domain(data)
+
+  //// For rangeBands, the range is the extent and a decimal for padding
+  rb_scale.rangeRoundBands([0, 600], 0.3)
 
   console.log( 'rb_scale.domain() = '+rb_scale.domain() )
   console.log( 'rb_scale.range() = '+rb_scale.range() )
@@ -54,14 +58,14 @@ function renderRangeBands(){
     .enter().append("rect")
       .attr("class", "bar")
       .attr("x", function(d) { return rb_scale(d) })
-      .attr("width", rb_scale.rangeBand())
+      .attr("width", rb_scale.rangeBand()) ////This returns the width between each section of padding
       .attr("y", 100)
       .attr("height", height*0.5)
 
   var text = svg.selectAll("text").data(data)
     .enter().append("text")
       .attr("class", "barlabel")
-      .attr("x", function(d){ return rb_scale(d)+(rb_scale.rangeBand()*0.5) })
+      .attr("x", function(d){ return rb_scale(d)+(rb_scale.rangeBand()*0.5) }) ////Centered text
       .attr("y", 200)
       .text(function(d){ return d+": "+rb_scale(d) })
 }
