@@ -49,11 +49,11 @@ svg{
   transform: translate(0px, 0px);
 }
 
-#barchart .bar:hover {
+/*#barchart .bar:hover {
   fill: lightskyblue;
   transform: translate(0px, -40px);
 }
-
+*/
 .axis {
   font: 10px sans-serif;
 }
