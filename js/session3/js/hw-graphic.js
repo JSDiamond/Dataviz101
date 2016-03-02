@@ -1,7 +1,3 @@
-var width = 600
-  , height = 400
-
-
 d3.csv("data/language-distribution-by-origin.csv", function(error, dataset) {
   if (error) throw error
   renderChart(dataset)
@@ -20,41 +16,43 @@ function renderChart(dataset){
 
   ////////////////////////////////////////////////////////////////////////////////////////////
   //// First way to make scales with d3.extent()
-  // var scale_x = d3.scale.linear()
-  //     .range([0, width])
-  //     .domain( d3.extent(dataset, function(d){ return parseInt(d.lang_count) }) )
 
-  // var scale_y = d3.scale.linear()
-  //     .range([height, 0])
-  //     .domain(  d3.extent(dataset, function(d){ return parseInt(d.speakers_count) }) )
+  var scale_x = d3.scale.linear()
+      .range([0, width])
+      .domain( d3.extent(dataset, function(d){ return parseInt(d.lang_count) }) )
+
+  var scale_y = d3.scale.linear()
+      .range([height, 0])
+      .domain(  d3.extent(dataset, function(d){ return parseInt(d.speakers_count) }) )
+
   ////////////////////////////////////////////////////////////////////////////////////////////
 
 
   ////////////////////////////////////////////////////////////////////////////////////////////
   //// Second way to make scales with d3.extent()
-  var xExtent = d3.extent( dataset.map( function(d){ return parseInt(d.lang_count) }) )
-  var yExtent = d3.extent( dataset.map( function(d){ return parseInt(d.speakers_count) }) )
 
-  //// Create padding for the min and max 
-  xExtent[0] = xExtent[0] - ( xExtent[0]*0.2 )
-  xExtent[1] = xExtent[1] + ( xExtent[1]*0.2 )
+  // var xExtent = d3.extent( dataset.map( function(d){ return parseInt(d.lang_count) }) )
+  // var yExtent = d3.extent( dataset.map( function(d){ return parseInt(d.speakers_count) }) )
 
-  yExtent[0] = 0 - ( yExtent[0] )
-  yExtent[1] = yExtent[1] + ( yExtent[1]*0.2 )
+  // //// Create padding for the min and max 
+  // xExtent[0] = xExtent[0] - ( xExtent[0]*0.2 )
+  // xExtent[1] = xExtent[1] + ( xExtent[1]*0.2 )
 
-  console.log(xExtent, yExtent)
+  // yExtent[0] = 0 - ( yExtent[0] )
+  // yExtent[1] = yExtent[1] + ( yExtent[1]*0.2 )
+
+  // console.log(xExtent, yExtent)
+
+  // var scale_x = d3.scale.linear()
+  //     .range([0, width])
+  //     .domain( xExtent )
+
+  // var scale_y = d3.scale.linear()
+  //     .range([height, 0])
+  //     .domain( yExtent )
+  //     .nice()
+
   ////////////////////////////////////////////////////////////////////////////////////////////
-
-
-  var scale_x = d3.scale.linear()
-      .range([0, width])
-      .domain( xExtent )
-
-  var scale_y = d3.scale.linear()
-      .range([height, 0])
-      .domain( yExtent )
-      .nice()
-
 
   var xAxis = d3.svg.axis()
       .scale(scale_x)
