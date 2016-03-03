@@ -3,9 +3,9 @@
 ////////////////////////////////////////////////
 
 
-//// Here is a function you can pass into the data request
+//// Here is an accessor function you can pass into the data request
 //// that will called for each "row", aka object, in the data.
-//// Here we use it to convert the frequency data from a String to a Float
+//// We use it here, to convert the frequency data from a String to a Float
 function convert(d) {
   //// Append the data to the unordered list as a String
   d3.select('#stringdata').append('li').text( d.frequency )

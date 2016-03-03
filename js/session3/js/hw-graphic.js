@@ -54,6 +54,8 @@ function renderChart(dataset){
 
   ////////////////////////////////////////////////////////////////////////////////////////////
 
+  var commaFormat = d3.format(",");
+
   var xAxis = d3.svg.axis()
       .scale(scale_x)
       .tickSize(10)
@@ -68,7 +70,7 @@ function renderChart(dataset){
       .tickPadding(10)
       .outerTickSize(1)
       .orient('left')
-      .tickFormat(function(d,i){ return Math.round(d*0.000001) })
+      .tickFormat(function(d,i){ return commaFormat( Math.round(d*0.000001) ) })
 
   var svg = d3.select('#svg-wrapper-1').append('svg')
     .attr('id', 'svg')
