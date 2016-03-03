@@ -52,8 +52,8 @@ svg{
 /*#barchart .bar:hover {
   fill: lightskyblue;
   transform: translate(0px, -40px);
-}
-*/
+}*/
+
 .axis {
   font: 10px sans-serif;
 }
@@ -72,5 +72,12 @@ svg{
 .barlabel{
 	fill: #ddd;
 	font-size: 14px;
-	text-anchor: middle
+	text-anchor: middle;
 }
+
+
+
+
+
+
+

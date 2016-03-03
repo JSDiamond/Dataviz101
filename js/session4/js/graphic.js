@@ -25,6 +25,11 @@ function convert(d) {
 //// Request the data file 
 d3.tsv("data/alpha.tsv", convert, function(error, dataset) {
   if (error) throw error
+
+  // dataset.forEach(function(d){
+  //   d.frequency = +d.frequency
+  // })
+
   renderRangeBands()
   renderChart(dataset)
 })
@@ -41,10 +46,10 @@ function renderRangeBands(){
   var rb_scale = d3.scale.ordinal()
   
   //// For rangeBands, the domain of the data is the array, not the extent
-  rb_scale.domain(data)
+  rb_scale.domain(d3.range(5))
 
   //// For rangeBands, the range is the extent and a decimal for padding
-  rb_scale.rangeRoundBands([0, 600], 0.3)
+  rb_scale.rangeRoundBands([0, width], 0.3)
 
   console.log( 'rb_scale.domain() = '+rb_scale.domain() )
   console.log( 'rb_scale.range() = '+rb_scale.range() )
@@ -54,10 +59,12 @@ function renderRangeBands(){
     .attr("width", 600)
     .attr("height", 400)
 
+  d3.shuffle(data)
+
   var rects = svg.selectAll(".bar").data(data)
     .enter().append("rect")
       .attr("class", "bar")
-      .attr("x", function(d) { return rb_scale(d) })
+      .attr("x", function(d,i) { return rb_scale(i) })
       .attr("width", rb_scale.rangeBand()) ////This returns the width between each section of padding
       .attr("y", 100)
       .attr("height", height*0.5)
@@ -65,9 +72,9 @@ function renderRangeBands(){
   var text = svg.selectAll("text").data(data)
     .enter().append("text")
       .attr("class", "barlabel")
-      .attr("x", function(d){ return rb_scale(d)+(rb_scale.rangeBand()*0.5) }) ////Centered text
+      .attr("x", function(d,i){ return rb_scale(i)+(rb_scale.rangeBand()*0.5) }) ////Centered text
       .attr("y", 200)
-      .text(function(d){ return d+": "+rb_scale(d) })
+      .text(function(d,i){ return d+": "+rb_scale(i) })
 }
 
 
@@ -99,8 +106,11 @@ function renderChart(dataset){
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
-  xScale.domain(dataset.map(function(d) { return d.letter }))
+  //xScale.domain( dataset.map(function(d) { return d.letter }) )
+  xScale.domain( d3.range(dataset.length) )
   yScale.domain([0, d3.max(dataset, function(d) { return d.frequency })])
+
+  console.log('DOMAIN == '+xScale.domain())
 
   svg.append("g")
       .attr("class", "x axis")
@@ -117,10 +127,11 @@ function renderChart(dataset){
       .style("text-anchor", "end")
       .text("Frequency")
 
+
   svg.selectAll(".bar").data(dataset)
     .enter().append("rect")
       .attr("class", "bar")
-      .attr("x", function(d) { return xScale(d.letter) })
+      .attr("x", function(d,i) { return xScale(i) })
       .attr("width", xScale.rangeBand())
       .attr("y", function(d) { return yScale(d.frequency) })
       .attr("height", function(d) { return height - yScale(d.frequency) })
