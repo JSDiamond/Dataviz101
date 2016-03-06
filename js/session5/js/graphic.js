@@ -7,10 +7,11 @@ function renderSimpleLines(){
   var width = 600
     , height = 400
 
-  var svg = d3.select("#linez").append("svg")
+  var svg = d3.select('#linez').append('svg')
       .attr("width", width)
       .attr("height", height)
 
+  //// A simple line
   svg.append('line')
     .attr({
       x1: 10, // x postion of start point
@@ -21,6 +22,7 @@ function renderSimpleLines(){
       'stroke-width': 2 // stroke width
     })
 
+  //// 20 simple lines 
   svg.selectAll(".newline").data(d3.range(20))
     .enter().append("line")
     .attr({
@@ -37,79 +39,166 @@ renderSimpleLines()
 
 
 
+function renderSimplePaths(){
+  var width = 600
+    , height = 400
 
-function convert(d) {
-  return d
+  var svg = d3.select('#pathz').append('svg')
+      .attr("width", width)
+      .attr("height", height)
+
+  //// A simple path
+  svg.append('path')
+    .attr({
+      d: 'M10,20L50,20',
+      stroke: 'coral',
+      'stroke-width': 2
+    })
+
+  //// 20 simple paths
+  svg.selectAll('.newpath').data(d3.range(20))
+    .enter().append('path')
+    .attr({
+      d: function(d){ return 'M'+ 10 +','+ (d+3)*10 +'L'+ (width-10) +','+ (d+20)*10 },
+      stroke: 'cyan',       
+      'stroke-width': 2     
+    })
 }
 
+renderSimplePaths()
 
-//// Request the data file 
+
+
+
+//// Request the data file and run the convert() function on each "row" aka object in the data
 d3.csv("data/co2-emissions.csv", convert, function(error, dataset) {
   if (error) throw error
-
+  //// Here we are logging the result of loading the CSV and running convert
   console.log(dataset)
-  // dataset.forEach(function(d){
-  //   d.frequency = +d.frequency
-  // })
-
+  renderChartOne(dataset)
 })
 
 
 
-function renderChart(dataset){
+////////////////////////////////////////////////
+//// Thinking of each object in the array as a "country".
+//// Convert is going to take all the years worth of values
+//// and save it back into the country's data as an array of objects.
+//// This will be a better structure for looping through later.
+////////////////////////////////////////////////
+function convert(d) {
+
+  //// Make an empty array to fill with years and respective values
+  var emissions = [] 
+  ////  Then loop through the keys in the country object: "Country", "1961", ... "2015" 
+  d3.keys(d).forEach(function(key){
+    //// For any key other than "Country"...
+    if (key != "Country"){
+      //// ... add an object to emissions that has the year and its value...
+      emissions.push( {year: +key, val: +d[key]} )
+      //// ... then delete this key and its value from d
+      //// because we've already saved it in emissions and don't need it anymore
+      delete d[key]
+    }
+
+  })
+
+  //// Save emissions into the country data
+  d.emissions = emissions//.filter(function(year){ return year.val != 0 })
+
+  //// Save the extent of emissions values into the country data
+  d.extent = d3.extent(d.emissions, function(year){ return year.val})
+
+  return d
+}
+
+
+
+
+
+
+function renderChartOne(dataset){
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 600 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom
 
-  var xScale = d3.scale.ordinal()
-      .rangeRoundBands([0, width], .1)
+  var xScale = d3.scale.linear()
+      .range([0, width])
+      .domain( [1961, 2015] )
 
   var yScale = d3.scale.linear()
-      .range([height, 0])
+      .range([height, 0])  
+  //// get the max of all country extents
+  var vmax = d3.max(dataset, function(d){ return d.extent[1] })
+  console.log('vmax = '+ vmax)
+  yScale.domain( [0, vmax] )
 
-  var xAxis = d3.svg.axis()
-      .scale(xScale)
-      .orient("bottom")
+  //// D3 line generator function
+  var line = d3.svg.line()
+    .defined(function(d){ return !isNaN(d.val) })
+    .x(function(d) { return xScale(d.year) })
+    .y(function(d) { return yScale(d.val) })
 
-  var yAxis = d3.svg.axis()
-      .scale(yScale)
-      .orient("left")
-      .ticks(10, "%")
+  // var xAxis = d3.svg.axis()
+  //     .scale(xScale)
+  //     .orient("bottom")
 
-  var svg = d3.select("#barchart").append("svg")
+  // var yAxis = d3.svg.axis()
+  //     .scale(yScale)
+  //     .orient("left")
+  //     .ticks(10)
+
+  var svg = d3.select("#one-country").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
-  //xScale.domain( dataset.map(function(d) { return d.letter }) )
-  xScale.domain( d3.range(dataset.length) )
-  yScale.domain([0, d3.max(dataset, function(d) { return d.frequency })])
+  var USA = dataset.filter(function(d){ return d.Country == "United States" })
+  console.log(USA)
 
-  console.log('DOMAIN == '+xScale.domain())
+  svg.append('path').datum(USA[0].emissions)
+    .attr('d', line)
+    .attr('stroke', 'orange')
+    .attr('stroke-width', 3)
+    .attr('fill-opacity', '0')
 
-  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis)
-
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Frequency")
+  svg.append('text').datum(USA[0].emissions)
+    .attr('x', 00)
+    .attr('y', 180)
+    .text('United States')
+    //// attr / styles below could be done with CSS
+    .attr('fill', 'orange')
+    .style('font-size', '14px')
 
 
-  svg.selectAll(".bar").data(dataset)
-    .enter().append("rect")
-      .attr("class", "bar")
-      .attr("x", function(d,i) { return xScale(i) })
-      .attr("width", xScale.rangeBand())
-      .attr("y", function(d) { return yScale(d.frequency) })
-      .attr("height", function(d) { return height - yScale(d.frequency) })
+  var China = dataset.filter(function(d){ return d.Country == "China" })
+  console.log(China)
+
+  svg.append('path').datum(China[0].emissions)
+    .attr('d', line)
+    .attr('stroke', 'cadetblue')
+    .attr('stroke-width', 3)
+    .attr('fill-opacity', '0')
+
+  svg.append('text').datum(USA[0].emissions)
+    .attr('x', 0)
+    .attr('y', 320)
+    .text('China')
+    //// attr / styles below could be done with CSS
+    .attr('fill', 'cadetblue')
+    .style('font-size', '14px')
+    
+
+
+  // svg.append("g")
+  //     .attr("class", "x axis")
+  //     .attr("transform", "translate(0," + height + ")")
+  //     .call(xAxis)
+
+  // svg.append("g")
+  //     .attr("class", "y axis")
+  //     .call(yAxis)
+
 }
 

@@ -1,6 +1,6 @@
 #JS Session 5
 
-##Drawing anything
+##Lines, paths, and timeseries
 
 Run a server and view `index.html` in a browser
 
@@ -54,7 +54,7 @@ Multiple L and M commands can be combined to create complex shapes:
 
 The same line as above in path form:
 
-	<path d="M10,201L50,20"
+	<path d="M10,20L50,20"
 		stroke="coral" 
     	stroke-width="2"/>
     	
