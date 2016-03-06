@@ -75,7 +75,7 @@ d3.csv("data/co2-emissions.csv", convert, function(error, dataset) {
   if (error) throw error
   //// Here we are logging the result of loading the CSV and running convert
   console.log(dataset)
-  renderChartOne(dataset)
+  renderIndividualPaths(dataset)
 })
 
 
@@ -117,7 +117,7 @@ function convert(d) {
 
 
 
-function renderChartOne(dataset){
+function renderIndividualPaths(dataset){
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 600 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom
@@ -155,7 +155,7 @@ function renderChartOne(dataset){
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
   var USA = dataset.filter(function(d){ return d.Country == "United States" })
-  console.log(USA)
+  console.log('USA', USA)
 
   svg.append('path').datum(USA[0].emissions)
     .attr('d', line)
@@ -173,7 +173,7 @@ function renderChartOne(dataset){
 
 
   var China = dataset.filter(function(d){ return d.Country == "China" })
-  console.log(China)
+  console.log('China', China)
 
   svg.append('path').datum(China[0].emissions)
     .attr('d', line)
