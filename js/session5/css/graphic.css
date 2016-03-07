@@ -22,62 +22,29 @@ ul{
 }
 
 
-.lefty{
-	float: left;
+.axis{
+	font-size: 12px;
+}
+	
+.axis line{
+	stroke: #ddd;
+	stroke-dasharray: 4,4;
 }
 
-#tsvoutput{
-	overflow: hidden;
+.axis text{
+	fill: #bbb;
 }
 
-#tsvoutput h4{
-	margin: 8px 0;
-}
-
-#tsvoutput ul:first-child{
-	margin-right: 30px;
-}
-
-svg{
-	border: 2px solid #333;
-	margin: 30px auto;
-}
-
-.bar {
-  fill: cadetblue;
-  transition: all 0.3s ease-out;
-  transform: translate(0px, 0px);
-}
-
-/*#barchart .bar:hover {
-  fill: lightskyblue;
-  transform: translate(0px, -40px);
-}*/
-
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path {
-  display: none;
-}
-
-.barlabel{
-	fill: #ddd;
-	font-size: 14px;
-	text-anchor: middle;
+.axis .domain{
+	display: none;
 }
 
 
-
-
+.countrylabel{
+	fill: #888;
+	font-size: 10px;
+	font-family: Helvetica;
+}
 
 
 

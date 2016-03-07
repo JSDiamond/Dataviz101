@@ -63,7 +63,23 @@ The same line as above in path form:
 [D3 line generator](https://github.com/mbostock/d3/wiki/SVG-Shapes#_line) is uselful for making paths from data.
 	
 	var line = d3.svg.line()
-	    .x(function(d) { return x(d.x); })
-	    .y(function(d) { return y(d.y); })
+	    .x(function(d) { return scaleX(d.x) })
+	    .y(function(d) { return scaleY(d.y) })
 
+You can define it as a variable (like above) and then use it as an accessor function to construct a path string from specific values in your data.
 
+	svg.append('path').datum([{x: 10, y: 20}, {x: 50, y: 20}])
+    	.attr('d', line)
+    	
+[datum() vs data()](https://github.com/mbostock/d3/wiki/Selections#datum) Used after `append()`, as opposed to `selectAll()`, binding an array of data to a single element.
+
+----------------
+Some of this session is based on a Lynn Cherny example. Shewisely recommends selectively labeling the lines at the ends to highlight outliers. And provides these examples:
+
+[The David Bowie Song That Fans Are Listening to Most](http://www.nytimes.com/interactive/2016/01/12/upshot/david-bowie-songs-that-fans-are-listening-most-heroes-starman-major-tom.html)
+
+[A reference version by Mike Bostock](http://bl.ocks.org/mbostock/3884955)
+
+[Simpler version (be sure to read what he says at the top; your data will not be in reverse order!)](http://bl.ocks.org/d3noob/8603837)
+
+----------------
