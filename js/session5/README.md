@@ -74,7 +74,7 @@ You can define it as a variable (like above) and then use it as an accessor func
 [datum() vs data()](https://github.com/mbostock/d3/wiki/Selections#datum) Used after `append()`, as opposed to `selectAll()`, binding an array of data to a single element.
 
 ----------------
-Some of this session is based on a Lynn Cherny example. Shewisely recommends selectively labeling the lines at the ends to highlight outliers. And provides these examples:
+Some of the World Bank portion of this session is based on a Lynn Cherny example. She wisely recommends selectively labeling the lines at the ends to highlight outliers. And provides these examples:
 
 [The David Bowie Song That Fans Are Listening to Most](http://www.nytimes.com/interactive/2016/01/12/upshot/david-bowie-songs-that-fans-are-listening-most-heroes-starman-major-tom.html)
 

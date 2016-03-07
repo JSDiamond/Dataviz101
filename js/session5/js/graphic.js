@@ -91,7 +91,7 @@ function convert(d) {
 
   //// Make an empty array to fill with years and respective values
   var emissions = [] 
-  ////  Then loop through the keys in the country object: "Country", "1961", ... "2015" 
+  ////  Then loop through the keys in the country object: "Country", "1961", ... "2011" 
   d3.keys(d).forEach(function(key){
     //// For any key other than "Country"...
     if (key != 'Country'){
@@ -125,7 +125,7 @@ function renderIndividualPaths(dataset){
 
   var xScale = d3.scale.linear()
       .range([0, width])
-      .domain( [1961, 2015] )
+      .domain( [1961, 2011] )
 
   var yScale = d3.scale.linear()
       .range([height, 0])  
@@ -186,13 +186,13 @@ function renderIndividualPaths(dataset){
 
 
 function renderAllPaths(dataset){
-  var margin = {top: 20, right: 70, bottom: 30, left: 70},
+  var margin = {top: 20, right: 90, bottom: 30, left: 70},
     width = 600 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom
 
   var xScale = d3.scale.linear()
       .range([0, width])
-      .domain( [1961, 2015] )
+      .domain( [1961, 2011] )
 
   var yScale = d3.scale.linear()
       .range([height, 0])  
@@ -213,6 +213,7 @@ var xAxis = d3.svg.axis()
     .tickPadding(6)
     .orient('bottom')
     .outerTickSize(1)
+    .tickFormat(function(d){ return d })
 
 var yAxis = d3.svg.axis()
     .scale(yScale)
