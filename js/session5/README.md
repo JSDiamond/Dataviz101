@@ -60,7 +60,8 @@ The same line as above in path form:
     	
     	
 
-[D3 line generator](https://github.com/mbostock/d3/wiki/SVG-Shapes#_line) is uselful for making paths from data.
+######[D3 line generator](https://github.com/mbostock/d3/wiki/SVG-Shapes#_line) 
+Uselful for making paths from data.
 	
 	var line = d3.svg.line()
 	    .x(function(d) { return scaleX(d.x) })
@@ -72,6 +73,16 @@ You can define it as a variable (like above) and then use it as an accessor func
     	.attr('d', line)
     	
 [datum() vs data()](https://github.com/mbostock/d3/wiki/Selections#datum) Used after `append()`, as opposed to `selectAll()`, binding an array of data to a single element.
+
+######Line defined [docs](https://github.com/mbostock/d3/wiki/SVG-Shapes#line_defined)
+Pass in an accessor function set where the line is defined and undefined, which is typically useful in conjunction with missing data; the generated path data will automatically be broken into multiple distinct subpaths, skipping undefined data.
+
+		var line = d3.svg.line()
+	    	.x(function(d) { return scaleX(d.x) })
+	    	.y(function(d) { return scaleY(d.y) })
+	    	.defined(function(d){ return !isNaN(d.y) })
+	    	
+The accessor function should return `true` if the data is not `NaN` and `false` if it is. Any false returns or `NaN` data will not display — will not have a connection to the rest of the line.
 
 ----------------
 Some of the World Bank portion of this session is based on a Lynn Cherny example. She wisely recommends selectively labeling the lines at the ends to highlight outliers. And provides these examples:

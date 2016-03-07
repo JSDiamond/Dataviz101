@@ -203,7 +203,7 @@ function renderAllPaths(dataset){
 
   //// D3 line generator function
   var line = d3.svg.line()
-    .defined(function(d){ return !isNaN(d.val) })
+    .defined(function(d){ return !isNaN(d.val) }) //if there's no value for the year, don't draw
     .x(function(d) { return xScale(d.year) })
     .y(function(d) { return yScale(d.val) })
 
