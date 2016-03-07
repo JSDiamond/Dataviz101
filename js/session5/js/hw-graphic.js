@@ -64,7 +64,7 @@ function connectTheDots(svg, data){
   //// Based on what we've learned about lines and paths,
   //// you can do this any way you want, as long as it works.
 
-  //// Hint: You will need to pair-up points in order to make a line
+  //// Hint: You will need to pair-up points in order to make a line.
 
 }
 

@@ -84,6 +84,9 @@ Pass in an accessor function set where the line is defined and undefined, which 
 	    	
 The accessor function should return `true` if the data is not `NaN` and `false` if it is. Any false returns or `NaN` data will not display — will not have a connection to the rest of the line.
 
+### Time series
+A time series is a sequence of data points made: 1) over a continuous time interval. 2) out of successive measurements across that interval. 3) using equal spacing between every two consecutive measurements. 4) with each time unit within the time interval having at most one data point. [via Wikipedia](https://en.wikipedia.org/wiki/Time_series)
+
 ----------------
 Some of the World Bank portion of this session is based on a Lynn Cherny example. She wisely recommends selectively labeling the lines at the ends to highlight outliers. And provides these examples:
 
