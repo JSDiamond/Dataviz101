@@ -1,6 +1,6 @@
 #JS Session 5
 
-##Lines, paths, and timeseries
+##Lines, paths, and time series
 
 Run a server and view `index.html` in a browser
 
