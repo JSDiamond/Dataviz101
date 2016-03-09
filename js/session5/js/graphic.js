@@ -310,5 +310,6 @@ function dateTimeExample(){
     .enter().append('li')
     .text(function(d){ return format(d) })
 }
+dateTimeExample()
 
 
