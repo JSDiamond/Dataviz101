@@ -97,3 +97,64 @@ Some of the World Bank portion of this session is based on a Lynn Cherny example
 [Simpler version (be sure to read what he says at the top; your data will not be in reverse order!)](http://bl.ocks.org/d3noob/8603837)
 
 ----------------
+
+### Dates and time in javascript
+
+Using the [javascript Date function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) creates an object that represents a single moment in time. That object has many methods for getting either calendar date components (day of the week, day of the month, month of the year, etc.), or time components (minute of the day, hour of the day, seconds since 1/1/1970, etc.). Date objects are based on a time value that is the number of milliseconds since 1 January, 1970 UTC.
+
+	////Default, if no argument is passed in, is create a Date object for the moment it's called
+	var now = new Date()
+	
+	////Otherwise, based on the date passed in as a string
+	var bday = new Date('10/23/2003')
+	
+	////Same date passed in as value arguments
+	////new Date(year, month, day, hour, minutes, seconds, milliseconds)
+	var bday = new Date(2003, 9, 23)
+	
+	////Some built-in Date methods and their output
+	
+	bday.toDateString()
+	//"Thu Oct 23 2003"
+	
+	bday.toUTCString()
+	//"Thu, 23 Oct 2003 04:00:00 GMT"
+	
+	bday.toString()
+	//"Thu Oct 23 2003 00:00:00 GMT-0400 (EDT)"
+	
+	bday.getDay() //Get day of the week
+	//4
+
+	bday.getDate() //Get day of the month
+	//23
+	
+	bday.getTime() //Get number of milliseconds since January 1, 1970
+	//1066881600000
+	
+	////... and many more ...
+
+####Formating dates with D3
+
+
+D3 includes a [helper module](https://github.com/mbostock/d3/wiki/Time-Formatting) `d3.time.format`, for parsing and formatting dates modeled after standards used in C, Python and other programing languages. `d3.time.format` constructs a new local time formatter function using the given specifier, which is a string that can contain plain text characters (/,-:the), and specifiers that look like `%Y` which translates into the four digit year. Invoking that function on a Date object will return the corresponding string.
+
+	var date = new Date(1986,0,2,11,39,13)
+	
+	var format1 = d3.time.format("%Y-%m-%d") //create a new formatter function and save it as a variable
+	
+	format1(date)//call the formatter function on your Date object and see output below
+	
+	//1986-01-28
+	
+	var format2 = d3.time.format("%m/%d/%Y")
+	format2(date)
+	//01/28/1986
+	
+	var format3 = d3.time.format("%A %B %d, %Y %H:%M %p")
+	format2(date)
+	//Monday January 28, 1986 11:39 AM
+	
+Check out [this bl.ock](http://bl.ocks.org/zanarmstrong/ca0adb7e426c12c06a95) to see more formats and try them out.
+
+This can be used in tick formating or labels or any other place you need to keep you dates/times neat and organized.

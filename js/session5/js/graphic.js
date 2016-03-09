@@ -115,6 +115,27 @@ function convert(d) {
 
 
 
+////////////////////////////////////////////////
+//// If you use this convert accessor function to change the year values into Date objects,
+//// you'll need to adjust downstream for any time you use that value.
+//// It could look more like d.year.getFullYear()
+////////////////////////////////////////////////
+function convertDateTime(d) {
+  var emissions = [] 
+  d3.keys(d).forEach(function(key){
+    if (key != 'Country'){
+
+      emissions.push( {year: new Date(key), val: +d[key]} )
+      delete d[key]
+
+    }
+  })
+  d.emissions = emissions
+  d.extent = d3.extent(d.emissions, function(year){ return year.val})
+  return d
+}
+
+
 
 
 
@@ -124,11 +145,11 @@ function renderIndividualPaths(dataset){
     height = 400 - margin.top - margin.bottom
 
   var xScale = d3.scale.linear()
-      .range([0, width])
+      .range( [0, width] )
       .domain( [1961, 2011] )
 
   var yScale = d3.scale.linear()
-      .range([height, 0])  
+      .range( [height, 0] )  
   //// get the max of all country extents
   var vmax = d3.max(dataset, function(d){ return d.extent[1] })
   console.log('vmax = '+ vmax)
@@ -192,7 +213,7 @@ function renderAllPaths(dataset){
 
   var xScale = d3.scale.linear()
       .range([0, width])
-      .domain( [1961, 2011] )
+      .domain( [1960, 2011] )
 
   var yScale = d3.scale.linear()
       .range([height, 0])  
@@ -268,5 +289,26 @@ var yAxis = d3.svg.axis()
     })
     .text(function(d){ return d.Country })
 
-
 }
+
+
+
+function dateTimeExample(){
+  var dates = ["5/12/2016","2/19/2016","3/27/2016","5/14/2016","4/16/2016","2/10/2016","5/25/2016","5/6/2016","4/26/2016","4/1/2016"]
+  var dateObjects = dates.map(function(d){ return new Date(d) })
+
+  console.log( dateObjects )
+
+  // dateObjects.sort(function(a,b){
+  //   return a.getTime() - b.getTime()
+  // })
+
+  var format = d3.time.format("%A %B %d, %Y")
+
+
+  d3.select('#datetime').selectAll('li').data(dateObjects)
+    .enter().append('li')
+    .text(function(d){ return format(d) })
+}
+
+
