@@ -59,10 +59,10 @@ svg.block{
 
 .tooltip{
 	position: absolute;
-	padding: 5px 10px;
+	padding: 3px 8px;
 	border: 1px solid #bbb;
 	background-color: rgba(255,255,255,0.8);
-	font-size: 14px;
+	font-size: 12px;
 	color: #333;
 	pointer-events: none;
 	display: none;
@@ -166,4 +166,35 @@ svg.block{
 	font-size: 14px;
 	text-anchor: middle;
 }
+
+
+
+
+
+
+
+.countrygroup .countrylabel{
+	fill: #333;
+	font-size: 11px;
+	font-family: Helvetica;
+	display: none;
+}
+.countrygroup.active .countrylabel{
+	display: block;
+}
+.countrygroup.active path{
+	stroke: #111;
+	opacity: 1;
+}
+.countrygroup path{
+    fill: none;
+}
+
+#lines .axis line{
+	stroke: #ddd;
+	stroke-dasharray: 4,4;
+}
+
+
+
 

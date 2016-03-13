@@ -75,3 +75,16 @@ If no second argument is given, it will return whether or not the element curren
 
 ### To access the current event within a listener, use the global d3.event.
 
+[The d3.event object](https://github.com/mbostock/d3/wiki/Selections#d3_event) is a DOM event and implements the standard event fields like timeStamp and keyCode as well as methods like preventDefault() and stopPropagation().
+	
+	d3.select('circle').on("click", function(){
+		d3.event.clientX //mouse x position within the svg
+		d3.event.clientY //mouse y position within the svg
+	})
+
+
+### Linear scale invert
+
+[A function of the](https://github.com/mbostock/d3/wiki/Quantitative-Scales#linear_invert) `d3.scale.linear`, `d3.scale.linear.invert(val)` returns the value in the input domain x for the corresponding value in the output range y. This represents the inverse mapping from range to domain.
+
+
