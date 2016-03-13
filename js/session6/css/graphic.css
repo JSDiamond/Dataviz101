@@ -1,0 +1,169 @@
+body, html{
+	margin:0;padding:0;
+	font-family: "Helvetica", sans-serif;
+	font-size: 1.2em;
+}
+
+section{
+	max-width: 1220px;
+	width: 88%;
+	margin: 10px auto 80px;
+}
+
+h3{
+	margin: 6px 0;
+}
+
+ul{
+	list-style: none;
+	margin: 6px 0;
+	font-size: 0.8em;
+	padding: 0;
+}
+
+
+div.button{
+	padding: 6px 14px;
+	background-color: #ddd;
+	font-size: 20px;
+	color: #333;
+	display: inline-block;
+	cursor: pointer;
+}
+
+div.button:hover{
+	background-color: coral;
+}
+
+div.button:hover span{
+	color: #fff;
+}
+
+div.button span:hover{
+	color: yellow;
+}
+
+
+
+svg{
+	/*border: 2px solid #333;*/
+	margin: 30px auto;
+}
+svg.block{
+	display: block;
+}
+
+.svgbox{
+	position: relative;
+}
+
+.tooltip{
+	position: absolute;
+	padding: 5px 10px;
+	border: 1px solid #bbb;
+	background-color: rgba(255,255,255,0.8);
+	font-size: 14px;
+	color: #333;
+	pointer-events: none;
+	display: none;
+	top: 0px;
+	left: 0px;
+}
+.tooltip.show{
+	display: block;
+}
+
+
+
+.domain{
+	display: none;
+}
+.x.axis .domain{
+	display: block;
+	stroke: #bbb;
+}
+
+.axis text{
+	font-size: 12px;
+	fill: #aaa;
+}
+
+.axis .tick line{
+	stroke: #bbb;
+	stroke-width: 1px;
+}
+.y.axis .tick line{
+	stroke: #bbb;
+}
+
+.circlegroup{
+	font-size: 28px;
+	font-weight: bolder;
+}
+
+.circlegroup:hover circle{
+	stroke-width: 3px;
+	stroke: #222;
+}
+
+.circlegroup text{
+	cursor: default;
+	display: none
+}
+.circlegroup.active text{
+	display: block;
+}
+
+.circlegroup.catA{
+	fill: coral;
+}
+.circlegroup.catB{
+	fill: lightpink;
+}
+.circlegroup.catC{
+	fill: cyan;
+}
+.circlegroup.catD{
+	fill: teal;
+}
+.circlegroup.catE{
+	fill: orange;
+}
+
+
+
+
+
+
+.bar {
+  fill: cadetblue;
+  transition: all 0.2s ease-out;
+  transform: translate(0px, 0px);
+}
+
+.bar:hover {
+  fill: lightskyblue;
+  /*transform: translate(0px, -40px);*/
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.barlabel{
+	fill: #ddd;
+	font-size: 14px;
+	text-anchor: middle;
+}
+

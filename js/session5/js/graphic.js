@@ -263,8 +263,10 @@ var yAxis = d3.svg.axis()
   var groups = svg.selectAll('.countrygroup').data(dataset)
     .enter().append('g')
 
+    console.log('groups',groups)
+
   var lines = groups.append('path').datum(function(d){ 
-      //console.log(d); 
+      // console.log(d); 
       return d.emissions
     })
     .attr('d', line)
@@ -273,8 +275,11 @@ var yAxis = d3.svg.axis()
     .attr('fill-opacity', '0')
     .attr('opacity', 0.4)
 
+
+console.log('lines', lines); 
+
   var outliers = dataset.filter(function(d){ return d.extent[1] > 2000000 })
-  console.log(outliers)
+  console.log('outliers',outliers)
 
   var labels = svg.selectAll('.countrylabel').data(outliers)
     .enter().append('text')
@@ -299,12 +304,11 @@ function dateTimeExample(){
 
   console.log( dateObjects )
 
-  // dateObjects.sort(function(a,b){
-  //   return a.getTime() - b.getTime()
-  // })
+  dateObjects.sort(function(a,b){
+    return b.getTime() - a.getTime()
+  })
 
   var format = d3.time.format("%A %B %d, %Y")
-
 
   d3.select('#datetime').selectAll('li').data(dateObjects)
     .enter().append('li')
