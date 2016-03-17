@@ -78,9 +78,10 @@ circleGroup.append('text')
     .text(function(d){ return d.cat; })
     .attr('dx', function(d){ return d.z*1.5 })
 
-circleGroup.on('mouseenter', function(d){
+
+circleGroup.on('mouseenter', function(d,i){
         d3.select(this).classed('active', true)
-        //console.log('mouseenter', this)
+        console.log('mouseenter', d, i, this, d3.event)
     })
 
 circleGroup.on('mouseleave', function(d){

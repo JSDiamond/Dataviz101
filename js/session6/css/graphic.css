@@ -43,6 +43,9 @@ div.button span:hover{
 	color: yellow;
 }
 
+div.button:active {
+	background-color: #999;
+}
 
 
 svg{

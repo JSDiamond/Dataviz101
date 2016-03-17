@@ -110,7 +110,7 @@ function renderAllPaths(dataset){
 
     groups.on('mouseenter', pathEnter)
         .on('mouseleave', pathLeave)
-        .on('mousemove', pathMove)
+        //.on('mousemove', pathMove)
     
 
     function pathEnter(d, i){
@@ -127,10 +127,10 @@ function renderAllPaths(dataset){
     var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
 
 
-    function pathEnter(d, i){
-        d3.select(this).classed('active', true)
-        tooltip.classed('show', true)
-    }
+    // function pathEnter(d, i){
+    //     d3.select(this).classed('active', true)
+    //     tooltip.classed('show', true)
+    // }
 
     var years = dataset[0].emissions.map(function(d){ return d.year }) 
     var yearIndex = null

@@ -11,8 +11,8 @@ var margin = {top: 20, right: 20, bottom: 20, left: 20},
 //// We can make a function that takes a d3 selction as an argument,
 //// creates an svg in that selection,
 //// then return the d3 selection of that svg.
-function renderSVG(sel){
-  var svg = sel.append('svg')
+function renderSVG(selection){
+  var svg = selection.append('svg')
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
@@ -69,6 +69,12 @@ function connectTheDots(svg, data){
 }
 
 connectTheDots(svg, points)
+
+
+
+
+
+
 
 
 
