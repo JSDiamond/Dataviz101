@@ -10,6 +10,10 @@ section{
 	margin: 10px auto 80px;
 }
 
+h2{
+	font-size: 1.3em;
+}
+
 h3{
 	margin: 6px 0;
 }
@@ -58,22 +62,15 @@ svg.block{
 
 .svgbox{
 	position: relative;
+	min-height: 400px;
 }
 
-.tooltip{
-	position: absolute;
-	padding: 3px 8px;
-	border: 1px solid #bbb;
-	background-color: rgba(255,255,255,0.8);
-	font-size: 12px;
-	color: #333;
-	pointer-events: none;
-	display: none;
-	top: 0px;
-	left: 0px;
+#circle svg{
+	border: 5px solid #333;
 }
-.tooltip.show{
-	display: block;
+
+.circle{
+
 }
 
 
@@ -173,13 +170,14 @@ svg.block{
 
 
 
-
-
-
-.countrygroup .countrylabel{
+.countrylabel{
 	fill: #333;
 	font-size: 11px;
 	font-family: Helvetica;
+}
+
+
+.countrygroup .countrylabel{
 	display: none;
 }
 .countrygroup.active .countrylabel{

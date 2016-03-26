@@ -2,12 +2,6 @@
 //// Session 5
 ////////////////////////////////////////////////
 
-
-d3.csv("data/co2-emissions.csv", convert, function(error, dataset) {
-  if (error) throw error
-  renderAllPaths(dataset)
-})
-
 function convert(d) {
 
   var emissions = [] 
@@ -26,28 +20,115 @@ function convert(d) {
 
 
 
+d3.csv("data/co2-emissions.csv", convert, function(error, dataset) {
+  if (error) throw error
 
+  //// Getting the max of each country's emissions to filter by those above average 
+  
+  //// Make an array of max values from the emissions
+  var maxArray = dataset.map(function(country){
+    var max = d3.max(country.emissions, function(d){ return d.val })
+    //// Save the max emissions value into the country's data
+    country.max = max
+    return max
+  })
+  //// Get the mean of the array of max values
+  var maxMean = d3.mean( maxArray )
 
-function renderAllPaths(dataset){
-  var margin = {top: 20, right: 90, bottom: 30, left: 70},
+  // console.log(maxArray, maxMean)
+
+  //// Filter the dataset to eliminate any below or average countries
+  var aboveAverage = dataset.filter(function(country){ return country.max > maxMean })
+
+  // console.log(aboveAverage.length)
+
+  renderAllPaths(aboveAverage)
+  createSelection(aboveAverage)
+
+})
+
+////////////////////////////////////////////////////////
+//// Global Vars
+////////////////////////////////////////////////////////
+var margin = {top: 20, right: 90, bottom: 30, left: 70},
     width = 600 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom
 
-  var xScale = d3.scale.linear()
-      .range([0, width])
-      .domain( [1960, 2011] )
+var xScale = d3.scale.linear()
+    .range([0, width])
+    .domain( [1960, 2011] )
 
-  var yScale = d3.scale.linear()
-      .range([height, 0])  
+var yScale = d3.scale.linear()
+    .range([height, 0])  
+
+//// D3 line generator function
+var line = d3.svg.line()
+  .defined(function(d){ return !isNaN(d.val) }) //if there's no value for the year, don't draw
+  .x(function(d) { return xScale(d.year) })
+  .y(function(d) { return yScale(d.val) })
+
+var svg;
+var highlight, highlightext;
+////////////////////////////////////////////////////////
+
+
+
+function createSelection(dataset){
+  var selectElement = d3.select('select#countries')
+
+  var options = selectElement.selectAll('option.country').data(dataset)
+    .enter().append('option')
+    .attr('value', function(d){ return d.Country })
+    .text(function(d){ return d.Country })
+
+  selectElement.on('change', updateHighlight)
+
+  highlight = svg.append('path')
+    .attr('stroke', '#111')
+    .attr('stroke-width', 3)
+    .attr('fill-opacity', '0')
+    .attr('opacity', 0.9)
+
+  highlightext = svg.append('text')
+        .attr('class', 'countrylabel')
+}
+
+
+function updateHighlight(){
+  var select = d3.select(this) 
+    , selectedIndex = select.property('selectedIndex')
+    , data = select.selectAll('option')[0][selectedIndex].__data__
+  
+  console.log(data)
+
+  highlight.datum(data.emissions)
+    .transition()
+    .duration(400)
+    .attr('d', line)
+
+  highlightext
+    .transition()
+    .duration(400)
+    .attr('x', function(){
+      var last_object_in_emissions = data.emissions[data.emissions.length-1] 
+      return xScale(last_object_in_emissions.year)
+    })
+    .attr('y', function(){
+      var last_object_in_emissions = data.emissions[data.emissions.length-1] 
+      return yScale(last_object_in_emissions.val)
+    })
+    .text(data.Country)
+
+}
+
+
+
+
+function renderAllPaths(dataset){
+
   //// get the max of all country extents
   var vmax = d3.max(dataset, function(d){ return d.extent[1] })
   yScale.domain( [0, vmax] )
-
-  //// D3 line generator function
-  var line = d3.svg.line()
-    .defined(function(d){ return !isNaN(d.val) }) //if there's no value for the year, don't draw
-    .x(function(d) { return xScale(d.year) })
-    .y(function(d) { return yScale(d.val) })
 
   var xAxis = d3.svg.axis()
     .scale(xScale)
@@ -65,7 +146,7 @@ function renderAllPaths(dataset){
     .outerTickSize(1)
     .orient('left')
 
-  var svg = d3.select('#lines').append('svg')
+  svg = d3.select('#lines').append('svg')
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
       .append('g')
@@ -106,65 +187,5 @@ function renderAllPaths(dataset){
     .attr('stroke-width', 3)
     .attr('fill-opacity', '0')
     .attr('opacity', 0.4)
-
-
-    groups.on('mouseenter', pathEnter)
-        .on('mouseleave', pathLeave)
-        //.on('mousemove', pathMove)
-    
-
-    function pathEnter(d, i){
-        d3.select(this).classed('active', true)
-    }
-
-    function pathLeave(d, i){
-        d3.select(this).classed('active', false)
-        //tooltip.classed('show', false)
-    }
-
-
-    ////With a tooltip
-    var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
-
-
-    // function pathEnter(d, i){
-    //     d3.select(this).classed('active', true)
-    //     tooltip.classed('show', true)
-    // }
-
-    var years = dataset[0].emissions.map(function(d){ return d.year }) 
-    var yearIndex = null
-    
-    function pathMove(d, i){
-
-        //console.log(d3.event)
-        var mx = d3.event.clientX
-        var my = d3.event.clientY
-
-        var lineBCR = this.getBoundingClientRect()
-
-        //// An invert on a scale!
-        //// this reverses the usual input / output
-        //// domain input --to--> range output | to | range input --to--> domain output 
-        var year = Math.floor( xScale.invert( mx - lineBCR.left ) )   
-        var yearIndex = years.indexOf(year)
-        var data = d.emissions[yearIndex]
-        
-        //console.log( year, yearIndex, data )
-
-        tooltip.html(d.Country +'<br>'+ data.year +': '+ data.val)
-
-        var ttBCR = tooltip.node().getBoundingClientRect()
-        var svgBCR = svg.node().getBoundingClientRect()
-        var topPosition = ( yScale(data.val) + svgBCR.top + pageYOffset - ttBCR.height )
-        var leftPosition = ( xScale(data.year) + svgBCR.left )
-        
-        tooltip
-          .style({
-            top: topPosition+'px', 
-            left: leftPosition+'px'
-          })
-    }
-
 
 }
