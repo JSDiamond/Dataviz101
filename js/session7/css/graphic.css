@@ -169,6 +169,9 @@ svg.block{
 
 
 
+#lines .x.axis .domain{
+	display: none;
+}
 
 .countrylabel{
 	fill: #333;
