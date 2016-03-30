@@ -61,3 +61,7 @@ D3.js is a JavaScript library for manipulating documents based on data. D3 helps
 ## Data Sources
 [fivethirtyeight](https://github.com/fivethirtyeight/data)
 
+## Github Pages
+
+[Github Pages](https://pages.github.com/) is static page hosting that comes free with your github account. You can edit and push just like any other repo we work in, but this will put your work on the web.
+

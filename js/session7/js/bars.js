@@ -73,7 +73,7 @@ function renderChart(dataset){
       // .attr("height", function(d) { return height - yScale(d.frequency) })
 
       //// ...but this time we'll start at 0 height on the baseline, so we can animate in...
-      .attr("y", yScale(0))
+      .attr("y", yScale( yScale.domain()[0] ))
       .attr("height", 0)
 
   //// ...here
@@ -93,11 +93,11 @@ function renderChart(dataset){
 
   function updateBars(){
     //// Set all bars back to 0 height on the baseline
-    // bars
-    //   .transition()
-    //   .duration(100)
-    //     .attr("y", yScale(0))
-    //     .attr("height", 0)
+    bars
+      .transition()
+      .duration(100)
+        .attr("y", yScale(0))
+        .attr("height", 0)
 
     //// Shuffle the data
     d3.shuffle(dataset)
@@ -106,14 +106,14 @@ function renderChart(dataset){
     bars.data(dataset)
 
     //// Call the xAxis function to update with the newly shuffled data
-    // g_xaxis.call(xAxis)
+    g_xaxis.call(xAxis)
 
     //// Make an animation to hide and show the shuffled tick marks
-    // g_xaxis.selectAll('text')
-    //   .style('fill', '#fff')
-    //   .transition()
-    //   .duration(1000)
-    //     .style('fill', '#aaa')
+    g_xaxis.selectAll('text')
+      .style('fill', '#fff')
+      .transition()
+      .duration(1000)
+        .style('fill', '#aaa')
 
     //// Animate the bars with their new height value
     bars
