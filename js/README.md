@@ -65,3 +65,12 @@ D3.js is a JavaScript library for manipulating documents based on data. D3 helps
 
 [Github Pages](https://pages.github.com/) is static page hosting that comes free with your github account. You can edit and push just like any other repo we work in, but this will put your work on the web.
 
+## CSS FUN!
+[Using_CSS_transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+[Using_CSS_animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+
+
+## Colorbrewer
+Color advice (for cartography)<br>
+You can use Colorbrewer to get some nice scales.
+http://colorbrewer2.org/

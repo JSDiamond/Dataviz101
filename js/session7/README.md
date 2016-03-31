@@ -42,6 +42,7 @@ Examples:
 * [Arc Tween](http://bl.ocks.org/mbostock/5100636)
 * [Path Tween](https://bl.ocks.org/mbostock/3916621)
 * [Transform Interpolation](http://bl.ocks.org/mbostock/3173784)
+* [Point-Along-Path Interpolation](http://bl.ocks.org/mbostock/1705868)
 	
 ### HTML &#60;select&#62; dropdowns
 

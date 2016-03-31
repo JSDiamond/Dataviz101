@@ -95,20 +95,21 @@ function createSelection(dataset){
 
 
 function updateHighlight(){
+
   var select = d3.select(this) 
     , selectedIndex = select.property('selectedIndex')
     , data = select.selectAll('option')[0][selectedIndex].__data__
   
-  console.log(data)
+  console.log(select.selectAll('option')[0][selectedIndex].__data__)
 
   highlight.datum(data.emissions)
     .transition()
-    .duration(400)
+    .duration(1000)
     .attr('d', line)
 
   highlightext
     .transition()
-    .duration(400)
+    .duration(1000)
     .attr('x', function(){
       var last_object_in_emissions = data.emissions[data.emissions.length-1] 
       return xScale(last_object_in_emissions.year)

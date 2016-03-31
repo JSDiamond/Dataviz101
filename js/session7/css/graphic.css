@@ -132,18 +132,38 @@ svg.block{
 
 
 
+@keyframes anyname {
+  0%{
+  	stroke-width: 1px;
+  }
+  30%{
+  	stroke-width: 50px;
+  }
+  60%{
+  	stroke-width: 2px;
+  }
+  100%{
+  	stroke-width: 20px;
+  }
+}
+
 
 
 
 .bar {
   fill: cadetblue;
-  transition: all 0.2s ease-out;
-  transform: translate(0px, 0px);
+  /*transition: all 0.2s ease-out;*/
+  /*transition: fill 0.2s, transform 2s;*/
+  /*transform: translate(0px, 0px);*/
+  stroke: #111;
 }
 
 .bar:hover {
   fill: lightskyblue;
-  /*transform: translate(0px, -40px);*/
+  /*transform: translate(0px, -400px);*/
+  animation-duration: 3s;
+  animation-name: anyname;
+  animation-iteration-count: infinite;
 }
 
 .axis {

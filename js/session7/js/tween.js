@@ -9,25 +9,25 @@ function tween1(){
     .append("g")
       .attr("transform", "translate(60,60)");
 
-  svg.append("circle")
+  svg.append("circle").datum([1,2,3])
       .attr("r", 10)
       .attr("cx", 2)
       .transition()
       .duration(2000)
+      // .attr("cx", 480)
       .attrTween("cx", function(d, i, a){
         //// Where d = data, i = index, a = current attr value when tween starts
         console.log(d,i,a)
         
-        // return d3.interpolateString(a,480)
-        
+        // return d3.interpolateString(a, 480)
         return function(t){
-          // console.log(t)
+          console.log(t*480)
           return t*480//(width-120)//t*Math.random()*100
         }
 
       })
 
-  svg.append("text")
+  svg.append("text").datum([1,2,3])
       .attr({
         "dy": -40
       })
@@ -37,8 +37,8 @@ function tween1(){
       .tween("text", function(d,i){
         console.log(d,i,this.textContent)
           return function(t) {
-              this.textContent =  Math.round(t*480)
-          };
+              this.textContent = Math.round(t*480)
+          }
       });
 
 }
