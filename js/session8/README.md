@@ -58,3 +58,28 @@ D3 includes [several common projections]((https://github.com/mbostock/d3/wiki/Ge
 Numerous (less-commonly used) projections are available in the [extended geographic projections plugin](https://github.com/d3/d3-geo-projection/) and the [polyhedral projection plugin](https://github.com/d3/d3-plugins/tree/master/geo/polyhedron).
 
 ![projections](assets/projections.png "projections")
+
+
+
+### Making a map
+[Simple Mercator Projection](http://bl.ocks.org/mbostock/2869760)
+
+	var projection = d3.geo.mercator();
+
+	var path = d3.geo.path()
+	    .projection(projection);
+	
+	var svg = d3.select("svg");
+	
+	d3.json("countries.json", function(error, collection) {
+	  if (error) throw error;
+	
+	  svg.selectAll("path")
+	      .data(collection.features)
+	    .enter().append("path")
+	      .attr("d", path);
+	});
+	
+### Colors
+[http://colorbrewer2.org/](http://colorbrewer2.org/)
+

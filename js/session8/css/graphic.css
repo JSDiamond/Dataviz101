@@ -25,199 +25,24 @@ ul{
 	padding: 0;
 }
 
-
-div.button{
-	padding: 6px 14px;
-	background-color: #ddd;
-	font-size: 20px;
-	color: #333;
-	display: inline-block;
-	cursor: pointer;
-}
-
-div.button:hover{
-	background-color: coral;
-}
-
-div.button:hover span{
-	color: #fff;
-}
-
-div.button span:hover{
-	color: yellow;
-}
-
-div.button:active {
-	background-color: #999;
-}
-
-
-svg{
-	/*border: 2px solid #333;*/
-	margin: 30px auto;
-}
-svg.block{
-	display: block;
-}
-
-.svgbox{
-	position: relative;
-	min-height: 400px;
-}
-
-#circle svg{
-	border: 5px solid #333;
-}
-
-.circle{
-
-}
-
-
-
-.domain{
-	display: none;
-}
-.x.axis .domain{
-	display: block;
-	stroke: #bbb;
-}
-
-.axis text{
-	font-size: 12px;
-	fill: #aaa;
-}
-
-.axis .tick line{
-	stroke: #bbb;
-	stroke-width: 1px;
-}
-.y.axis .tick line{
-	stroke: #bbb;
-}
-
-.circlegroup{
-	font-size: 28px;
-	font-weight: bolder;
-}
-
-.circlegroup:hover circle{
-	stroke-width: 3px;
-	stroke: #222;
-}
-
-.circlegroup text{
-	cursor: default;
-	display: none
-}
-.circlegroup.active text{
-	display: block;
-}
-
-.circlegroup.catA{
-	fill: coral;
-}
-.circlegroup.catB{
-	fill: lightpink;
-}
-.circlegroup.catC{
-	fill: cyan;
-}
-.circlegroup.catD{
-	fill: teal;
-}
-.circlegroup.catE{
-	fill: orange;
-}
-
-
-
-@keyframes anyname {
-  0%{
-  	stroke-width: 1px;
-  }
-  30%{
-  	stroke-width: 50px;
-  }
-  60%{
-  	stroke-width: 2px;
-  }
-  100%{
-  	stroke-width: 20px;
-  }
-}
-
-
-
-
-.bar {
-  fill: cadetblue;
-  transition: all 0.2s ease-out;
-  /*transition: fill 0.2s, transform 2s;*/
-  /*transform: translate(0px, 0px);*/
-  /*stroke: #111;*/
-}
-
-.bar:hover {
-  fill: lightskyblue;
-  /*transform: translate(0px, -400px);*/
-  /*animation-duration: 3s;
-  animation-name: anyname;
-  animation-iteration-count: infinite;*/
-}
-
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
+.counties {
   fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
 }
-
-.x.axis path {
-  display: none;
+.state-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-linecap: round;
 }
-
-.barlabel{
-	fill: #ddd;
-	font-size: 14px;
-	text-anchor: middle;
-}
-
-
-
-#lines .x.axis .domain{
-	display: none;
-}
-
-.countrylabel{
-	fill: #333;
-	font-size: 11px;
-	font-family: Helvetica;
-}
-
-
-.countrygroup .countrylabel{
-	display: none;
-}
-.countrygroup.active .countrylabel{
-	display: block;
-}
-.countrygroup.active path{
-	stroke: #111;
-	opacity: 1;
-}
-.countrygroup path{
-    fill: none;
-}
-
-#lines .axis line{
-	stroke: #ddd;
-	stroke-dasharray: 4,4;
-}
+.q0-9 { fill:rgb(247,251,255); }
+.q1-9 { fill:rgb(222,235,247); }
+.q2-9 { fill:rgb(198,219,239); }
+.q3-9 { fill:rgb(158,202,225); }
+.q4-9 { fill:rgb(107,174,214); }
+.q5-9 { fill:rgb(66,146,198); }
+.q6-9 { fill:rgb(33,113,181); }
+.q7-9 { fill:rgb(8,81,156); }
+.q8-9 { fill:rgb(8,48,107); }
 
 
 
