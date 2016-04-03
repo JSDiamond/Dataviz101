@@ -45,5 +45,14 @@ ul{
 .q8-9 { fill:rgb(8,48,107); }
 
 
+.stroke {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+}
+.graticule {
+  stroke: rgba(150,150,150,0.4);
+  fill: none;
+}
 
 
