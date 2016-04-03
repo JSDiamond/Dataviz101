@@ -37,7 +37,7 @@
         .attr("class", function(d){ return quantize(d.properties.rate); })
         .attr("d", path)
 
-    svg.append("path")
+    var borders = svg.append("path")
         .datum(topojson.mesh(us, us.objects.counties, function(a, b){ return a.id / 1000 ^ b.id / 1000 }))
         .attr("class", "state-borders")
         .attr("d", path);
@@ -54,7 +54,7 @@
       .attr("width", width)
       .attr("height", height);
       
-    svg.append("g")
+    var countypaths = svg.append("g")
         .attr("class", "counties")
       .selectAll("path")
         .data(counties)
@@ -62,10 +62,28 @@
         .style("fill", function(d) { return color(d.properties.rate); })
         .attr("d", path)
 
-    svg.append("path")
+    var borders = svg.append("path")
         .datum(topojson.mesh(us, us.objects.counties, function(a, b){ return a.id / 1000 ^ b.id / 1000 }))
         .attr("class", "state-borders")
         .attr("d", path);
+
+    //// Remove county fill color and add bubbles
+    // countypaths
+    //   .each(function(d){
+    //     // console.log(d)
+    //     var centroid = path.centroid(d)
+    //     svg.append('circle')
+    //       .attr({
+    //         r:  Math.sqrt( d.properties.rate )*10
+    //         , cx: centroid[0]
+    //         , cy: centroid[1]
+    //         , fill: color(d.properties.rate)
+    //         , 'fill-opacity': 0.8
+    //       })
+    //   })
+    //   .style("fill", '#fff')
+    // borders.remove()
+
   })
 
 })()

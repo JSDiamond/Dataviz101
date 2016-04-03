@@ -19,7 +19,7 @@ To use TopoJSON with d3, you need the [extension file](https://cdnjs.cloudflare.
 
 Using commandline tools, you can take conventional [shapefiles](https://en.wikipedia.org/wiki/Shapefile) and convert them into GeoJSON and then into TopoJSON. A good sorce for shapefiles is [Natural Earth](http://www.naturalearthdata.com/downloads/), which even let's you choose the level of resolution, so you can reduce file-size.
 
-A very good walk through on how to go from shapefiles to a map, is Mike Bostock's [Let's Make a Map](https://bost.ocks.org/mike/map/).
+A very good walk through on how to go from shapefiles to a map, is Mike Bostock's [Let's Make a Map](https://bost.ocks.org/mike/map/) or [Let's Make a Bubble Map](https://bost.ocks.org/mike/bubble-map/).
 
 Othrwise, you can find existing examples and use the associted json files. [Bostock's bl.ocks](http://bl.ocks.org/mbostock) has a wide array of map examples. Here's some links to the TopoJSON files he uses:
 
@@ -81,5 +81,28 @@ Numerous (less-commonly used) projections are available in the [extended geograp
 	});
 	
 ### Colors
+[D3 Colors](https://github.com/mbostock/d3/wiki/Colors) and [color interpolation](https://github.com/mbostock/d3/wiki/Transitions#d3_interpolateRgb)
+
 [http://colorbrewer2.org/](http://colorbrewer2.org/)
+
+### Examples
+* [Mercator Projection](http://bl.ocks.org/mbostock/2869760)
+* [Choropleth 1](http://bl.ocks.org/mbostock/5925375)
+* [Choropleth 2](http://bl.ocks.org/mbostock/6320825)
+* [Choropleth 3](http://bl.ocks.org/mbostock/3306362)
+* [Zoom to Bounding Box](http://bl.ocks.org/mbostock/4699541)
+* [Merging Features](http://bl.ocks.org/mbostock/5416440)
+* [Interactive Orthographic](http://bl.ocks.org/mbostock/3795040)
+* [Leaflet with a D3 overlay](https://bost.ocks.org/mike/leaflet/)
+
+
+### U.S. Census county level data
+[USA Counties Data File Downloads](https://www.census.gov/support/USACdataDownloads.html)
+
+Use the Mastdata.xls file to reference the column names in any data file (included in the repo as `/js/session8/data/Mastdata.xls`). The `STCOU` column in each data file is the FIPS code to use when binding the data to the TopoJSON features.
+
+
+
+
+
 
