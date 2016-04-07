@@ -1,0 +1,158 @@
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
+body {
+	font-family: 'Droid Serif', serif;
+}
+
+h1 {
+text-align: center;
+}
+
+h3 {margin-top: 40px;}
+
+#container {
+	width: 700px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.dividedbar{
+	overflow: hidden;
+		font-family: "Helvetica";
+		width: 100%;
+		margin: 40px auto;
+}
+
+.dividedbar li{
+	float: left;
+	height: 80px;
+	line-height: 80px;
+	font-size: 13px;
+	color: white;
+	text-align: center;
+}
+
+.tooltip{
+	position: absolute;
+	padding: 3px 8px;
+	border: 1px solid #bbb;
+	background-color: rgba(0,134,139,0.8);
+	font-size: 18px;
+	color: rgb(255,255,255);
+	pointer-events: none;
+	display: none;
+	top: 0px;
+	left: 0px;
+}
+
+.tooltip.show{
+	display: block;
+}
+
+#boxes {
+	font-size: 12px;
+}
+
+#agree-disagree {
+	list-style: none;
+}
+
+#agree-disagree li {
+	display: inline-block;
+	width: 220px;
+	height: 80px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: rgba(205, 155, 29, 0.5);
+}
+
+#agree-disagree li:last-child {
+	margin-right: 0;
+}
+
+#agree-disagree li p {
+	padding: 5px 4px;
+}
+
+#agree-bar {
+	width: 50%;
+	min-height: 300px;
+}
+
+.bar {
+	z-index: 10;
+}
+.bar text {
+  font: 14px;
+}
+
+.axis text {
+	font-size: 12px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar--positive {
+  fill: rgb(60,179,113);
+}
+
+.bar--negative {
+  fill: rgb(220,20,60);
+ }
+
+ #sources {
+	font-size: 12px;
+}
+
+ #noteonincome {
+	font-size: 12px;
+}
+
+#chart {
+  height: 500px;
+  width: 1000px;
+  margin-left: -150px;
+}
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+.link:hover {
+  stroke-opacity: .5;
+}
+#chart2 {
+    margin-left: -30px;
+}
+
+#agree-bar {
+	background: white;
+	width: 100%;
+	height: auto;
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>D3 Test</title>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <script src="sankey.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Sleeping alone is not for the single only</h1>
+
+        <p><i>March 28, 2016</i></p>
+
+        <p>A recent online survey of 1093 adults in a committed relationship across all census regions in the US revealed that sleeping alone is frequently present in domestic relationships and marriages.</p>
+
+        <div id="chart"></div>
+
+        <p>The study, conducted in July 2014, showed that nearly one in six couples (14%) sleeps in separate beds every night. Another 4% reported sleeping alone several times a week. Summed together, this means that for 18% of marriages and committed relationships, sleeping alone is a normal habit.</p>
+
+        <p>At the other end are 54% of respondents, who reported that they never slept alone. This was observed proportionally across all age groups.</p>
+
+        <h3>Why are you sleeping alone?</h3>
+
+        <p>Reasons for sleeping alone are varied and contextual:</p>
+
+        <ul id="reason-bar" class="dividedbar"></ul>
+
+        <p>The most common reason for sleeping alone was the old elephant in the room called snoring as 30% of respondents cited it as the reason for keeping them apart at night. Sickness or child care accounted for one-fourth (25%) of the cases, while night shifts and different sleeping patterns were another 11%. Different room temperature preferences were a show-stopper for 7% of couples. A halt in physical intimacy was a reason only in 4% of cases (a sigh of relief!)</p>
+
+        <h3>But what if you had a fight?</h3>
+
+        <p>10% of respondents indicated that sleeping alone resulted from a fight, which means that one can mostly still fight with one's significant other and make it to the same bed. However, for those who got evicted from the bed, nearly half (47%) had to sleep on a chair or a couch. The comforting thought is that the frequency of this is low as 43% of the time this occurs once a year and 34% once a month (which, arguably, can be acceptable!). So if you find yourself on the couch more than once a month, you should probably take a second look at your relationship.</p>
+
+        <h3>Where do you sleep then?</h3>
+
+        <p>39% of respondents have a separate bedroom, but 31% still land on the chair or the couch (mostly when sleeping alone is not a normal arrangement in the relationship). 22% sleep anywhere they can find and 1% sleep in the kid's room. Only 1% of respondents reported sleeping on the floor (and most of them every night!), which eeek, can indeed happen!</p>
+
+        <h3>What effects does sleeping alone have on the relationship?</h3>
+
+        <div id=boxes>
+            <p><i>Click on the boxes below to see results:</i></p>
+        </div>
+
+        <div id="clickBoxes"></div>
+
+        <div id="agree-bar"></div>
+
+        <p>Almost half of people sleeping alone (46%) believe that they sleep better when they sleep separately. However, they are also aware that sleeping alone does not help them stay together: 44% are neutral on positive effects towards the relationship and 37% diasgree that there are any positives.</p>
+
+        <p>Sex life also possibly suffers from sleeping alone. An overwhelming majority of people, 95%, either disagree or are neutral that there is any improvement in their sex lives as a result of sleeping alone. The other 5% are probably the type who crave sleep more than sex.</p>
+
+        <p>As a whole, it can be inferred that people sleep alone only if they really have to.</p>
+
+        <h3>What are the chances of sleeping alone at different household income levels?</h3>
+
+        <p>We also decided to check if the rich (do cry sometimes and maybe) sleep alone. We found out that the rich as as likely to sleep alone as anybody else. </p>
+
+        <div id="chart2"></div>
+
+        <div id=noteonincome>
+            <p><i>Note: Figures only show respondents who provided household income or educational attainment information</i></p>
+        </div>
+
+        <p>To our surprise, data across household income is very consistent. All three segments of households earning $50,000 or more per year have the same percent of couples sleeping alone (13% with margin of difference +/-1%). In households earning between $25,000-$49,000, this percentage is 17% and for households earning less than $25,000 per year, it drops to 9% (may be due to a smaller sample size of 45 respondents or to limited options for sleeping-alone arrangements at such income levels).</p>
+
+        <p>At each income level, 52-58% of couples never sleep alone. Looking at other sleeping-alone frequencies, we found that the ratios are also very similar.</p>
+
+        <p>Thus, sleeping alone does not depend on household income.</p>
+
+        <div id=sources>
+            <p><i>Source: "sleeping-alone-data" from FiveThirtyEight (https://www.fivethirtyeight.com) found here: https://github.com/fivethirtyeight/data</i></p>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
