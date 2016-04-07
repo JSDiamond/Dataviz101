@@ -68,7 +68,7 @@ Numerous (less-commonly used) projections are available in the [extended geograp
 
 	var path = d3.geo.path()
 	    .projection(projection);
-	
+	 q
 	var svg = d3.select("svg");
 	
 	d3.json("countries.json", function(error, collection) {

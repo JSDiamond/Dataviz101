@@ -1,12 +1,15 @@
-(function map2(){
+(function map1(){
 
 	var width = 900
 		, height = 600
 
 	var projection = d3.geo.mercator()
-		// .scale(100)
-		// .rotate([100, 10])
+		.scale(100)
+		// .center([-73.9884189, 40.7313029])
+		// .rotate([-100, 0])
 		// .translate([width / 2, height / 2])
+
+	console.log( projection.scale() )
 
 	var path = d3.geo.path()
 	    .projection(projection)
@@ -20,6 +23,8 @@
 
 	d3.json("data/countries.json", function(error, collection) {
 	  if (error) throw error;
+
+	  console.log(collection)
 
 	  var land = svg.selectAll("path")
 	      .data(collection.features)

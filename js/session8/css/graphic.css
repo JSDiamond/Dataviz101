@@ -28,12 +28,16 @@ ul{
 .counties {
   fill: none;
 }
+.counties path:hover{
+	stroke: #111;
+}
 .state-borders {
   fill: none;
   stroke: #fff;
   stroke-linejoin: round;
   stroke-linecap: round;
 }
+
 .q0-9 { fill:rgb(247,251,255); }
 .q1-9 { fill:rgb(222,235,247); }
 .q2-9 { fill:rgb(198,219,239); }
@@ -51,8 +55,24 @@ ul{
   stroke-width: 3px;
 }
 .graticule {
-  stroke: rgba(150,150,150,0.4);
+  stroke: rgba(150,150,150,1);
   fill: none;
 }
 
+
+.tooltip{
+	position: absolute;
+	padding: 3px 8px;
+	border: 1px solid #bbb;
+	background-color: rgba(255,255,255,0.8);
+	font-size: 12px;
+	color: #333;
+	pointer-events: none;
+	display: none;
+	top: 0px;
+	left: 0px;
+}
+.tooltip.show{
+	display: block;
+}
 
