@@ -223,16 +223,19 @@ if(firstcall){
         .attr("transform", "translate(" + x(0) + ",0)")
         .call(yAxis)
 
+    tickNegative.selectAll("text")
+         .attr("x", 19)
+
     var tickfiltered = tickNegative.selectAll(".tick")
          .filter(function(d, i) {
              return data[i].value < 0;
          });
 
-    // tickfiltered.selectAll("line")
-         // .attr("x2", 6);
+    tickfiltered.selectAll("line")
+         .attr("x2", 6);
 
      tickfiltered.selectAll("text")
-         // .attr("x", 9)
+         .attr("x", 9)
          .style("text-anchor", "start");
 }
      

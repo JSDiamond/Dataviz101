@@ -35,7 +35,7 @@
       
       ////make a lookup table
       rent.forEach(function(d){
-        lookup[d.FIPS] = d
+        lookup[+d.FIPS] = d
       })
       console.log(lookup['00000'])
 
@@ -44,14 +44,15 @@
       counties.forEach(function(d){
         // console.log(d.id)
         // console.log(lookup[d.id])
-        d.properties.rent = d.id in lookup ? +lookup[d.id].Rent90 : 0
-        if(lookup[d.id] != undefined) allRentVals.push(d.properties.rent)
-        // console.log(d.properties)
+        d.properties.rent = +d.id in lookup ? +lookup[+d.id].Rent90 : 'n/a'
+        if(lookup[+d.id] != undefined) allRentVals.push(d.properties.rent)
+        if(!(+d.id in lookup)) console.log(+d.id)
       })
       ////setting quantize domain
-      quantize.domain( [d3.quantile(allRentVals, .1), d3.quantile(allRentVals, .9)] )
+      quantize.domain( [d3.quantile(allRentVals, .01), d3.quantile(allRentVals, .99)] )
 
       renderMap()
+      debugger
 
     })
 
