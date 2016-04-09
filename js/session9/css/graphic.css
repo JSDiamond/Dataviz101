@@ -44,7 +44,7 @@ ul{
   display: none;
 }
 
-.color_.98abc5 rect{
+.color_98abc5 rect{
 	fill: #98abc5;
 }
 .color_8a89a6 rect{
@@ -63,5 +63,28 @@ ul{
 	fill: #d0743c;
 }
 .color_ff8c00 rect{
+	fill: #ff8c00;
+}
+
+
+.color_98abc5 path{
+	fill: #98abc5;
+}
+.color_8a89a6 path{
+	fill: #8a89a6;
+}
+.color_7b6888 path{
+	fill: #7b6888;
+}
+.color_6b486b path{
+	fill: #6b486b;
+}
+.color_a05d56 path{
+	fill: #a05d56;
+}
+.color_d0743c path{
+	fill: #d0743c;
+}
+.color_ff8c00 path{
 	fill: #ff8c00;
 }

@@ -16,14 +16,20 @@
 
   var xAxis = d3.svg.axis()
   .scale(x)
-  .orient("bottom");
+  .orient("bottom")
 
   var yAxis = d3.svg.axis()
   .scale(y)
   .orient("left")
-  .tickFormat(d3.format(".2s"));
+  .tickFormat(d3.format(".2s"))
 
-  var svg = d3.select("#stack1").append("svg")
+  var area = d3.svg.area()
+    .interpolate('monotone')
+    .x(function(d) { return x(d.x); })
+    .y0(function(d) { return y(d.y0); })
+    .y1(function(d) { return y(d.y0 + d.y); });
+
+  var svg = d3.select("#stack2").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -36,6 +42,14 @@
     var ages = d3.keys(data[0]).filter(function(key) { return key !== "State" })
     color.domain(ages)
 
+    data.forEach(function(d) {
+      var t = 0
+      ages.forEach(function(age){
+        t += +d[age]
+      })
+      d.total = t
+    })
+    data.sort(function(a,b){ return b.total - a.total})
     
     var age_arrays = ages.map(function(age) {
       var all_states = data.map(function(state){ return {'x':state.State, 'y':+state[age]} })
@@ -43,10 +57,9 @@
     })
 
     var stack = d3.layout.stack()
-              // .offset("zero")
-              .values(function(d){ return d.values })
-              .x(function(d){ return d.x })
-              .y(function(d){ return d.y })
+      .values(function(d){ return d.values })
+      .x(function(d){ return d.x })
+      .y(function(d){ return d.y })
 
     var layers = stack(age_arrays)
 
@@ -80,17 +93,17 @@
       .text("Population")
 
     ////Make group element for each state
-    var state = svg.selectAll(".state").data(layers)
+    var states = svg.selectAll(".state").data(layers)
       .enter().append("g")
-        .attr("class", function(d){console.log(color(d.group).replace(/[#]/g,'')); return "gage color_"+color(d.group).replace(/[#]/g,'') })
+        .attr("class", function(d){
+          // console.log(color(d.group).replace(/[#]/g,'')); 
+          return "gage color_"+color(d.group).replace(/[#]/g,'') 
+        })
         .attr("transform", function(d) { return "translate(" + 0 + ",0)" })
 
-    state.selectAll("rect").data(function(d) { return d.values })
-      .enter().append("rect")
-        .attr("width", x.rangeBand())
-        .attr("x", function(d) { return x(d.x) })
-        .attr("y", function(d) { return y(d.y) })
-        .attr("height", function(d) { return  y(d.y0) - y(d.y) }) //y(d.y) - y(d.y0)
+    states.append("path")
+      .attr("class", "area")
+      .attr("d", function(d){ return area(d.values); })
 
     
     ////Make an legend
