@@ -74,7 +74,7 @@ ul{
 .tooltip:after,.tooltip:before{top:100%;
 	left:50%;
 	border:solid transparent;
-	content:" ";
+	content:"";
 	height:0;
 	width:0;
 	position:absolute;
@@ -92,6 +92,15 @@ div.tooltip:before{border-color:rgba(102,102,102,0);
 	margin-left:-8px
 }
 
+.guideline{
+	stroke: #fff;
+	stroke-width: 1px;
+	stroke-dasharray: 3,3;
+	display: none;
+}
+.guideline.show{
+	display: block;
+}
 
 .color_98abc5 path, .color_98abc5{
 	color: #98abc5;

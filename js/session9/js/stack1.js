@@ -2,7 +2,7 @@
 
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
   width = 860 - margin.left - margin.right,
-  height = 500 - margin.top - margin.bottom
+  height = 400 - margin.top - margin.bottom
 
   var x = d3.scale.ordinal()
   .rangeRoundBands([0, width], .1)
@@ -45,7 +45,7 @@
       d.ages = ages.map(function(age){
         // console.log('y0', y0) 
         ////... assign y0 and then add the data value to it to make y1
-        return { 'name':age, 'y0':y0, 'y1':(y0 += +d[age]) } 
+        return { 'name':age, 'y0':y0, 'y1':(y0 += +d[age]), 'val':+d[age] } 
       })
       ///save the final y1 into the data as d.total
       d.total = d.ages[d.ages.length - 1].y1
@@ -109,7 +109,13 @@
       .text(function(d) { return d })
 
 
-    var chartspace = svg.append('rect').datum(data)
+
+
+    //////////////////////////////////////////////////////////
+    //// Adding a tooltip to map1
+    //////////////////////////////////////////////////////////
+    var chartspace = svg.append('rect')
+      .datum(data)////bind the data so you dont have to rely on a global variable
       .attr({
         'x': 0
         , 'y': 0
@@ -117,11 +123,6 @@
         , 'height': height
         , 'class': 'chartspace'
       })
-
-
-    /////////////////////////////
-    //// Adding a tooltip to map1
-    /////////////////////////////
     var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
     var comma = d3.format('0,000')
 
@@ -154,16 +155,17 @@
       
       ////Put the state initial and all age group data in the tooltip HTML
       tooltip.html('').html('<h4>'+data.State+'</h4>')
-      d[dataindex].ages.forEach(function(group){
+      var reversed = d[dataindex].ages.slice().reverse()
+      reversed.forEach(function(group){
         tooltip.append('p').html(
-          '<span class="color_'+color(group.name).replace(/[#]/g,'')+'">'+group.name+'</span>: '+comma(group.y1)
+          '<span class="color_'+color(group.name).replace(/[#]/g,'')+'">'+group.name+'</span>: '+comma(group.val)
           )
       })
 
       ////Calculate positioning and move tooltip
       var ttBCR = tooltip.node().getBoundingClientRect()
       var topPosition = rectBRC.top + lastheight - ttBCR.height + pageYOffset - 7
-      var leftPosition = ( x(data.State) + rectBRC.left + x.rangeBand()*0.5 - ttBCR.width*0.5 )
+      var leftPosition = ( x(data.State) + rectBRC.left + x.rangeBand()*0.5 - ttBCR.width*0.5 ) + pageXOffset
       
       tooltip
         .style({
@@ -174,7 +176,7 @@
     function hideToolTip(d,i){
       tooltip.classed('show', false)
     }
-    /////////////////////////////
+    //////////////////////////////////////////////////////////
 
 
   })
