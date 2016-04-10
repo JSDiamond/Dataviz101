@@ -29,7 +29,7 @@
       .attr("width", width)
       .attr("height", height);
 
-    svg.append("g")
+    var countypaths1 = svg.append("g")
         .attr("class", "counties")
       .selectAll("path")
         .data(counties)
@@ -41,6 +41,35 @@
         .datum(topojson.mesh(us, us.objects.counties, function(a, b){ return a.id / 1000 ^ b.id / 1000 }))
         .attr("class", "state-borders")
         .attr("d", path);
+
+
+    /////////////////////////////
+    //// Adding a tooltip to map1
+    /////////////////////////////
+    var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
+
+    countypaths1.on('mouseenter', showToolTip)
+      .on('mouseleave', hideToolTip)
+    var decimal = d3.format(".1f")
+    function showToolTip(d,i){
+      tooltip.classed('show', true)
+      tooltip.html('ID: '+d.id+' <br> Unemplyment rate: '+ d.properties.rate+'%' )
+      var thisBRC = this.getBoundingClientRect()
+
+      var ttBCR = tooltip.node().getBoundingClientRect()
+      var topPosition = ( thisBRC.top - ttBCR.height + pageYOffset )
+      var leftPosition = ( thisBRC.left - ttBCR.width*0.5 + thisBRC.width*0.5 )
+      
+      tooltip
+        .style({
+          top: topPosition+'px', 
+          left: leftPosition+'px'
+        })
+    }
+    function hideToolTip(d,i){
+      tooltip.classed('show', false)
+    }
+    /////////////////////////////
 
 
     ////Alt color scheme setup

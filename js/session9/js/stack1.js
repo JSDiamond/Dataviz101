@@ -108,6 +108,75 @@
       .style("text-anchor", "end")
       .text(function(d) { return d })
 
+
+    var chartspace = svg.append('rect').datum(data)
+      .attr({
+        'x': 0
+        , 'y': 0
+        , 'width': width
+        , 'height': height
+        , 'class': 'chartspace'
+      })
+
+
+    /////////////////////////////
+    //// Adding a tooltip to map1
+    /////////////////////////////
+    var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
+    var comma = d3.format('0,000')
+
+    chartspace.on('mouseenter', showToolTip)
+              .on('mousemove', moveTooltip)
+              .on('mouseleave', hideToolTip)
+
+    var decimal = d3.format(".1f")
+    function showToolTip(d,i){
+      tooltip.classed('show', true)
+    }
+    function moveTooltip(d,i){
+      ////Get the position of the rect.chartspace
+      var rectBRC = this.getBoundingClientRect()
+      ////Get the mouse X position minus the left offset of rect.chartspace
+      var mouseX = d3.event.clientX - rectBRC.left - x.rangeBand() 
+      ////Get the ordinal scale range array of left edged
+      var leftEdges = x.range()
+      ////Look for the index of the closest value in in leftEdges to mouseX
+      var dataindex = d3.bisectLeft(leftEdges, mouseX)
+      ////Make sure we don't get a dataindex greater than the data array length
+      dataindex = d3.min([d.length-1, dataindex])
+      
+      // console.log( mouseX,  d[dataindex] )
+
+      ////Get the data and then the height of the last bar in the stack 
+      var data = d[dataindex]
+      var lastage = d[dataindex].ages[d[dataindex].ages.length-1]
+      var lastheight = y(lastage.y1)
+      
+      ////Put the state initial and all age group data in the tooltip HTML
+      tooltip.html('').html('<h4>'+data.State+'</h4>')
+      d[dataindex].ages.forEach(function(group){
+        tooltip.append('p').html(
+          '<span class="color_'+color(group.name).replace(/[#]/g,'')+'">'+group.name+'</span>: '+comma(group.y1)
+          )
+      })
+
+      ////Calculate positioning and move tooltip
+      var ttBCR = tooltip.node().getBoundingClientRect()
+      var topPosition = rectBRC.top + lastheight - ttBCR.height + pageYOffset - 7
+      var leftPosition = ( x(data.State) + rectBRC.left + x.rangeBand()*0.5 - ttBCR.width*0.5 )
+      
+      tooltip
+        .style({
+          top: topPosition+'px', 
+          left: leftPosition+'px'
+        })
+    }
+    function hideToolTip(d,i){
+      tooltip.classed('show', false)
+    }
+    /////////////////////////////
+
+
   })
 
 })()
