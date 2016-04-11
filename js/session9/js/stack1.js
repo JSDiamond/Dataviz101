@@ -112,7 +112,7 @@
 
 
     //////////////////////////////////////////////////////////
-    //// Adding a tooltip to map1
+    //// Adding a tooltip to mapped to mouse X
     //////////////////////////////////////////////////////////
     var chartspace = svg.append('rect')
       .datum(data)////bind the data so you dont have to rely on a global variable
