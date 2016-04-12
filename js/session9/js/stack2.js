@@ -25,9 +25,9 @@
 
   var area = d3.svg.area()
     .interpolate('monotone')
-    .x(function(d) { return x(d.x)+x.rangeBand()*0.5 })
-    .y0(function(d) { return y(d.y0) })
-    .y1(function(d) { return y(d.y0 + d.y) });
+    .x(function(d){ return x(d.x)+x.rangeBand()*0.5 })
+    .y0(function(d){ return y(d.y0) })
+    .y1(function(d){ return y(d.y0 + d.y) });
 
   var svg = d3.select("#stack2").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -53,7 +53,9 @@
     data.sort(function(a,b){ return b.total - a.total})
     
     var age_arrays = ages.map(function(age) {
+      
       var all_states = data.map(function(state){ return {'x':state.State, 'y':+state[age]} })
+      
       return {'group':age, 'values':all_states}
     })
 
@@ -90,8 +92,8 @@
       .style("text-anchor", "end")
       .text("Population")
 
-    ////Make group element for each state
-    var states = svg.selectAll(".state").data(layers)
+    ////Make group element for each age group
+    var agegroups = svg.selectAll(".state").data(layers)
       .enter().append("g")
         .attr("class", function(d){
           // console.log(color(d.group).replace(/[#]/g,'')); 
@@ -99,7 +101,7 @@
         })
         .attr("transform", function(d) { return "translate(" + 0 + ",0)" })
 
-    states.append("path")
+    agegroups.append("path")
       .attr("class", "area")
       .attr("d", function(d){ return area(d.values); })
 

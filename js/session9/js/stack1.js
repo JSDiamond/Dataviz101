@@ -18,10 +18,11 @@
   .scale(x)
   .orient("bottom");
 
+  var format1 = d3.format(".2s")
   var yAxis = d3.svg.axis()
   .scale(y)
   .orient("left")
-  .tickFormat(d3.format(".2s"));
+  .tickFormat(format1)
 
   var svg = d3.select("#stack1").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -33,10 +34,11 @@
     if (error) throw error;
 
     ////Get an array of the keys from the first obect and ommit "State", leaving only age ranges
-    var ages = d3.keys(data[0]).filter(function(key) { return key !== "State" })
+    var ages = d3.keys(data[0])
+                .filter(function(header){ return header !== "State" })
     console.log('ages', ages)
     color.domain(ages)
-
+console.log(data)
     ////Loop through the data...
     data.forEach(function(d) {
       ////...with y0 as the base... 
@@ -81,12 +83,12 @@
         .attr("class", "g")
         .attr("transform", function(d) { return "translate(" + x(d.State) + ",0)" })
 
-    state.selectAll("rect").data(function(d) { return d.ages })
+    state.selectAll("rect").data(function(d){ return d.ages })
       .enter().append("rect")
         .attr("width", x.rangeBand())
-        .attr("y", function(d) { return y(d.y1) })
-        .attr("height", function(d) { return y(d.y0) - y(d.y1) })
-        .style("fill", function(d) { return color(d.name) })
+        .attr("y", function(d){ return y(d.y1) })
+        .attr("height", function(d){ return y(d.y0) - y(d.y1) })
+        .style("fill", function(d){ return color(d.name) })
 
     
     ////Make an legend
@@ -136,9 +138,9 @@
     }
     function moveTooltip(d,i){
       ////Get the position of the rect.chartspace
-      var rectBRC = this.getBoundingClientRect()
+      var rectBCR = this.getBoundingClientRect()
       ////Get the mouse X position minus the left offset of rect.chartspace
-      var mouseX = d3.event.clientX - rectBRC.left - x.rangeBand() 
+      var mouseX = d3.event.clientX - rectBCR.left - x.rangeBand() 
       ////Get the ordinal scale range array of left edged
       var leftEdges = x.range()
       ////Look for the index of the closest value in in leftEdges to mouseX
@@ -150,12 +152,12 @@
 
       ////Get the data and then the height of the last bar in the stack 
       var data = d[dataindex]
-      var lastage = d[dataindex].ages[d[dataindex].ages.length-1]
+      var lastage = data.ages[data.ages.length-1]
       var lastheight = y(lastage.y1)
       
       ////Put the state initial and all age group data in the tooltip HTML
       tooltip.html('').html('<h4>'+data.State+'</h4>')
-      var reversed = d[dataindex].ages.slice().reverse()
+      var reversed = data.ages.slice().reverse()
       reversed.forEach(function(group){
         tooltip.append('p').html(
           '<span class="color_'+color(group.name).replace(/[#]/g,'')+'">'+group.name+'</span>: '+comma(group.val)
@@ -164,8 +166,8 @@
 
       ////Calculate positioning and move tooltip
       var ttBCR = tooltip.node().getBoundingClientRect()
-      var topPosition = rectBRC.top + lastheight - ttBCR.height + pageYOffset - 7
-      var leftPosition = ( x(data.State) + rectBRC.left + x.rangeBand()*0.5 - ttBCR.width*0.5 ) + pageXOffset
+      var topPosition = rectBCR.top + lastheight - ttBCR.height + pageYOffset - 7
+      var leftPosition = ( x(data.State) + rectBCR.left + x.rangeBand()*0.5 - ttBCR.width*0.5 ) + pageXOffset
       
       tooltip
         .style({
@@ -174,7 +176,7 @@
         })
     }
     function hideToolTip(d,i){
-      tooltip.classed('show', false)
+      //tooltip.classed('show', false)
     }
     //////////////////////////////////////////////////////////
 

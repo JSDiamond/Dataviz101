@@ -71,26 +71,30 @@ ul{
 	padding: 1px 0;
 	white-space: nowrap;
 }
-.tooltip:after,.tooltip:before{top:100%;
+.tooltip:after,.tooltip:before{
+	top:100%;
 	left:50%;
-	border:solid transparent;
+	border: solid transparent;
 	content:"";
 	height:0;
 	width:0;
 	position:absolute;
 	pointer-events:none;
-	z-index:100
+	z-index: 2;
 }
-div.tooltip:after{border-color:rgba(0,0,0,0);
+div.tooltip:after{
+	border-color:rgba(0,0,0,0);
 	border-top-color:#fff;
 	border-width:7px;
-	margin-left:-7px
+	margin-left:-7px;
 }
-div.tooltip:before{border-color:rgba(102,102,102,0);
+div.tooltip:before{
+	border-color:rgba(102,102,102,0);
 	border-top-color:#bbb;
 	border-width:8px;
-	margin-left:-8px
+	margin-left:-8px;
 }
+
 
 .guideline{
 	stroke: #fff;
@@ -104,7 +108,6 @@ div.tooltip:before{border-color:rgba(102,102,102,0);
 
 .color_98abc5 path, .color_98abc5{
 	color: #98abc5;
-
 	fill: #98abc5;
 }
 .color_8a89a6 path, .color_8a89a6{
