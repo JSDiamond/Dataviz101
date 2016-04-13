@@ -102,11 +102,16 @@ d3.csv("data/pop-top6.csv", function(error, data) {
               .on('mouseleave', hideToolTip)
 
     var decimal = d3.format(".1f")
+    
     function showToolTip(d,i){
       tooltip.classed('show', true)
     }
+
+
     function moveTooltip(d,i){
 
+      ////Add the class `reced` if the data of a `stategroup` is not the same as `d`
+      ////`d` is the data bound to the element that triggered the event 
       stategroups.classed('reced', function(state_data){return state_data != d })
 
       ////Get the position of the rect.chartspace
@@ -125,7 +130,7 @@ d3.csv("data/pop-top6.csv", function(error, data) {
           )
       })
 
-      // ////Calculate positioning and move tooltip
+      ////Calculate positioning and move tooltip
       var ttBCR = tooltip.node().getBoundingClientRect()
       var topPosition = mouseY - ttBCR.height + pageYOffset - 14
       var leftPosition = ( mouseX - ttBCR.width*0.5 ) + pageXOffset
@@ -136,6 +141,8 @@ d3.csv("data/pop-top6.csv", function(error, data) {
           left: leftPosition+'px'
         })
     }
+
+    
     function hideToolTip(d,i){
       tooltip.classed('show', false)
       stategroups.classed('reced', false)
