@@ -92,7 +92,7 @@ d3.csv("data/pop-top6.csv", function(error, data) {
 
 
     //////////////////////////////////////////////////////////
-    //// Adding a tooltip to mapped to mouse X
+    //// Adding a tooltip to follow the mouse
     //////////////////////////////////////////////////////////
     var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
     var comma = d3.format('0,000')
