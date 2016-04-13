@@ -134,12 +134,3 @@ div.tooltip:before{
 	color: #ff8c00;
 	fill: #ff8c00;
 }
-
-.state{
-	transition: opacity 0.3s;
-}
-
-.reced{
-	opacity: 0.4;
-}
-

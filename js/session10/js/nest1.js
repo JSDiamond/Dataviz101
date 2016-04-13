@@ -176,7 +176,7 @@ console.log(data)
         })
     }
     function hideToolTip(d,i){
-      tooltip.classed('show', false)
+      //tooltip.classed('show', false)
     }
     //////////////////////////////////////////////////////////
 

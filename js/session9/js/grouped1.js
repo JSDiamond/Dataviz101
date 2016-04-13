@@ -56,12 +56,12 @@ d3.csv("data/pop-top6.csv", function(error, data) {
       .style("text-anchor", "end")
       .text("Population")
 
-  var state = svg.selectAll(".state").data(data)
+  var stategroups = svg.selectAll(".state").data(data)
     .enter().append("g")
       .attr("class", "state")
       .attr("transform", function(d) { return "translate(" + x0(d.State) + ",0)" })
 
-  state.selectAll("rect")
+  stategroups.selectAll("rect")
       .data(function(d) { return d.ages })
     .enter().append("rect")
       .attr("width", x1.rangeBand())
@@ -88,6 +88,59 @@ d3.csv("data/pop-top6.csv", function(error, data) {
       .attr("dy", ".35em")
       .style("text-anchor", "end")
       .text(function(d) { return d })
+
+
+
+    //////////////////////////////////////////////////////////
+    //// Adding a tooltip to mapped to mouse X
+    //////////////////////////////////////////////////////////
+    var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
+    var comma = d3.format('0,000')
+
+    stategroups.on('mouseenter', showToolTip)
+              .on('mousemove', moveTooltip)
+              .on('mouseleave', hideToolTip)
+
+    var decimal = d3.format(".1f")
+    function showToolTip(d,i){
+      tooltip.classed('show', true)
+    }
+    function moveTooltip(d,i){
+
+      stategroups.classed('reced', function(state_data){return state_data != d })
+
+      ////Get the position of the rect.chartspace
+      var rectBCR = this.getBoundingClientRect()
+
+      ////Get the mouse X position 
+      var mouseX = d3.event.clientX
+      var mouseY = d3.event.clientY
+      
+      ////Put the state initial and all age group data in the tooltip HTML
+      tooltip.html('').html('<h4>'+d.State+'</h4>')
+      var reversed = d.ages.slice().reverse()
+      reversed.forEach(function(group){
+        tooltip.append('p').html(
+          '<span class="color_'+color(group.name).replace(/[#]/g,'')+'">'+group.name+'</span>: '+comma(group.value)
+          )
+      })
+
+      // ////Calculate positioning and move tooltip
+      var ttBCR = tooltip.node().getBoundingClientRect()
+      var topPosition = mouseY - ttBCR.height + pageYOffset - 14
+      var leftPosition = ( mouseX - ttBCR.width*0.5 ) + pageXOffset
+      
+      tooltip
+        .style({
+          top: topPosition+'px', 
+          left: leftPosition+'px'
+        })
+    }
+    function hideToolTip(d,i){
+      tooltip.classed('show', false)
+      stategroups.classed('reced', false)
+    }
+    //////////////////////////////////////////////////////////
 
 
 })
