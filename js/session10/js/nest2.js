@@ -9,7 +9,7 @@
   var treemap = d3.layout.treemap()
       .size([width, height])
       .sticky(true)
-      .padding(10)
+      .padding(1)
       .value(function(d){ return d.size })
 
   var div = d3.select("#nested2").append("div")

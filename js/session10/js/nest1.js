@@ -4,14 +4,14 @@ var treeData = {
     "value": 10,
     "type": "black",
     "level": "red",
-    "children": [
+    "values": [
       {
         "name": "Level 2: A",
         "parent": "Top Level",
         "value": 15,
         "type": "grey",
         "level": "red",
-        "children": [
+        "values": [
           {
             "name": "Son of A",
             "parent": "Level 2: A",
@@ -41,12 +41,12 @@ var treeData = {
 
 // ************** Generate the tree diagram	 *****************
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
-	width = 960 - margin.right - margin.left,
+	width = 800 - margin.right - margin.left,
 	height = 500 - margin.top - margin.bottom
 	
 var i = 0
 
-var tree = d3.layout.tree()
+var tree = d3.layout.tree().children(function(d){return d['values']})
 	.size([height, width])
 
 var diagonal = d3.svg.diagonal()
@@ -58,18 +58,16 @@ var svg = d3.select("#nested1").append("svg")
   .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
-root = treeData
-
 
 // Compute the new tree layout.
-var nodes = tree.nodes(root).reverse()
+var nodes = tree.nodes(treeData).reverse()
 var links = tree.links(nodes)
 
 // Normalize for fixed-depth.
 nodes.forEach(function(d){ d.y = d.depth * 180 })
 
 console.log('tree diagram nodes', nodes)
-console.log('tree diagram links', links)
+// console.log('tree diagram links', links)
 
 // Declare the nodes…
 var node = svg.selectAll("g.node")
@@ -88,11 +86,11 @@ nodeEnter.append("circle")
 
 nodeEnter.append("text")
   .attr("x", function(d){ 
-	  return d.children || d._children ? 
-	  (d.value + 4) * -1 : d.value + 4 })
+	  return d.values || d._values ? (d.value + 4) * -1 : d.value + 4 
+  })
   .attr("dy", ".35em")
   .attr("text-anchor", function(d){ 
-	  return d.children || d._children ? "end" : "start" })
+	  return d.values || d._values ? "end" : "start" })
   .text(function(d){ return d.name })
   .style("fill-opacity", 1)
 

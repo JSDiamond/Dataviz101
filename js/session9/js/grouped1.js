@@ -31,15 +31,26 @@ var svg = d3.select("#grouped1").append("svg")
 d3.csv("data/pop-top6.csv", function(error, data) {
   if (error) throw error
 
+  console.log(data)
+
   var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "State" })
 
   data.forEach(function(d) {
     d.ages = ageNames.map(function(name) { return {name: name, value: +d[name]} })
   })
 
-  x0.domain(data.map(function(d) { return d.State }))
+  x0.domain(data.map(function(d){ return d.State }))
   x1.domain(ageNames).rangeRoundBands([0, x0.rangeBand()])
-  y.domain([0, d3.max(data, function(d) { return d3.max(d.ages, function(d) { return d.value }) })])
+  y.domain(
+    [
+      0, 
+      d3.max(data, function(d){ 
+        return d3.max(d.ages, function(d){ 
+            return d.value 
+          }) 
+      })
+    ]
+  )
 
   svg.append("g")
       .attr("class", "x axis")
@@ -59,14 +70,14 @@ d3.csv("data/pop-top6.csv", function(error, data) {
   var stategroups = svg.selectAll(".state").data(data)
     .enter().append("g")
       .attr("class", "state")
-      .attr("transform", function(d) { return "translate(" + x0(d.State) + ",0)" })
+      .attr("transform", function(d){ return "translate(" + x0(d.State) + ",0)" })
 
   stategroups.selectAll("rect")
-      .data(function(d) { return d.ages })
+      .data(function(d){ return d.ages })
     .enter().append("rect")
       .attr("width", x1.rangeBand())
-      .attr("x", function(d) { return x1(d.name) })
-      .attr("y", function(d) { return y(d.value) })
+      .attr("x", function(d){ return x1(d.name) })
+      .attr("y", function(d){ return y(d.value) })
       .attr("height", function(d) { return height - y(d.value) })
       .style("fill", function(d) { return color(d.name) })
 
@@ -113,9 +124,6 @@ d3.csv("data/pop-top6.csv", function(error, data) {
       ////Add the class `reced` if the data of a `stategroup` is not the same as `d`
       ////`d` is the data bound to the element that triggered the event 
       stategroups.classed('reced', function(state_data){return state_data != d })
-
-      ////Get the position of the rect.chartspace
-      var rectBCR = this.getBoundingClientRect()
 
       ////Get the mouse X position 
       var mouseX = d3.event.clientX
