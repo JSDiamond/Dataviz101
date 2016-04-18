@@ -9,7 +9,7 @@
   var treemap = d3.layout.treemap()
       .size([width, height])
       .sticky(true)
-      .padding(1)
+      .padding(10)
       .value(function(d){ return d.size })
 
   var div = d3.select("#nested2").append("div")
@@ -25,22 +25,19 @@
     var node = div.datum(root).selectAll(".node")
         .data(treemap.nodes)
       .enter().append("div")
-        .attr("class", "node")
+        .attr("class", function(d){ 
+          return d.children ? "node parent" : "node" 
+        })
         .call(position)
-        .style("background", function(d){ return d.children ? null : color(d.parent.name) })
-        .text(function(d){ return d.children ? null : d.name })
+        .style("background", function(d){
+          if('children' in d) console.log(d)
+          return d.children ? null : color(d.parent.name) 
+        })
+        .text(function(d){ 
+          // return d.children ? null : d.name 
+          return d.name 
+        })
 
-    d3.selectAll("input").on("change", function change(){
-      var value = this.value === "count"
-          ? function(){ return 1 }
-          : function(d){ return d.size }
-
-      node
-          .data(treemap.value(value).nodes)
-        .transition()
-          .duration(1500)
-          .call(position)
-    })
   })
 
   function position(){

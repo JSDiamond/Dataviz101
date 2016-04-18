@@ -64,4 +64,23 @@ form {
   overflow: hidden;
   position: absolute;
   text-indent: 2px;
-}/* //////////////////////////////// */
+}
+.node.parent {
+  font: 10px sans-serif;
+  font-weight: bolder;
+  line-height: 12px;
+  text-indent: 0px;
+  border: 1px solid #ddd;
+}
+/* //////////////////////////////// */
+
+h4{
+  margin: 6px auto;
+}
+#nesting ul{
+  margin-left: 20px;
+  margin-bottom: 26px;
+}
+#nesting ul li{
+  margin-left: 20px;
+}
