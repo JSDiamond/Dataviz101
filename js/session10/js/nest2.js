@@ -20,7 +20,7 @@
   d3.json("data/flare.json", function(error, root){
     if (error) throw error
 
-    console.log('treemap root', root)
+    // console.log('treemap root', root)
 
     var node = div.datum(root).selectAll(".node")
         .data(treemap.nodes)
@@ -30,7 +30,7 @@
         })
         .call(position)
         .style("background", function(d){
-          if('children' in d) console.log(d)
+          // if('children' in d) console.log(d)
           return d.children ? null : color(d.parent.name) 
         })
         .text(function(d){ 
