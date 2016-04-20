@@ -32,9 +32,9 @@ Introduced by Ben Shneiderman in 1991, a [treemap](https://github.com/mbostock/d
 
 ### Also made from flare.json nested data
 
-* (Collapsible Force Layout)[https://bl.ocks.org/mbostock/1062288]
-* (Hierarchical Edge Bundling)[https://bl.ocks.org/mbostock/7607999]
-* (Chord Diagram)[http://bl.ocks.org/mbostock/1046712]
+* [Collapsible Force Layout](https://bl.ocks.org/mbostock/1062288)
+* [Hierarchical Edge Bundling](https://bl.ocks.org/mbostock/7607999)
+* [Chord Diagram](http://bl.ocks.org/mbostock/1046712)
 
 
 
