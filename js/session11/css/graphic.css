@@ -157,7 +157,7 @@ ul{
     content: 'mobile < 440';
   }
   body{
-    background-color: rgba(100,255,255,0.2);
+    background-color: rgba(100,200,255,0.15);
   }
   h1{
     font-size: 1.1em;
