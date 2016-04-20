@@ -97,6 +97,32 @@ ul{
 /* //////////////////////////////// */
 
 
+.gridlike{
+  overflow: hidden;
+}
+.gridlike.col3 li{
+  float: left;
+  width: 32%;
+  height: 100px;
+  margin-right: 2%;
+  margin-bottom: 12px;
+}
+.gridlike.col3 li:last-child{
+  margin-right: 0%;
+}
+
+.gridlike.col3 li:nth-child(1){
+  background-color: lightcoral;
+}
+.gridlike.col3 li:nth-child(2){
+  background-color: cyan;
+}
+.gridlike.col3 li:nth-child(3){
+  background-color: aquamarine;
+}
+
+
+/* Styles specified in this query will afftect anything 1024 and below */
 @media only screen and (max-width: 1024px){
   .mediaq:before{
     content: 'tablet < 1024 && > 440';
@@ -110,8 +136,22 @@ ul{
   h2{
     font-size: 1em;
   }
+
+  .gridlike.col3 li{
+    width: 49%;
+    margin-right: 2%;
+  }
+  .gridlike.col3 li:nth-child(2){
+    margin-right: 0;
+  }
+  .gridlike.col3 li:nth-child(3){
+    width: 100%;
+  }
+
+
 }
 
+/* Styles specified in this query will afftect anything 440 and below, over writting the 1024 query*/
 @media only screen and (max-width: 440px){
   .mediaq:before{
     content: 'mobile < 440';
@@ -124,6 +164,11 @@ ul{
   }
   h2{
     font-size: 0.9em;
+  }
+
+  .gridlike.col3 li{
+    width: 100%;
+    margin-right: 0%;
   }
 }
 

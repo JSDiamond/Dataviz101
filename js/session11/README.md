@@ -25,3 +25,30 @@ Because this event is attached to the `window`, you can only define it once. But
 	d3.select(window).on('resize.chart1', redrawChart1)
 	d3.select(window).on('resize.chart1.key', redrawChart1Key)
 	d3.select(window).on('resize.chart2', redrawChart2)
+	
+	
+### Debounce
+
+	var debounce = null;
+	function resize(){
+	  if (debounce) clearTimeout(debounce)
+	  debounce = setTimeout(function(){
+	      console.log('you stopped moving, so redraw graphics')
+	      ////Put graphic redraw code in here
+	  }, 300)
+	}
+	d3.select(window).on('resize.graphic', resize)
+	
+
+### Queue.js
+
+A [queue](https://github.com/d3/d3-queue) evaluates zero or more deferred asynchronous tasks with configurable concurrency: you control how many tasks run at the same time. When all the tasks complete, or an error occurs, the queue passes the results to your await callback. 
+
+	queue()
+	  .defer(d3.json, "us.json")
+	  .defer(d3.csv, "county-data.csv")
+	  .await(initGraphic)
+	  
+	initGraphic(err, geodata, countydata){
+		//Now bind the countydata to each county in the geodata and draw your map
+	}

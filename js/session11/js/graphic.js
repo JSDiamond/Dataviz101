@@ -1,3 +1,4 @@
+
 ////Let's make a global object to store everything 
 ////that needs to be used throughout the project
 var db = {}
@@ -13,22 +14,53 @@ db.mediaTest = function(){
 }
 
 // queue()
-//   .defer(d3.json, "us.json")
+//   .defer(d3.json, "data/us.json")
+//   .defer(d3.csv, "data/countynames.csv")
 //   .await(initGraphic)
 
-// function initGraphic(err, geo_us){
-//   console.log(geo_us)
-//   // map2()
+// function initGraphic(err, geo_us, names){
+//   console.log(geo_us, names)
+  
+//   var lookup = {}
+  
+//   names.forEach(function(d){
+//     lookup[+d.code] = d
+//   })
+
+//   var counties = topojson.feature(geo_us, geo_us.objects.counties).features;
+  
+//   counties.forEach(function(d){
+//     d.properties.name = +d.id in lookup ? lookup[+d.id].name : 'n/a'
+//   })
+
+//   console.log(counties[0])
 // }
   
 
-
-// var debounce = null;
-// function resize(){
-//   if (debounce) clearTimeout(debounce)
-//   debounce = setTimeout(function(){
-//       console.log('you stopped moving, so redraw graphics')
-//       ////Put graphic redraw code in here
-//   }, 300)
+// function debounce(func, wait){
+//   wait = wait || 0
+//   var timeout
+//   console.log(arguments)
+//   return function() {
+//     // var context = this
+//     // var args = arguments
+//     var later = function(){
+//       timeout = null
+//       // func.apply(context, args)
+//       func(arguments)
+//     }
+//     clearTimeout(timeout)
+//     timeout = setTimeout(later, wait)
+//   }
 // }
-// d3.select(window).on('resize.graphic', resize)
+
+// var redrawGraphic = debounce(function() {
+//   console.log('you stopped moving, so redraw graphics')
+// }, 250)
+// var redrawGraphic2 = debounce(function() {
+//   console.log('2222222222')
+// })
+
+
+// d3.select(window).on('resize.graphic', redrawGraphic)
+// d3.select(window).on('resize.graphic.two', redrawGraphic2)
