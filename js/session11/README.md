@@ -13,10 +13,24 @@ A [media query](https://css-tricks.com/css-media-queries/) consists of a media t
 	    background: #ccc;
 	  }
 	}
+
+####:nth-chid()
+The [:nth-child selector](https://css-tricks.com/almanac/selectors/n/nth-child/) allows you to select one or more elements based on their source order, according to a formula. It is defined in the CSS Selectors Level 3 spec as a “structural pseudo-class”, meaning it is used to style content based on its relationship with parent and sibling elements.	
+
+	////HTML
+	<ul class="gridlike col3">
+      <li class="col"></li>
+      <li class="col"></li>
+      <li class="col"></li>
+    </ul>
+	
+	////CSS
+	.gridlike.col3 li:nth-child(3) {
+	  margin-right: 0;
+	}
 	
 ### D3 on resize
-
-https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onresize
+A [window level event](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onresize) triggered when the browswer size changes.
 
 	d3.select(window).on('resize', redrawGraphic)
 	
@@ -28,6 +42,7 @@ Because this event is attached to the `window`, you can only define it once. But
 	
 	
 ### Debounce
+A way to [put our resize event on hold](https://davidwalsh.name/javascript-debounce-function) until the window stops being resized for more than a given waiting period. Instead of having it rapid fire with every pixel change.
 
 	var debounce = null;
 	function resize(){
