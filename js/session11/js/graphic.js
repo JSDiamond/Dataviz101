@@ -13,54 +13,59 @@ db.mediaTest = function(){
   d3.select('body').classed("mobile", db.media.type=="mobile")
 }
 
-// queue()
-//   .defer(d3.json, "data/us.json")
-//   .defer(d3.csv, "data/countynames.csv")
-//   .await(initGraphic)
 
-// function initGraphic(err, geo_us, names){
-//   console.log(geo_us, names)
+queue()
+  .defer(d3.json, "data/us.json")
+  .defer(d3.csv, "data/countynames.csv")
+  .await(initGraphic)
+
+function initGraphic(err, geo_us, names){
+  // console.log(geo_us, names)
   
-//   var lookup = {}
+  var lookup = {}
   
-//   names.forEach(function(d){
-//     lookup[+d.code] = d
-//   })
+  names.forEach(function(d){
+    lookup[+d.code] = d
+  })
 
-//   var counties = topojson.feature(geo_us, geo_us.objects.counties).features;
+  var counties = topojson.feature(geo_us, geo_us.objects.counties).features;
   
-//   counties.forEach(function(d){
-//     d.properties.name = +d.id in lookup ? lookup[+d.id].name : 'n/a'
-//   })
+  counties.forEach(function(d){
+    d.properties.name = +d.id in lookup ? lookup[+d.id].name : 'n/a'
+  })
 
-//   console.log(counties[0])
-// }
+  console.log(counties)
+}
   
 
-// function debounce(func, wait){
-//   wait = wait || 0
-//   var timeout
-//   console.log(arguments)
-//   return function() {
-//     // var context = this
-//     // var args = arguments
-//     var later = function(){
-//       timeout = null
-//       // func.apply(context, args)
-//       func(arguments)
-//     }
-//     clearTimeout(timeout)
-//     timeout = setTimeout(later, wait)
-//   }
-// }
+function debounce(func, wait){
+  wait = wait || 0
+  var timeout
+  console.log(arguments)
+  return function() {
+    // var context = this
+    // var args = arguments
+    var later = function(){
+      timeout = null
+      // func.apply(context, args)
+      func(arguments)
+    }
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+  }
+}
 
-// var redrawGraphic = debounce(function() {
-//   console.log('you stopped moving, so redraw graphics')
-// }, 250)
-// var redrawGraphic2 = debounce(function() {
-//   console.log('2222222222')
-// })
+var redrawGraphic = debounce(function(){
+  db.mediaTest
+}, 1000)
+var redrawGraphic2 = debounce(function(){
+  console.log('2222222222')
+})
 
 
 // d3.select(window).on('resize.graphic', redrawGraphic)
 // d3.select(window).on('resize.graphic.two', redrawGraphic2)
+
+
+
+

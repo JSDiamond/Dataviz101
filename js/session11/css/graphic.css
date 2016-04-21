@@ -125,7 +125,7 @@ ul{
 /* Styles specified in this query will afftect anything 1024 and below */
 @media only screen and (max-width: 1024px){
   .mediaq:before{
-    content: 'tablet < 1024 && > 440';
+    content: 'tablet <= 1024 && > 440';
   }
   body{
     background-color: rgba(255,255,100,0.2);
@@ -148,13 +148,12 @@ ul{
     width: 100%;
   }
 
-
 }
 
 /* Styles specified in this query will afftect anything 440 and below, over writting the 1024 query*/
 @media only screen and (max-width: 440px){
   .mediaq:before{
-    content: 'mobile < 440';
+    content: 'mobile <= 440';
   }
   body{
     background-color: rgba(100,200,255,0.15);

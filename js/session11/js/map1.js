@@ -72,6 +72,7 @@ function map1(){
   d3.select(window).on('resize.map1', redrawMap)
 
   function redrawMap(){
+    // console.log('redrawMap')
     container.select('svg').remove()
     drawMap(geodata)
   }

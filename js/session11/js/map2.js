@@ -83,8 +83,8 @@ function map2(){
     borders.attr("d", path)
   }
 
-
-  d3.select(window).on('resize.map2', redrawMap)
+  var redrawGraphic = debounce(redrawMap, 250)
+  d3.select(window).on('resize.map2', redrawGraphic)
 
   function redrawMap(){
     sizeMap()
