@@ -1,174 +1,52 @@
 body, html{
-	margin:0;padding:0;
-	font-family: "Helvetica", sans-serif;
-	font-size: 1.2em;
+  width: 100%;
+  height: 100%;
 }
 
-.mediaq:before{
-  content: 'desktop > 1024';
-  font-size: 1em;
-  color: #999;
-  margin-left: 6px;
+.carousel, .carousel-inner{
+  width: 100%;
+  height: 100%;
+}
+.carousel-inner .item{
+  min-width: 100%;
+  min-height: 100%;
 }
 
-section{
-	max-width: 1220px;
-	width: 88%;
-	margin: 10px auto 80px;
+.fullheight{
+    min-width: 100%;
+    min-height: 100%;
 }
 
-h2{
-	font-size: 1.3em;
+.grade_blue{
+  background: linear-gradient(to bottom, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(5,119,150,1) 100%);
+}
+.grade_orange{
+  background: linear-gradient(to bottom, rgba(255,175,75,1) 0%, rgba(189,110,13,1) 100%);
 }
 
-h3{
-	margin: 6px 0;
-}
-
-ul{
-	list-style: none;
-	margin: 6px 0;
-	font-size: 0.8em;
-	padding: 0;
-}
-
-.svgbox{
-	font-size: 9px;
-}
-
-
-
-/* //////////////// maps //////////////// */
-.mapdiv{
-  max-width: 900px;
-  margin: 0 0 10px;
-  border: 2px solid #999;
-}
-.counties {
-  fill: none;
-}
-.counties path:hover{
-  stroke: #111;
-}
-.state-borders {
-  fill: none;
-  stroke: #fff;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-}
-
-.q0-9 { fill:rgb(247,251,255); }
-.q1-9 { fill:rgb(222,235,247); }
-.q2-9 { fill:rgb(198,219,239); }
-.q3-9 { fill:rgb(158,202,225); }
-.q4-9 { fill:rgb(107,174,214); }
-.q5-9 { fill:rgb(66,146,198); }
-.q6-9 { fill:rgb(33,113,181); }
-.q7-9 { fill:rgb(8,81,156); }
-.q8-9 { fill:rgb(8,48,107); }
-
-
-.stroke {
-  fill: none;
-  stroke: #000;
-  stroke-width: 3px;
-}
-.graticule {
-  stroke: rgba(150,150,150,1);
-  fill: none;
-}
-
-
-.tooltip{
+h1.absoluted{
   position: absolute;
-  padding: 3px 8px;
-  border: 1px solid #bbb;
-  background-color: rgba(255,255,255,0.8);
-  font-size: 12px;
-  color: #333;
-  pointer-events: none;
-  display: none;
-  top: 0px;
-  left: 0px;
-}
-.tooltip.show{
-  display: block;
-}
-/* //////////////////////////////// */
-
-
-.gridlike{
-  overflow: hidden;
-}
-.gridlike.col3 li{
-  float: left;
-  width: 32%;
-  height: 100px;
-  margin-right: 2%;
-  margin-bottom: 12px;
-}
-.gridlike.col3 li:last-child{
-  margin-right: 0%;
+  top: 100px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
 }
 
-.gridlike.col3 li:nth-child(1){
-  background-color: lightcoral;
+.carousel-inner .item:nth-child(1){
+ background: url(../assets/slide1.png) no-repeat center center fixed;
+ background-size: cover;
 }
-.gridlike.col3 li:nth-child(2){
-  background-color: cyan;
+.carousel-inner .item:nth-child(2){
+ background: url(../assets/slide2.png) no-repeat center center fixed;
+ background-size: cover;
 }
-.gridlike.col3 li:nth-child(3){
-  background-color: aquamarine;
-}
-
-
-/* Styles specified in this query will afftect anything 1024 and below */
-@media only screen and (max-width: 1024px){
-  .mediaq:before{
-    content: 'tablet <= 1024 && > 440';
-  }
-  body{
-    background-color: rgba(255,255,100,0.2);
-  }
-  h1{
-    font-size: 1.3em;
-  }
-  h2{
-    font-size: 1em;
-  }
-
-  .gridlike.col3 li{
-    width: 49%;
-    margin-right: 2%;
-  }
-  .gridlike.col3 li:nth-child(2){
-    margin-right: 0;
-  }
-  .gridlike.col3 li:nth-child(3){
-    width: 100%;
-  }
-
+.carousel-inner .item:nth-child(3){
+ background: url(../assets/slide3.png) no-repeat center center fixed;
+ background-size: cover;
 }
 
-/* Styles specified in this query will afftect anything 440 and below, over writting the 1024 query*/
 @media only screen and (max-width: 440px){
-  .mediaq:before{
-    content: 'mobile <= 440';
-  }
-  body{
-    background-color: rgba(100,200,255,0.15);
-  }
-  h1{
-    font-size: 1.1em;
-  }
-  h2{
-    font-size: 0.9em;
-  }
 
-  .gridlike.col3 li{
-    width: 100%;
-    margin-right: 0%;
-  }
 }
 
 
