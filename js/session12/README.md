@@ -1,9 +1,15 @@
 #JS Session 12
 
 
-## Regex and UI framework
+## User Interface (Bonus: Regular Expressions)
 <br>
 
+
+### U.I. and navigation elements
+
+[Twitter bootstrap](http://getbootstrap.com/getting-started/) is a front-end framework for elements like buttons, drop-downs, form fields, and other [interface components](http://getbootstrap.com/components/), as well as a [grid system](http://getbootstrap.com/css/#grid) and [other functionality](http://getbootstrap.com/javascript/).
+
+<br>
 
 ### Regex
 
@@ -76,4 +82,16 @@ The following script uses the `replace()` method to switch the words in the stri
 	
 	"John Smith".match(re)
 	//["John Smith", "John", "Smith"]
+	
+	
+Email address pattern
+	
+	var email_pattern = /[A-z0-9-]{1,}\@[A-z0-9-\.]{1,}/g
+	
+	var paragraph = Lorem ipsum dolor sit amet, consectetur adipiscing deborah_schoman@fa.org elit. Curabitur erat neque, rhoncus ut laoreet et, pulvinar nec mauris. Mauris nec nunc tortor. Curabitur nulla orci, gryphon75672@hot.mail.com laoreet eget tincidunt nec, ultricies sit amet ex. Nullam porttitor nunc nibh, in freds@monarch-info.com eleifend nulla  sales@calpak-usa.com aliquam eu.
+	
+	var emails = paragraph.match(email_pattern)
+	//["deborah_schoman@fa.org", "gryphon75672@hot.mail.com", "freds@monarch-info.com", "sales@calpak-usa.com"]
+	
+	
 	
