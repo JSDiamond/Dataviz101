@@ -9,12 +9,15 @@
 
 [Twitter bootstrap](http://getbootstrap.com/getting-started/) is a front-end framework for elements like buttons, drop-downs, form fields, and other [interface components](http://getbootstrap.com/components/), as well as a [grid system](http://getbootstrap.com/css/#grid) and [other functionality](http://getbootstrap.com/javascript/).
 
+#####Libraries and other helpers
 
-[Simple Parallax Scrolling](http://pixelcog.github.io/parallax.js/)
+[jQuery UI](https://jqueryui.com/)
 
 [Native javascript touch events](http://tutorials.jenkov.com/responsive-mobile-friendly-web-design/touch-events-in-javascript.html)
 
 [Hammer.js, a touch event library](http://hammerjs.github.io/)
+
+[Simple Parallax Scrolling](http://pixelcog.github.io/parallax.js/)
 
 <br>
 

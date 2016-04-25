@@ -33,11 +33,14 @@ body, html{
 
 h1.absoluted{
   position: absolute;
+  font-size: 90px;
+  font-weight: 900;
   top: 100px;
   color: #fff;
   text-align: center;
   width: 100%;
   z-index: 10;
+  text-shadow: 0 0 40px #222;
 }
 
 .carousel-inner .item:nth-child(1){
