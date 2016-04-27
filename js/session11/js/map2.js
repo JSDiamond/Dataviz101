@@ -38,18 +38,18 @@ function map2(){
   
   function initMap(geodata){
 
-    counties = topojson.feature(geodata, geodata.objects.counties).features;
+    states = topojson.feature(geodata, geodata.objects.states).features;
 
     countypaths1 = svg.append("g")
-        .attr("class", "counties")
+        .attr("class", "states")
       .selectAll("path")
-        .data(counties)
+        .data(states)
       .enter().append("path")
         .attr("class", function(d){ return 'q4-9' }) // quantize(d.properties.rate);
         // .attr("d", path)
 
     borders = svg.append("path")
-        .datum(topojson.mesh(geodata, geodata.objects.counties, function(a, b){ return a.id / 1000 ^ b.id / 1000 }))
+        .datum(topojson.mesh(geodata, geodata.objects.states, function(a, b){ return a.id / 1000 ^ b.id / 1000 }))
         .attr("class", "state-borders")
         // .attr("d", path)
 

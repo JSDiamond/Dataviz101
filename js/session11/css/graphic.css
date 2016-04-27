@@ -37,6 +37,10 @@ ul{
 }
 
 
+.states{
+  stroke: #fff;
+  stroke-width: 1px;
+}
 
 /* //////////////// maps //////////////// */
 .mapdiv{
