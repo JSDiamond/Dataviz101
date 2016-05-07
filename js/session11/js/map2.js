@@ -48,9 +48,9 @@ function map2(){
         .attr("class", function(d){ return 'q4-9' }) // quantize(d.properties.rate);
         // .attr("d", path)
 
-    borders = svg.append("path")
-        .datum(topojson.mesh(geodata, geodata.objects.states, function(a, b){ return a.id / 1000 ^ b.id / 1000 }))
-        .attr("class", "state-borders")
+    // borders = svg.append("path")
+    //     .datum(topojson.mesh(geodata, geodata.objects.states, function(a, b){ return a.id / 1000 ^ b.id / 1000 }))
+    //     .attr("class", "state-borders")
         // .attr("d", path)
 
     countypaths1.on('mouseenter', showToolTip)
@@ -80,7 +80,7 @@ function map2(){
 
   function renderMap(){
     countypaths1.attr("d", path)
-    borders.attr("d", path)
+    // borders.attr("d", path)
   }
 
   var redrawGraphic = debounce(redrawMap, 250)

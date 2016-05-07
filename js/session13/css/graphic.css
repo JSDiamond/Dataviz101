@@ -28,6 +28,20 @@ ul{
 }
 
 
+.node {
+  cursor: pointer;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 1.5px;
+}
+
+
+
 
 @media only screen and (max-width: 440px){
 
