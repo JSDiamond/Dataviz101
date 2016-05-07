@@ -58,8 +58,6 @@ ul{
   text-align: center;
   padding: 20px;
 
-  height: 300px;
-  background-color: deepskyblue;
 }
 
 #graph.graph-scroll-fixed{
@@ -75,6 +73,71 @@ ul{
   /*margin-left: 240px;*/
 }
 
+
+
+
+/* //////////////////////////////////
+SCATTER PLOT CSS
+////////////////////////////////// */
+.domain{
+  display: none;
+}
+.x.axis .domain{
+  display: block;
+  stroke: #bbb;
+}
+
+.axis text{
+  font-size: 12px;
+  fill: #aaa;
+}
+
+.axis .tick line{
+  stroke: #bbb;
+  stroke-width: 1px;
+}
+.y.axis .tick line{
+  stroke: #bbb;
+}
+
+.circlegroup{
+  font-size: 28px;
+  font-weight: bolder;
+  opacity: 0.8;
+}
+
+.circlegroup:hover circle, .circlegroup.active circle{
+  stroke-width: 1.5px;
+  stroke: #222;
+}
+.circlegroup.active{
+  opacity: 1;
+}
+
+.circlegroup text{
+  cursor: default;
+  display: none
+}
+.circlegroup.active text{
+  display: block;
+}
+
+.circlegroup.catA{
+  fill: coral;
+}
+.circlegroup.catB{
+  fill: lightpink;
+}
+.circlegroup.catC{
+  fill: cyan;
+}
+.circlegroup.catD{
+  fill: teal;
+}
+.circlegroup.catE{
+  fill: orange;
+}
+/* //////////////////////////////// */
 
 
 

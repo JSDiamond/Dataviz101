@@ -33,8 +33,13 @@ Feautres:
  
 #### [graph-scroll](https://github.com/1wheel/graph-scroll)
 
+Simple scrolling events for d3 graphs. graph-scroll takes a selection of explanatory text sections and dispatches active events as different sections are scrolled into to view. These active events can be used to update a chart's state.
 
 
-
-Non-D3 stuff
+Non-D3 Scroll Library
 [scroll-watcher](https://github.com/WSJ/scroll-watcher)
+
+<br>
+
+####Other Libraries Built on D3
+[A good list](http://mikemcdearmon.com/portfolio/techposts/charting-libraries-using-d3)
