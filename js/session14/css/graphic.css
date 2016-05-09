@@ -85,6 +85,7 @@ SCATTER PLOT CSS
 .x.axis .domain{
   display: block;
   stroke: #bbb;
+  fill: transparent;
 }
 
 .axis text{
@@ -138,6 +139,62 @@ SCATTER PLOT CSS
   fill: orange;
 }
 /* //////////////////////////////// */
+
+
+
+
+/* //////////////////////////////////
+TOOLTIP
+////////////////////////////////// */
+.tooltip{
+  position: absolute;
+  padding: 3px 8px;
+  border: 1px solid #bbb;
+  background-color: rgba(255,255,255,0.9);
+  font-size: 12px;
+  color: #333;
+  pointer-events: none;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.tooltip-hidden{
+  display: none;
+}
+.tooltip h4{
+  margin: 1px 0;
+  padding: 1px 0;
+}
+.tooltip p{
+  margin: 1px 0;
+  padding: 1px 0;
+  white-space: nowrap;
+}
+.tooltip:after,.tooltip:before{
+  top:100%;
+  left:50%;
+  border: solid transparent;
+  content:"";
+  height:0;
+  width:0;
+  position:absolute;
+  pointer-events:none;
+  z-index: 2;
+}
+div.tooltip:after{
+  border-color:rgba(0,0,0,0);
+  border-top-color:#fff;
+  border-width:7px;
+  margin-left:-7px;
+}
+div.tooltip:before{
+  border-color:rgba(102,102,102,0);
+  border-top-color:#bbb;
+  border-width:8px;
+  margin-left:-8px;
+}
+/* //////////////////////////////// */
+
 
 
 

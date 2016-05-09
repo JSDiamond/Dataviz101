@@ -30,58 +30,74 @@ var dataset = [
   {'cat': 'E', 'x':7, 'y': 7.26, z:5},
 ];
 
+
+
 var margin = {top: 20, right: 30, bottom: 40, left: 40};
 
 var width = d3.selectAll('#graph').node().getBoundingClientRect().width - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom
 
-var xScale = d3.scale.linear()
-    .range([0, width])
-    .domain([3, 16])
+var cvn = d3.conventions({
+    parentSel: d3.selectAll('#graph')
+    , width: width
+    , height: height
+    , margin: margin
+  })
 
-var yScale = d3.scale.linear()
-    .range([height, 0])
-    .domain([2, 10])
+cvn.x.range([0, width]).domain([3, 16])
+cvn.y.range([height, 0]).domain([0, 10])
+cvn.xAxis.outerTickSize(1).ticks(6)
+cvn.yAxis.ticks(6).tickFormat(function(d,i){ return '$'+d+'M' })
 
-var xAxis = d3.svg.axis()
-    .scale(xScale)
-    .tickSize(10)
-    .tickPadding(6)
-    .orient('bottom')
-    .outerTickSize(1)
+// var xScale = d3.scale.linear()
+//     .range([0, width])
+//     .domain([3, 16])
 
-var yAxis = d3.svg.axis()
-    .scale(yScale)
-    .tickSize(width)
-    .ticks(8)
-    .tickPadding(10)
-    .outerTickSize(1)
-    .orient('left')
-    .tickFormat(function(d,i){ return '$'+d+'M' })
+// var yScale = d3.scale.linear()
+//     .range([height, 0])
+//     .domain([2, 10])
 
-var svg3 = d3.select('#scatter').append('svg')
-  .attr('id', 'svg3')
-  .attr('width', width + margin.left + margin.right)
-  .attr('height', height + margin.top + margin.bottom)
+// var xAxis = d3.svg.axis()
+//     .scale(xScale)
+//     .tickSize(10)
+//     .tickPadding(6)
+//     .orient('bottom')
+//     .outerTickSize(1)
 
-var marginedgroup = svg3.append('g')
-    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+// var yAxis = d3.svg.axis()
+//     .scale(yScale)
+//     .tickSize(width)
+//     .ticks(8)
+//     .tickPadding(10)
+//     .outerTickSize(1)
+//     .orient('left')
+//     .tickFormat(function(d,i){ return '$'+d+'M' })
+
+// var svg3 = d3.select('#scatter').append('svg')
+//   .attr('id', 'svg3')
+//   .attr('width', width + margin.left + margin.right)
+//   .attr('height', height + margin.top + margin.bottom)
 
 
-marginedgroup.append('g')
-    .attr('class', 'x axis')
-    .attr('transform', 'translate(0,' + (height) + ')')
-    .call(xAxis)
+cvn.drawAxis()
 
-marginedgroup.append('g')
-    .attr('class', 'y axis')
-    .attr('transform', 'translate(' +  width + ',0)')
-    .call(yAxis)
+// var marginedgroup = cvn.svg.append('g')
+//     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
-var circleGroup = marginedgroup.selectAll('.circlegroup').data(dataset)
-    .enter().append('g')
+// marginedgroup.append('g')
+//     .attr('class', 'x axis')
+//     .attr('transform', 'translate(0,' + (height) + ')')
+//     .call(xAxis)
+
+// marginedgroup.append('g')
+//     .attr('class', 'y axis')
+//     .attr('transform', 'translate(' +  width + ',0)')
+//     .call(yAxis)
+
+var circleGroup = cvn.svg.dataAppend(dataset, 'g.circlegroup')
+    // .selectAll('g.circlegroup').data(dataset).enter().append('g')
     .attr('class', function(d){ return 'circlegroup cat'+d.cat })
-    .attr('transform', function(d){ return 'translate('+ xScale(d.x) +','+ yScale(d.y) +')'; })
+    .attr('transform', function(d){ return 'translate('+ cvn.x(d.x) +','+ cvn.y(d.y) +')'; })
 
 
 circleGroup.append('circle')
@@ -90,16 +106,24 @@ circleGroup.append('circle')
   }) 
 
 circleGroup.append('text')
-    .text(function(d){ return d.cat; })
+    .text( ƒ('cat') )
+    // .text( function(d){ return d.cat} )
     .attr('dx', function(d){ return d.z*1.5 })
 
 
-circleGroup.on('mouseenter', function(d,i){
-        d3.select(this).classed('active', true)
-    })
+// circleGroup.on('mouseenter', function(d,i){
+//         d3.select(this).classed('active', true)
+//     })
 
-circleGroup.on('mouseleave', function(d){
-        d3.select(this).classed('active', false)
-    })
+// circleGroup.on('mouseleave', function(d){
+//         d3.select(this).classed('active', false)
+//     })
+
+circleGroup.each(function(d){
+  d3.attachTooltip(d3.select(this))
+})
 
 ////////////////////////////////////////////////
+
+
+
