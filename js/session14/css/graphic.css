@@ -63,14 +63,12 @@ ul{
 #graph.graph-scroll-fixed{
   position: fixed;
   top: 0px;
-  /*margin-left: 240px;*/
 }
 
 #graph.graph-scroll-below{
   position: absolute;
   bottom: 0px;
   top: inherit;
-  /*margin-left: 240px;*/
 }
 
 

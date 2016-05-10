@@ -1,16 +1,6 @@
-graphScroll()
-    .graph(d3.selectAll('#graph'))
-    .container(d3.select('#container'))
-  .sections(d3.selectAll('.gs_section'))
-  .on('active', function(i){ 
-  	d3.select('#fstate').text(i)
-  	console.log(i + 'th section active')
 
-  	var random = Math.floor( Math.random()*circleGroup[0].length)
-  	circleGroup.classed('active', false)
-  	d3.select(circleGroup[0][random]).classed('active', true)
-  	
-  })
+
+    
 
 
 ////////////////////////////////////////////////
@@ -38,7 +28,7 @@ var width = d3.selectAll('#graph').node().getBoundingClientRect().width - margin
     height = 300 - margin.top - margin.bottom
 
 var cvn = d3.conventions({
-    parentSel: d3.selectAll('#graph')
+    parentSel: d3.select('#graph')
     , width: width
     , height: height
     , margin: margin
@@ -95,7 +85,7 @@ cvn.drawAxis()
 //     .call(yAxis)
 
 var circleGroup = cvn.svg.dataAppend(dataset, 'g.circlegroup')
-    // .selectAll('g.circlegroup').data(dataset).enter().append('g')
+    //marginedgroup.selectAll('g.circlegroup').data(dataset).enter().append('g')
     .attr('class', function(d){ return 'circlegroup cat'+d.cat })
     .attr('transform', function(d){ return 'translate('+ cvn.x(d.x) +','+ cvn.y(d.y) +')'; })
 
@@ -126,4 +116,28 @@ circleGroup.each(function(d){
 ////////////////////////////////////////////////
 
 
+var highlights = [
+      circleGroup[0][1]
+      , circleGroup[0][4]
+      , circleGroup[0][2]
+      , circleGroup[0][6]
+      , circleGroup[0][7]
+      , circleGroup[0][9]
+      , circleGroup[0][3]
+    ]
+
+graphScroll()
+    .graph(d3.select('#graph'))
+    .container(d3.select('#container'))
+    .sections(d3.selectAll('.gs_section'))
+    .on('active', function(i){ 
+      console.log(i + 'th section active')
+
+      // var random = Math.floor( Math.random()*circleGroup[0].length)
+      // circleGroup.classed('active', false)
+      // d3.select(circleGroup[0][random]).classed('active', true)
+
+      circleGroup.classed('active', false)
+      d3.select(highlights[i]).classed('active', true)
+    })
 

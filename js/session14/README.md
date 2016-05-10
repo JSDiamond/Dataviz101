@@ -39,6 +39,9 @@ Simple scrolling events for d3 graphs. graph-scroll takes a selection of explana
 Non-D3 Scroll Library
 [scroll-watcher](https://github.com/WSJ/scroll-watcher)
 
+#### [swwopyDrag](http://1wheel.github.io/swoopy-drag/)
+Annotations!!!
+
 <br>
 
 ####Other Libraries Built on D3
