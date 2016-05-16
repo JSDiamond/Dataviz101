@@ -6,5 +6,14 @@ This course teaches students the fundamentals of data visualization so that they
 
 ###Student Repos
 
- * [PJ Moriarty](https://github.com/moriartp)
- * [Kiril Traykov](https://github.com/kiriltraykov)
+ * PJ Moriarty
+ 	* [github](https://github.com/moriartp)
+ 	* [Project 1](https://sites.google.com/a/newschool.edu/christmas-hardships/?pli=1)
+ 	* [Project 2](http://moriartp.github.io/moriartp.github.io/projects/drugs/) [Additional piece](http://moriartp.github.io/moriartp.github.io/projects/vets/) 
+ 	* [Project 3]()
+ * Kiril Traykov
+ 	* [github](https://github.com/kiriltraykov)
+ 	* [Project 1](https://canvas.newschool.edu/courses/1303518/discussion_topics/4066633)
+ 	* [Project 2](http://kiriltraykov.github.io/Project_2_Sleeping_Alone/)
+ 	* [Project 3](http://kiriltraykov.github.io/FinalProject/)
+ 	
