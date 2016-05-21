@@ -10,7 +10,7 @@ This course teaches students the fundamentals of data visualization so that they
  	* [github](https://github.com/moriartp)
  	* [Project 1](https://sites.google.com/a/newschool.edu/christmas-hardships/?pli=1)
  	* [Project 2](http://moriartp.github.io/moriartp.github.io/projects/drugs/) [Additional piece](http://moriartp.github.io/moriartp.github.io/projects/vets/) 
- 	* [Project 3]()
+ 	* [Project 3](http://moriartp.github.io/projects/viewpointX/)
  * Kiril Traykov
  	* [github](https://github.com/kiriltraykov)
  	* [Project 1](https://canvas.newschool.edu/courses/1303518/discussion_topics/4066633)
